@@ -76,7 +76,8 @@ main{
     margin: 80px auto;
     padding: 0 40px;
     box-sizing: border-box;
-}   article h2{
+}  
+ article h2{
     color: #f63232;
     font-size: 48px;
 }

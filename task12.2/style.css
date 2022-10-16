@@ -1,7 +1,110 @@
-p{ 
+body{
+    background: #eee;
+}
+.wrapper{
+    background: #fff;
+    max-width: 960px;
+    margin: 0 auto;
     padding: 20px;
-    background: #eeee;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.4em;
+
 }
 
+
+/*.blue{
+    background: blue;
+    float: right;
+
+}
+.red{
+    background: red;
+    float: right;
+}
+.green{
+    background: green;
+    float: left;
+}
+.box{
+    height: 100px;
+    width: 100px;
+}*/
+.wrapper:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.Service:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.Service h2 .service p{
+    color: #999;
+    margin: 100px 0;
+    text-align: center;
+    
+}
+.Service{
+    float: left;
+    background: #eee;
+    width: 29%;
+    margin: 1%;
+    padding: 1%;
+    height: 140px;
+    position: relative;
+}
+.Service:nth-child(1){
+    top: 5px;
+}
+.Service:nth-child(2){
+    top: 15px;
+}
+.Service:nth-child(3){
+    top: 25px;
+}
+.content{
+    padding: 10px;
+    clear: left;
+    top: 50px;
+    margin: 20px 1%;
+    position: relative;
+    left: 50px;
+
+}
+
+.content p{
+    -webkit-column-count: 3;
+    -webkit-column-gap: 50px;
+    column-gap: 50px;
+    -webkit-column-rule: 1px solid #ccc;
+    text-align: justify;
+}
+
+section, aside{
+    float: left;
+    width: 46%;
+    padding: 1%;
+    margin: 1%;
+    background: #f2f2f2;
+
+}
+.columns:after{
+    display: block;
+    content: "";
+    clear: both;
+    color: #f2f2f2;
+
+}
+.banner{
+    max-height: 300px;
+    overflow: hidden;
+    margin: 1%;
+    position: relative;
+}
+.banner h2{
+    position: absolute;
+    top: 30px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
