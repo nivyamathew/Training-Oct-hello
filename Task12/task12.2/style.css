@@ -37,7 +37,7 @@ body{
 }
 .Service{
     max-height: 150px;
-    overflow: scroll;
+    overflow: hidden;
 }
 .Service:after{
     content: "";
@@ -46,14 +46,14 @@ body{
 }
 .Service h2 .service p{
     color: #999;
-    margin: 100px 0;
+    margin: 10px 0;
     text-align: center;
     
 }
 .Service{
     float: left;
     background: #eee;
-    width: 29%;
+    width: 29.33%;
     margin: 1%;
     padding: 1%;
     height: 140px;
@@ -72,17 +72,19 @@ body{
     padding: 10px;
     clear: left;
     top: 50px;
-    margin: 35px;
-    position: relative;
-    left: 50px;
+    margin-top: 20px 1%;
+    /*position: relative;
+    left: 50px;*/
 
 }
 
 .content p{
     -webkit-column-count: 3;
+    column-count: 3;
     -webkit-column-gap: 50px;
     column-gap: 50px;
     -webkit-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc:
     text-align: justify;
 }
 
@@ -91,6 +93,7 @@ section, aside{
     width: 46%;
     padding: 1%;
     margin: 1%;
+    margin-top: 1%;
     background: #f2f2f2;
 
 }
@@ -102,7 +105,7 @@ section, aside{
 
 }
 .banner{
-    max-height: 300px;
+    max-height: 100%;
     overflow: hidden;
     margin: 1%;
     position: relative;
