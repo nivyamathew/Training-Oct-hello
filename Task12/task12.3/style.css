@@ -5,7 +5,6 @@ body{
 .wrapper{
     width: 100%;
     max-width: 1180px;
-    padding: 0 10px;
     margin: 0 auto;
 }
 h1.logo{
@@ -277,8 +276,8 @@ footer ul{
 }
 #main-banner img{
     position: relative;
-    width: 180%;
-    left: -40%;
+    width: 100%;
+
 }
 
 }
