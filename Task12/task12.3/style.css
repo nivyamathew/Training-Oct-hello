@@ -1,5 +1,5 @@
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Georgia';
     margin: 0;
 }
 .wrapper{
@@ -182,7 +182,7 @@ footer a{
 /*MEDIA QUERIES*/
 /*TABLETS*/
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 768px){
     /*footer{
         background: red;
 }*/
@@ -217,18 +217,68 @@ footer a{
         text-align: center;
     }
 }
+/*18*/
 /*MOBILES*/
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 480px){
+    .burger-nav{
+        display: block;
+        height: 40px;
+        width: 100%;
+        background: url(img/menu.png) no-repeat 100% center;
+        background-color: #404040;
+        background-size: 40px;
+        cursor: pointer;
+    
+    }
+    header .wrapper{
+        width: 100%;
+        padding: 0;
+    }
+
+    header nav ul{
+        overflow: hidden;
+        background: #505050;
+        left: 0;
+        height: 0;
+    }
+    
+    header nav ul.open{
+        height: auto;
+    }
+
+    header nav ul li{
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+
+    header nav ul li a{
+        color:#fff;
+        padding: 10px;
+        border-bottom: 1px solid #404040;
+        display: block;
+        margin: 0;
+    }
+
 #featured li{
     width: 92%;
-}
-#featured li{
-    width: 90%;
     margin: 20px 5%;
 }
 footer ul{
     width: 98%;
     text-align: center;
 }
+#home-menu li{
+    float: none;
+    width: 96%;
+    margin: 30px 2% !important
+}
+#main-banner img{
+    position: relative;
+    width: 180%;
+    left: -40%;
+}
+
 }
