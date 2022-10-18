@@ -219,7 +219,7 @@ footer a{
 /*18*/
 /*MOBILES*/
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
     .burger-nav{
         display: block;
         height: 40px;
