@@ -25,7 +25,7 @@ nav ul{
 }
 nav a{
     text-decoration: none;
-    //text-align: center;
+    text-align: center;
     color: #fff;
     display: block;
     padding: 10px;
@@ -56,6 +56,7 @@ article{
     background: #fff;
     margin-bottom: 20px;
     padding: 10px;
+    /*width: 100%;*/
     box-sizing: border-box;
 }
 article h2{
