@@ -9,15 +9,19 @@ body{
 nav li{
     float: right;
     list-style-type: none;
-    margin: 15px 20px;
+    margin: 30px 25px;
+    
 }
 nav li a{
     text-decoration: none;
     color: #000;
-    font-size: 15px;
+    font-size: 12px;
+    font-family: Arial;
+
+
 }
 nav li img{
-    width: 17px;
+    width: 19px;
 }
 .selector{
     
@@ -77,7 +81,7 @@ a{
 }
 form{
     background: #ffcc00;
-    width: 800px;
+    width: 900px;
     height: 40px;
     display: flex;
     border-radius: 10px;
@@ -96,7 +100,7 @@ form button{
     background: #ffcc00;
     height: 100%;
 
-    font-size: 123%;
+    font-size: 120%;
     font-family: inherit;
     font-weight: 400;
     cursor:pointer;
@@ -115,9 +119,9 @@ form img{
     background-color: #fff;
 
 }
-.yandex h4{
-    margin-top: 13px;  
-    font-size: 12px;
+.yandex h3{
+    margin-top: 16px;  
+    font-size: 13px;
 }
 
 .yandex p{
@@ -132,10 +136,10 @@ form img{
 .countries{
     display: flex;
     justify-content: center;
-    padding: 80px;
-    margin-top: 300px;
+    padding: 70px;
+    margin-top: 340px;
     gap: 40px;
-
+    margin-left: 20px;
 }
 
 
@@ -145,21 +149,25 @@ form img{
     position: absolute;
     bottom: 0;
     align-items: center;
-    font-size: 0.9em;
+    font-size: 0.85em;
     width: 100%;
     margin: 0;
-
 }  
     
 
 footer  a{
-    color: grey;
+    color: rgb(151, 147, 147);
     display: flex;
     text-decoration: none;
     margin: 8px;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 
     
+}
+footer p{
+    color: rgb(151, 147, 147);
+    font-family: Arial, Helvetica, sans-serif;
 }
 svg{
     background: #fff;
