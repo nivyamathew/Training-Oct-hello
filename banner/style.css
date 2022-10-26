@@ -232,8 +232,10 @@ footer{
         justify-content: center;
         font-size: 15px;
         list-style-type: circle;
-        width: 405px
-    }
+     }
+     .main-nav{
+        width: 96.7%;
+     }
 } 
 @media screen and (max-width: 480px){
     .logo img{
@@ -245,8 +247,8 @@ footer{
         height: 150px;
         
     }
-    nav.main-nav ul{
-        width: 312px;
+    .main-nav{
+        width: 92.3%
     }
     
     .student{
@@ -263,3 +265,4 @@ footer{
     .info{
         background-size: 100% 1820px;
     }
+}
