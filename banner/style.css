@@ -1,0 +1,262 @@
+
+body{
+    /* background-color: rgb(164, 178, 182); */
+    margin:0;
+    padding: 0 
+
+    
+    
+}    
+.logo{
+    display: flex;
+    background-color: #e0ebea;
+    height: 400px;
+    background-image: url(img/ma.jpeg);
+    background-repeat: no-repeat ;
+    background-size: 100% 500px;
+    padding: 10px;
+}
+ 
+
+ nav.main-nav ul{
+    width: 97%;
+    justify-content: space-between;
+    display: flex; 
+    list-style-type: none;
+    padding: 15px auto;
+    background-color: rgb(224, 196, 197);
+    margin-top:-10px;
+ }
+ nav.main-nav ul:hover{
+    color:red;
+    cursor: pointer;
+ } 
+
+ .school{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    color: white;
+    width:100%;
+ }   
+ .student{
+    width: 300px;
+    display: inline-block;
+}
+ 
+ 
+ input{
+    width: 100%;
+    box-sizing: border-box;
+ }
+ input[type="submit"]{
+    width: 200px;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: grey;
+
+ }
+footer{
+    background-color:rgb(83, 80, 80);
+    color: white;
+    display: flex;
+
+}
+.contact{
+    display: flex;
+    padding: 20px 350px;
+    gap: 10px;
+    align-items: center;
+    
+}
+.getin ul li{
+    list-style-type: none;
+}
+.admission ul li{
+    list-style-type: none;
+}
+ .follow img{
+    width:20px
+}
+.follow ul li{
+    list-style-type: none;
+}
+.follow ul li a{
+    list-style-type: none;
+    color: white;
+    margin: 10px
+}
+.follow ul li a:hover{
+    color: red;
+    cursor: pointer;
+}
+.info{
+    background-image: url(img/ma.jpg) ;
+     background-repeat: no-repeat;
+   background-size: 100%;
+   /* background-color: #e0ebea04; */
+
+}
+.admission{
+    margin-top: -60px;
+}
+@media screen and (max-width: 1330px){
+    .contact{
+        padding: 10px 200px;
+    
+}
+.main-nav{
+    width: 99.4%;
+}
+}
+@media screen and (max-width: 1060px){
+    .contact{
+        padding: 10px 150px;
+    }
+     .main-nav{
+        width: 98.8%;
+     }
+}
+@media screen and (max-width: 960px){
+    .contact{
+        padding: 10px 100px;
+    }
+    .main-nav{
+        width: 98.5%;
+    }
+    .school{
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        color:white;
+        width:100%;
+    }
+    .logo img{
+        width:800px
+        
+    }
+}
+@media screen and (max-width: 860px){
+    .info{
+        background-size: 100% 1200px;
+    }
+    .main-nav{
+        width: 97.8%;
+    }
+    .contact{
+        padding: 10px 50px;
+    }
+}
+@media screen and (max-width: 760px){
+    .main-nav{
+        width: 96%;
+        gap:20px;
+        font-size: 11px;
+    }
+    .logo img{
+        width: 600px;
+        height: 300px;
+    }
+    .logo{
+        background-size: 100% 300px ;
+        padding: 0;
+        height: 310px;
+    }
+    .contact{
+        padding: 10px 0;
+    }
+    input{
+        width: 86%;
+        box-sizing: border-box;
+    }
+    textarea{
+        width: 86%;
+    }
+
+
+}
+@media screen and (max-width: 660px){
+    .contact{
+        display: block;
+        justify-content: center;
+        margin-left: 150px;
+    }
+    .school{
+        display: block;
+        
+    }
+    .student{
+        padding: 70px;
+        padding-bottom: 0;
+    }
+    .scorecard{
+        padding: 200px;
+        padding-top: 10px;
+        display: block;
+        padding-left: 80px;
+        width: 146px;
+    }
+    /* .scorecard input{
+        width: 38%; */
+
+    textarea{
+        width: 180%;
+    }
+    .info{
+        background-size: 100% 3000px;
+    }
+    input[type=number]{
+        box-sizing: border-box;
+       
+    }
+    .admission{
+        margin-top: -11px;
+    }
+    .follow img{
+        width: 12px;
+    }
+    .scorecard input{
+        width: 180%;
+        box-sizing: border-box;
+    }
+    .logo img{
+        width: 400px;
+        height: 200px
+    }
+    .logo{
+        background-size: 100% 200px;
+        height: 200px;
+    }
+    nav.main-nav ul{
+        display: block;
+        justify-content: center;
+        font-size: 15px;
+        list-style-type: circle;
+        width: 405px
+    }
+} 
+@media screen and (max-width: 480px){
+    .logo img{
+        width: 300px;
+        height: 150px;
+    }
+    .logo{
+        background-size: 100% 150px;
+        height: 150px
+    }
+    nav.main-nav ul{
+        width: 312px;
+    }
+    .student{
+        padding: 26px;
+    }
+    .scorecard{
+        padding-left: 32px;
+    }
+    .contact{
+        margin-left: 30px;
+
+    }
+    .info{
+        background-size: 100% 1820px;
+    }
