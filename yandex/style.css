@@ -9,7 +9,8 @@ body{
 nav li{
     float: right;
     list-style-type: none;
-    margin: 30px 25px;
+    margin: 35px 25px;
+    padding: 0;
     
 }
 nav li a{
@@ -17,6 +18,7 @@ nav li a{
     color: #000;
     font-size: 12px;
     font-family: Arial;
+    margin: 10px;
 
 
 }
@@ -24,8 +26,6 @@ nav li img{
     width: 19px;
 }
 .selector{
-    
-    
     display: flex;
     justify-content: center;
     margin-left: 210px;
@@ -79,9 +79,10 @@ a{
     justify-content: center;
     gap: 20px;
 }
+
 form{
     background: #ffcc00;
-    width: 900px;
+    width: 850px;
     height: 40px;
     display: flex;
     border-radius: 10px;
@@ -91,9 +92,8 @@ form input{
     flex: 1;
     border: 3px solid #ffcc00;
      border-radius: 10px 0 0 10px;
-    /* outline: #ffcc00;  */
-    font-family:  Arial, Helvetica, sans-serif ;
-    font-size: 15px; 
+     outline: #ffcc00; 
+    font: 18px aerial;
     border-right: none;
 }
 form button{
@@ -106,9 +106,12 @@ form button{
     cursor:pointer;
     border: none;
     border-radius: 10px;
-    
-    
 }
+button:hover{
+    background: rgb(245, 196, 0);
+    cursor: pointer;
+}
+
 .head{
     margin: 50px;
     margin-top: -30px;
@@ -132,12 +135,13 @@ form img{
     flex-flow: row;
     justify-content: center;
     font-size: 12px;
+    
 }
 .countries{
     display: flex;
     justify-content: center;
     padding: 70px;
-    margin-top: 340px;
+    margin-top: 375px;
     gap: 40px;
     margin-left: 20px;
 }
@@ -172,11 +176,19 @@ footer p{
 svg{
     background: #fff;
     height: 34px;
-    width: 35px;
+    width: 30px;
     border-radius: 0 8px 8px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 3px solid #ffcc00;
     border-left: none;
+}
+svg:hover{
+    background: rgb(241, 239, 239);
+    cursor: pointer;
+    
+}
+.search img{
+    cursor: pointer;
 }
