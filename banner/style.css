@@ -242,7 +242,8 @@ footer{
     }
     .logo{
         background-size: 100% 150px;
-        height: 150px
+        height: 150px;
+        
     }
     nav.main-nav ul{
         width: 312px;
@@ -252,7 +253,8 @@ footer{
         padding: 26px;
     }
     .scorecard{
-        padding-left: 6px;
+        padding-left: 24px;
+        width: 112px;
     }
     .contact{
         margin-left: 30px;
