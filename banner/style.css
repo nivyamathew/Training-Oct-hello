@@ -247,11 +247,12 @@ footer{
     nav.main-nav ul{
         width: 312px;
     }
+    
     .student{
         padding: 26px;
     }
     .scorecard{
-        padding-left: 32px;
+        padding-left: 6px;
     }
     .contact{
         margin-left: 30px;
