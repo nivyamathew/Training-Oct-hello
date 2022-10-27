@@ -83,13 +83,9 @@ a{
     background-size: 3800px;
     object-fit: fill;
     padding-top: 10px;
+    margin-bottom: 72px;
 }
-/* .main img{
-    width:380px;
-    height: 100%;
-    object-fit: cover;
-    box-sizing: inherit;
-} */
+
 .main1 h3{
     text-align: center;
     color: #50e6ff;
@@ -144,6 +140,7 @@ a{
     height: 60px;
     padding-left: 43px;
     top: 0;
+    margin-bottom: 10px;
 }
 .button{
     justify-content: space-between;
