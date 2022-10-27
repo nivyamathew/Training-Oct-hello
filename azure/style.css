@@ -166,9 +166,8 @@ a{
 }
 .content2 img{
     width: 68px;
-    align-items: center;
 }
-.content2 h3{
+.content2 h3 a{
     color: #0062ad;
     padding-left: 10px;
 }
@@ -176,4 +175,58 @@ a{
     cursor: pointer 2s;
     border: 2px solid rgb(27, 3, 134);
     text-decoration: underline;
+    color: rgb(27, 3, 134);
+}
+.content3 img{
+    width: 68px;
+    height: 68px
+}
+.content3{
+    display: flex;
+    align-items: center;
+    padding: 31px 25px 40px 3px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 12px 16px rgb(0 0 0 / 14%);
+    color: #4c4c51;
+    border: 1px solid transparent;
+    margin: 28px 20px;
+    height: 10px;
+}
+.content3 h3 a{
+    color: #0062ad;
+    padding-left: 10px;
+}
+.content3 h3 a:hover{
+    cursor: pointer;
+    border: 2px solid rgb(27, 3,134);
+    text-decoration: underline;
+    color: rgb(27, 3, 134);
+}
+.content4 img{
+    width: 68px;
+}
+.content4{
+    display: flex;
+    align-items: center;
+    padding: 31px 25px 40px 3px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 12px 16px rgb(0 0 0 / 14%);
+    color: #4c4c51;
+    border: 1px solid transparent;
+    margin: 28px 20px;
+    height: 10px;
+}
+.content4 h3 a{
+    color: #0062ad;
+    padding-left: 10px;
+}
+.content4 h3 a:hover{
+    cursor: pointer;
+    border: 2px solid rgb(27, 3, 134);
+    text-decoration: underline;
+    color: rgb(27, 3,134);
 }
