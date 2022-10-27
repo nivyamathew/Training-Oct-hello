@@ -28,7 +28,7 @@ nav li img{
 .selector{
     display: flex;
     justify-content: center;
-    margin-left: 210px;
+    margin-left: 154px;
     
 }
 .select {
@@ -90,7 +90,7 @@ form{
 }
 form input{
     flex: 1;
-    border: 3px solid #ffcc00;
+    border: 2px solid #ffcc00;
      border-radius: 10px 0 0 10px;
      outline: #ffcc00; 
     font: 18px aerial;
@@ -113,8 +113,8 @@ button:hover{
 }
 
 .head{
-    margin: 50px;
-    margin-top: -30px;
+    margin: 133px;
+    margin-top: -15px;
 }
 form img{
     width: 15px;
@@ -140,10 +140,14 @@ form img{
 .countries{
     display: flex;
     justify-content: center;
-    padding: 70px;
-    margin-top: 375px;
+    padding: 130px;
+    margin-top: 375cdpx;
     gap: 40px;
     margin-left: 20px;
+    margin-top: 284px;
+}
+.foot{
+    margin-bottom: 0;
 }
 
 
@@ -151,13 +155,13 @@ form img{
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 0;
+    bottom: 9px;
     align-items: center;
     font-size: 0.85em;
     width: 100%;
     margin: 0;
-}  
     
+  }
 
 footer  a{
     color: rgb(151, 147, 147);
