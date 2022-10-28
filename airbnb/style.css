@@ -1,0 +1,41 @@
+*{
+    box-sizing: border;
+}
+.search{
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+
+.mysearch{
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    padding: 20px ;
+    width: 600px;
+    box-shadow: 0 3px 10px grey;
+    display: flex;
+}
+#span{
+    font-size: 25px ; 
+    font-weight: bold;
+
+}
+img{
+    max-width: 50px;
+    height: 20px;
+    float: right;
+}
+/* #button{
+    text-align: 10px right;
+
+    
+} */
+button{
+    text-align: right;
+    color: #000;
+    font-size: 20px;
+}

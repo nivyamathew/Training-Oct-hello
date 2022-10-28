@@ -85,7 +85,7 @@ a{
 
 .main{
     background-image: url(img/ig.webp);
-    background-size: 3800px;
+    background-size: cover;
     object-fit: fill;
     padding-top: 10px;
     margin-bottom: 72px;
@@ -282,7 +282,7 @@ a{
     font-size: 14px;
     line-height: 20px;
     padding: 0px 18px;
-    width: 140px;
+    width: 127px;
     height: 40px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -293,7 +293,7 @@ a{
 }
 .section{
     background-color: #f8f9fa;
-    margin-bottom: 50px
+    padding-bottom: 50px
 }
 .section2 h6{
     font-size: 15px
@@ -607,9 +607,51 @@ a{
     margin-right: 25px;
     margin-top: 50px;
 }
-.sect{
+.sect1{
     text-align: center;
     color: #1a1a1f;
     font-size: 18px;
     font-weight: bold;
+    margin-top: 85px;
+}
+.sect2 img{
+    align-items: center;
+    justify-content: center;
+    margin-left: 119px
+}
+.sect3 img{
+    width: 375px;
+    margin-bottom: -30px;
+}
+.sect4{
+    text-align: left;
+    font-size: 20px;
+    padding: 25px;
+    color: #242429;
+    background-color: #f8fdfa;
+    margin-bottom: -50px;
+}
+.sect5 h6{
+    color: #0062ad;
+    text-align: left;
+    padding-left: 22px;
+    font-size: 13px;
+    background-color: #f8fdfa;
+}
+.sect5 a h6:hover{
+    border: 1px solid #144870;
+    text-decoration: underline;
+}
+
+.sect6{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    font-size: 20px;
+    margin-top: -80px;
+
+}
+.sect6a h1{
+    color: #0062ad;
+
 }
