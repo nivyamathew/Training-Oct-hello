@@ -32,10 +32,11 @@
 .header1b{
     font-size: 18px;
     line-height: 44px;
-    margin-top: 19px;;
+    margin-top: 8px;
+    font-size: 15px;
 }
 .header1a{
-    margin: 35px 20px;
+    margin: 20px 20px;
 }
 .header3{
     display: flex;
@@ -53,9 +54,6 @@ a{
     text-decoration: none;
 }
 
-.explore img{
-    width: 8px
-}
 .explore{
     align-items: center;
     justify-content: center;
@@ -68,7 +66,7 @@ a{
 
 .explore h6{
     color: #fff;
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     margin-top: 15px;
 }
@@ -210,31 +208,59 @@ a{
     cursor: pointer;
     border: 2px solid rgb(27, 3,134);
     height: 35px;
-
+}
+.content4 img{
+    width:68px;
+    height: 68px;
+}
+.content4{
     display: flex;
-    background-color: #0078d4;
-    position: fixed;
-    bottom: 0;
-    right: 12px;
-    z-index: 1000;
-    font-weight: 350px;
-    border: 1px solid #0078d4;
-    color: #fff;
+    align-items: center;
+    padding: 31px 25px 40px 3px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgb( 0 0 0 / 14%);
+    color: #4c4c51;
+    border: 1px solid transparent;
+    margin: 28px 20px;
+    height: 50px;
+}
+.content4 h3 a{
+    color: #0062ad;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.content4 h3 a:hover{
+    cursor: pointer;
+    border: 2px solid rgb(27, 3, 134);
+    height: 35px;
+}
+.content5 h6{
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+.content6 a button{
+    background-color: transparent;
+    border: 1px solid #007894;
+    border-radius: 4px;
+    color: #0062ad;
+    display: inline-block;
     font-size: 14px;
-    line-height: 20px;
-    padding: 0px 18px;
-    width: 127px;
-    height: 40px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    font-weight: 600;
+    padding: 10px 16px;
+    width: 75%;
+
 }
 .chat a svg{
     padding: 13px;
-    padding-right: 1px;
+    padding-right: 1px; 
 }
 .chat a{
     display: flex;
     position: fixed;
+    z-index:1;
     bottom: 0;
     right: 12px;
     color: #fff;
@@ -248,10 +274,16 @@ a{
 }
 .section{
     background-color: #f8f9fa;
-    padding-bottom: 50px
+    padding-bottom: 50px;
 }
+.section1{
+    font-size: 22px;
+    text-align: center;
+    margin: 100px 0 12px;
+}
+
 .section2 h6{
-    font-size: 15px
+    font-size: 25px
 }
 .section2{
     display: flex;
@@ -289,7 +321,7 @@ a{
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgb(0 0 0 /14%);
-    padding: 19px;
+    padding: 20px;
     position: relative;
     border: 1px soild transparent;
     margin-left: 18px;
@@ -300,7 +332,7 @@ a{
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    padding: 19px ;
+    padding: 20px ;
     position: relative;
     border: 1px solid transparent;
     margin-right: 15px;
@@ -314,7 +346,7 @@ a{
     margin-top: 10px;
 }
 .section3b h6{
-    margin-bottom: 0;
+    margin-top: 45px;
 }
 .section3 h6{
     color: #0062ad;
@@ -353,8 +385,10 @@ a{
     margin-left: 18px;
     height:240px;
     width: 95px;
-
     margin-top: 20px;
+}
+.section4a h6{
+    margin-top: 40px;
 }
 .section4b{
     background-color: #fff;
@@ -367,6 +401,9 @@ a{
     width: 95px;
     height:240px;
     margin-top: 20px;
+}
+.section4b h6{
+    margin-top: 40px;
 }
 .section4 h6{
     color: #0062ad;
@@ -406,6 +443,9 @@ a{
     height: 240px;
     margin-top: 20px;
 }
+.section5a h6{
+    margin-top: 20px;
+}
 .section5b{
     background-color: white;
     border-radius: 6px;
@@ -416,7 +456,10 @@ a{
     margin-right: 18px;
     width: 95px;
     height: 240px;
-    margin-top: 20px;
+    margin-top: 20px
+}
+.section5b h6{
+    margin-top: 50px;
 }
 .section5 h6{
     color: #0062ad;
@@ -588,7 +631,7 @@ a{
 .sect2 img{
     align-items: center;
     justify-content: center;
-    margin-left: 119px
+    margin-left: 100px
 }
 .sect3 img{
     width: 100%;
@@ -608,6 +651,7 @@ a{
     padding-left: 22px;
     font-size: 13px;
     background-color: #f8fdfa;
+    margin: 60px;
 }
 .sect5 a h6:hover{
     border: 1px solid #144870;
