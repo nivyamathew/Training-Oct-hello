@@ -680,10 +680,11 @@ a{
         justify-content: space-around;
     }
     .header01a{
-        padding: 20px;
+        padding: 2px;
     }
-    .header01{
+    .header001{
         display: flex;
+        margin-top: 10px;
     }
     .header01 p{
         font-size: 13px;
