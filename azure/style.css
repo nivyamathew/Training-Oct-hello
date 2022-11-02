@@ -16,10 +16,11 @@
 .nav-header{
     display: flex;
     height: 45.5px;
-    padding: 12px;
+    padding: 15px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    
     
 }
 .header0{
@@ -33,20 +34,39 @@
     font-size: 18px;
     line-height: 44px;
     margin-top: 8px;
-    font-size: 15px;
+    font-size: 18px;
+    margin-left: 0;
 }
 .nav-hamburger{
     margin: 20px 20px;
+
 }
 .nav-search{
     display: flex;
 }
+.nav-bar{
+    padding: 5px 12px;
+}
+.nav-windows{
+    padding: 10px 0;
+    margin-top: 10px;
+
+}
 .nav-search img{
     width: 15px;
-    height: 15px;
-    margin-right: 12px;
+    height: 18px;
+    margin-right: 40px;
+}
+.nav-search{
+    position: relative;
+    padding: 0;
+    left: -30px;
 }
 .nav-search a{
+    font-size: 13px;
+}
+.nav-search p{
+    white-space: nowrap;
     font-size: 13px;
 }
 a{
@@ -57,10 +77,11 @@ a{
 .explore{
     align-items: center;
     justify-content: center;
-    padding: 1px;
+    padding: 10px;
     background-color:  #1a7bc5;
-    height: 66px;
-    margin-top: -21px;
+    height: 45px;
+    margin-top: -20px;
+
     
 }
 
@@ -68,14 +89,13 @@ a{
     color: #fff;
     font-size: 14px;
     text-align: center;
-    margin-top: 15px;
+    padding: 0 12px;
 }
 
 .main{
     background-image: url(img/ig.webp);
     background-size: cover;
     object-fit: fill;
-    padding-top: 10px;
     margin-bottom: 72px;
     width: 100%;
     height: 750px;
@@ -85,29 +105,33 @@ a{
 .main_a h3{
     text-align: center;
     color: #50e6ff;
-    padding-top: 40px;
-    font-size: 20px;
+    padding: 10px 3px;
+    font-size: 23px;
+    padding-top: 60px;
 }
 .main_b h1{
     text-align: center;
     color: #f4f5f6;
     font-size: 54px;
-    line-height: 60px;
+    line-height: 1.1;
+    margin: 0 0 12px;
+    padding: 0 2px;
 }
 .main_c p{
     text-align: center;
     color: #f4f5f6;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400px;
     line-height: 1.3;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    padding: 10px 8px;
+    margin-bottom: 30px;
+    
 
 }
 .button_a input{ 
     justify-content: center;
     align-items:center;
-    width: 85%;
+    width: 75%;
     background-color: #0078d4;
     border: 10px solid #0078d4;
     border-radius: 4px;
@@ -130,7 +154,7 @@ a{
     color: #50e6ff;
     background-color: transparent;
     border-radius: 4px;
-    width: 85%;
+    width: 75%;
     display: inline-block;
     font-weight: 600;
     font-size: 14px;
@@ -149,13 +173,13 @@ a{
 }
 .content-a h2{
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 26px;
     margin: 15px;
+    padding: 12px 5px;
+    line-height: 1.2;
 }
-.content_head{
-    display: none;
-}
+
 .content{
     text-align: center;
 }
@@ -170,7 +194,8 @@ a{
     color: #4c4c51;
     border: 1px solid transparent;
     margin: 28px 20px;
-    height: 10px
+    height: 10px;
+    padding: 31px 25px 40px 3px;
 }
 .content-b img{
     width: 68px;
@@ -242,8 +267,9 @@ a{
 }
 .content-e h6{
     font-size: 15px;
-    margin-bottom: 30px;
-    margin-top: 60px;
+    /* margin-bottom: 30px;
+    margin-top: 60px; */
+    padding: 30px 2px;
 }
 .content-f a button{
     background-color: transparent;
@@ -256,6 +282,9 @@ a{
     padding: 10px 16px;
     width: 75%;
 
+}
+.content_main{
+    display: none;
 }
 .chat a svg{
     padding: 13px;
@@ -280,15 +309,17 @@ a{
     background-color: #f8f9fa;
     padding-bottom: 50px;
 }
-.section-intro{
-    font-size: 22px;
+.section-intro h4{ 
+    font-size: 20px;
     text-align: center;
     margin: 100px 0 12px;
+    padding: 12px 20px;
 }
+/* .section-card-u1 a h6{
+    font-size: 12px;
+} */
 
-.section-v1 h6{
-    font-size: 25px
-}
+/* section cards container */
 .section-v1{
     display: flex;
     align-items: center;
@@ -306,43 +337,43 @@ a{
 .section-v1:hover{
     color: #0062ad;
     text-decoration: underline;
-    border: 2px solid #0062ad;
+    border: 2px solid #0062ad
 }
 .section-v1 h6:hover{
     text-decoration: none;
 }
-.section-card-v2 svg{
-    width: 45px;
-    height: 35px
+
+.section-card-v-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    padding: 20px;
 }
-.section-card-h1{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
+
+.section-card-v-container h6{
+    font-size: 15px;
 }
-.section-card-v1{
+
+.section-card-v1, .section-card-v2, .section-card-v3, .section-card-v4, .section-card-v5, .section-card-v6 {
     background-color: #fff;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgb(0 0 0 /14%);
     padding: 20px;
     position: relative;
     border: 1px soild transparent;
-    margin-left: 18px;
-    width: 95px;
     height: 240px;
 }
-.section-card-v2{
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    padding: 20px ;
-    position: relative;
-    border: 1px solid transparent;
-    margin-right: 15px;
-    width: 95px;
-    height: 240px;
+
+
+.section-card-v2 svg{
+    width: 45px;
+    height: 35px
 }
+.section-card-v-container h6{
+    color:#0062ad;
+    font-size: 13px;;
+}
+
 .section-card-v1 h6{
     margin-top: 45px;
 }
@@ -352,71 +383,24 @@ a{
 .section-card-v2 h6{
     margin-top: 45px;
 }
-.section-card-h1 h6{
-    color: #0062ad;
-    font-size: 13px;
-
-}
-.section-card-h1 p{
+.section-card-v-container p{
     color: #4c4c51;
     font-size: 14px;
 }
-.section-card-v2 p{
-    margin-bottom: -20px
+
+
+
+.section-card-v3 svg{
+    width: 80px;
+    height: 50px;
 }
-.section-card-h1 a h6:hover{
+.section-card-v-container a h6:hover{
     text-decoration: underline;
     border: 2px solid #0062ad;
 }
-.section-card-h2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.section-card-v3 svg{
-    width: 70px;
-    height: 40px;
-}
-.section4-card-v3 {
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgb(0 0 0 /14%);
-    padding: 19px;
-    position: relative;
-    border: 1px solid transparent;
-    margin-left: 18px;
-    height:240px;
-    width: 95px;
-    margin-top: 20px;
-}
+
 .section4-card-v3 h6{
     margin-top: 40px;
-}
-.section-card-v3{
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgb(0 0 0 /14%);
-    padding: 19px;
-    position: relative;
-    border: 1px solid transparent;
-    margin-left: 18px;
-    width: 95px;
-    height:240px;
-    margin-top: 20px; 
-}
-.section-card-v4{
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgb(0 0 0 /14%);
-    padding: 19px;
-    position: relative;
-    border: 1px solid transparent;
-    margin-right: 18px;
-    width: 95px;
-    height:240px;
-    margin-top: 20px;
 }
 .section-card-v3 h6{
     margin-top: 40px;
@@ -424,74 +408,27 @@ a{
 .section-card-v4 h6{
     margin-top: 40px;
 }
-.section-card-h2 h6{
-    color: #0062ad;
-    font-size: 13px;
-}
-.section-card-h2 p{
-    color:#4c4c51;
-    font-size: 14px;
-}
+
+
 .section-card-v3 p{
     margin-bottom: -24px;
 }
-.sectionv a h6:hover{
-    text-decoration: underline;
-    border: 2px solid #0062ad;
-}
-.section-card-h3 svg{
+.section-card-v5 svg{
     width:50px;
     height: 35px;
 }
-.section-card-h3{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.section-card-v6 svg{
+    width: 50px;
+    height: 35px;
 }
-.section-card-v5{
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    padding: 19px;
-    position: relative;
-    border: 1px solid transparent;
-    margin-left: 18px;
-    width: 95px;
-    height: 240px;
-    margin-top: 20px;
-}
+
 .section-card-v5 h6{
     margin-top: 20px;
-}
-.section-card-v6{
-    background-color: white;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    padding: 19px;
-    position: relative;
-    border: 1px solid transparent;
-    margin-right: 18px;
-    width: 95px;
-    height: 240px;
-    margin-top: 20px
 }
 .section-card-v6 h6{
     margin-top: 50px;
 }
-.section-card-h3 h6{
-    color: #0062ad;
-    font-size: 13px;
-}
-.section-card-h3 p{
-    color: #4c4c51;
-    font-size: 14px
-}
-.section-card-h3 a h6:hover{
-    text-decoration: underline;
-    border: 2px solid #0062ad;
-}
+
 .section-card-h4{
     display: flex;
     align-items: center;
@@ -648,20 +585,29 @@ a{
     margin-top: 85px;
 }
 .container-nhs img{
-    align-items: center;
+    text-align: center;
     justify-content: center;
-    margin-left: 100px
+    width: 20%;
+    
 }
+
+.container-nhs{
+    text-align: center;
+    justify-content: center;
+}
+
 .container-img img{
     width: 100%;
     margin-bottom: -30px;
+}
+.container-main{
+    background-color: #f8f9fa;
 }
 .container-p{
     text-align: left;
     font-size: 20px;
     padding: 25px;
     color: #242429;
-    background-color: #f8fdfa;
     margin-bottom: -50px;
 }
 .container-casestudy h6{
@@ -669,7 +615,6 @@ a{
     text-align: left;
     padding-left: 22px;
     font-size: 13px;
-    background-color: #f8fdfa;
     margin: 60px;
 }
 .container-casestudy a h6:hover{
@@ -679,7 +624,9 @@ a{
 
 .container-h{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     margin: 50px;
     font-size: 20px;
     margin-top: -80px;
@@ -692,21 +639,60 @@ a{
 .navtop{
     display: none;
 } 
-.content_micro{
-    display: none;
-}
-.content_card-h3{
-    display: none;
-}
 .azure-header{
     display: none;
 }
 .section-card-r1{
     display: none;
 }
+.section-card-p{
+    overflow: hidden;
+}
+.section-card-p1{
+    display: none;
+}
+.section-code-w7{
+    display: none;
+}
+.nhs-content{
+    display: none;
+}
+.nhs-main{
+    display: none;
+}
+.section-code-w9{
+    display: none;
+}
+.class-main{
+    background-color: #f8f9fa;
+}
+.class-img img{
+    width: 80%;
+}
+.class-img{
+    padding: 50px;
+}
+.class-p h2{
+    font-size: 36px;
+    text-align: center;
+    padding: 50px;
+}
+.class-p button{
+    width: 220px;
+    height: 50px;
+    color:#0062ad;
+    background-color: #f8f9fa;
+    border: 1px solid #0062ad;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+
+}
 
 /*----------------------------------------------------------*/
 @media screen and (min-width: 768px){
+    
     .nav-header{
         display: none;
     }
@@ -736,22 +722,22 @@ a{
         font-size: 18px;
     }
     .navtop-b{
-        margin: 0 10px;
+        margin: 0 6px;
     }
     .navtop-c{
-        margin: 0 10px;
+        margin: 0 6px;
     }
     .navtop-d{
-        margin: 0 10px;
+        margin: 0 6px;
     }
     .navtop-e{
-        margin: 0 10px;
+        margin: 0 6px;
     }
     .navtop-f{
-        margin: 0 10px;
+        margin: 0 6px;
     }
     .navtop-g{
-        margin: 0 10px;
+        margin: 0 6px;
     }
     .navtop-bar{
         display: flex;
@@ -777,12 +763,16 @@ a{
         margin: 0 10px;
     }
     .navbar-h{
-        margin-top: 5px;
         margin: 0 10px;
     }
     .explore{
         margin-top: 0;
-        height: 46px;
+        padding: 10px;
+        height: 36px;
+    }
+    .explore h6{
+        padding: 5px;
+
     }
     .main_a h3{
         text-align: left;
@@ -817,7 +807,12 @@ a{
      .content{
         display: none;
      }
-     .content_head{
+     .content_main{
+        display: flex;
+        flex-direction: column;
+     }
+     .content_head h2{
+        display: flex;
         text-align: center;
      }
      .content_ignite{
@@ -825,7 +820,7 @@ a{
         background-size: cover;
         width: 100vw;
         background-color: #fff;
-        background-position: 50% 50%;
+        background-position: 50% 80%;
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
@@ -852,6 +847,7 @@ a{
     .content_card-h h3{
         color: #0062ad
     }
+    
     .content_card-h2{
         position: relative;
         top: 20px;
@@ -860,7 +856,8 @@ a{
         box-shadow: 0 2px  5px rgb( 0 0 0 / 14%);
         border: 1px solid transparent;
         align-items: center;
-        margin-right: 30px;
+        margin-right: 15px;
+        width: 350px
     }
     .content_card-h1{
         display: flex;
@@ -870,26 +867,37 @@ a{
         box-shadow: 0 2px  5px rgb( 0 0 0 / 14%);
         border: 1px solid transparent;
         align-items: center;
-        margin-right: 30px;;
+        margin-right: 15px;
+        width: 350px
+        
+    }
+    .content_card-h1-img{
+        height: 275px;
+        width: 250px;
     }
     .content_card-h1-img img{
-        width: 119px;
-        height: 270px;
+        width: 100%;
+        height: 100%;
     }
     .content_card-h2{
         display: flex;
         gap: 40px;
+        
     }
     .content_card-h2-img img{
-        width: 119px;
-        height: 270px;
+        width: 100%;
+        height: 100%;
+    }
+    .content_card-h2-img{
+        height: 275px;
+        width:270px;
     }
     .content_card-v3{
         display: block;
     }
     .content_micro{
         display: flex;
-        gap: 40px;
+        gap: 20px;
         position: relative;
         top: 30px;
     }
@@ -899,7 +907,8 @@ a{
         box-shadow: 0 2px 5px rgb( 0 0 0 / 14%);
         color: #4c4c51;
         border: 1px solid transparent;
-        margin-left: 30px;
+        margin-left: 20px;
+        padding: 0 20px;
         height: 575px;
     }
     .content_card-h3{
@@ -965,8 +974,233 @@ a{
         width: 100%;
         padding: 20px;
     }
+    .section-card-r1{
+        display: flex;
+        margin-top: 100px;
+        gap: 50px;
+    }
+    .section-card-r2{
+        line-height: 4;
+        margin-left: 20px;
+        padding: 60px;
+        white-space: nowrap;
+    }
+    .section-card-r2 a p:hover{
+        border: 2px solid black;
+        text-decoration: underline;
+        color: black;
+        
+    }
+    .section-card-r3{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+    }
 
-}
+
+    .section-card-w1{
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb( 0 0 0 / 14%);
+        color: 4c4c51;
+        position: relative;
+        border: 1 px solid transparent;
+        height: 290px;
+    }
+    .section-card-w1 p{
+        text-align: center;
+        margin: 24px 0;
+        font-size: 16px;
+        
+    }
+    .section-card-w1 a{
+        color: #0062ad;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        top: 40px;
+    }
+    .section-card-p1{
+        display: flex;
+        margin-top: 100px;
+        text-align: center;
+        justify-content: center;
+
+    }
+    .section-card-w1 svg{
+        margin: 10px 60px;
+        width: 60px;
+    }
+    .section-card-w2{
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb( 0 0 0 / 14%);
+        color: 4c4c51;
+        position: relative;
+        border: 1 px solid transparent;
+        height: 290px;
+    }
+    .section-card-w2 p{
+        text-align: center;
+        margin: 24px 0;
+        font-size: 16px;
+    }
+    .section-card-w2 a{
+        color: #0062ad;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        top: 50px;
+    }
+    .section-card-w2 svg{
+        margin: 10px 60px;
+    }
+    .section-card-w3{
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb( 0 0 0 / 14%);
+        color: 4c4c51;
+        position: relative;
+        border: 1 px solid transparent;
+        height: 290px;
+
+    }
+    .section-card-w3 p{
+        text-align: center;
+        margin: 24px 0;
+        font-size: 16px;
+    }
+    .section-card-w3 a{
+        color: #0062ad;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        top: 40px;
+    }
+    .section-card-w3 svg{
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 60px;
+        margin: 10px 60px;
+    }
+    
+    .section-card-w4{
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb( 0 0 0 / 14%);
+        color: 4c4c51;
+        position: relative;
+        border: 1 px solid transparent;
+        height: 290px;
+    
+    }
+    .section-card-w4 p{
+        text-align: center;
+        margin: 24px 0;
+        font-size: 16px;
+    }
+    .section-card-w4 a{
+        color: #0062ad;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        top: 60px;
+    }
+    .section-card-w4 svg{
+        margin: 10px 60px;
+    }
+    .section-card-w5{
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb( 0 0 0 / 14%);
+        color: 4c4c51;
+        position: relative;
+        border: 1 px solid transparent;
+        height: 290px;
+    
+    }
+    .section-card-w5 p{
+        text-align: center;
+        margin: 24px 0;
+        font-size: 16px;
+    }
+    .section-card-w5 a{
+        color: #0062ad;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        top: 60px;
+    }
+    .section-card-w5 svg{
+        margin: 10px 60px;
+    }
+    .section-card-w6{
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb( 0 0 0 / 14%);
+        color: 4c4c51;
+        position: relative;
+        border: 1 px solid transparent;
+        height: 290px;
+    
+    }
+    .section-card-w6 p{
+        text-align: center;
+        margin: 24px 0;
+        font-size: 16px;
+    } 
+    .section-card-w6 a{
+        color: #0062ad;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        top: 60px;
+    }
+    .section-card-w6 svg{
+        margin: 10px 60px;
+    }
+    .section-card-p{
+        background-color: #f8f9fa;
+    }
+   
+    .section-card-u7 h6{
+        color: #0062ad;
+    }
+    
+    .section-code-w8{
+        display: flex;
+    }
+    .section-code-w9{
+        display:flex;
+        justify-content: flex-end;
+    }
+    .nhs-content{
+        display: none;
+    }
+    .nhs-main{
+        display: none;
+    }
+    .section-code-w9 p{
+        color:#0062ad;
+    }
+    .class-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+    .class-img img{
+        width: 80%;
+    }
+    .class-img{
+        padding: 50px 3px;
+    }
+    .class-p h2{
+        font-size: 32px;
+    
+    }
+  }
 /*--------------------------------------------------------------------*/
 @media screen and (min-width: 1080px){
      .header{
@@ -1031,21 +1265,26 @@ a{
         height: 46px
     }
     .main_b h1{
-        margin-right: 625px
+        margin-right: 625px;
+        padding: 6px 200px 3px 0;
     }
     .main_c p{
         margin-right: 675px;
+        line-height: 1.5;
+        padding: 0 200px 12px 0;
     }
+    
  }
  /* -------------------960----------------------------*/
  @media screen and (min-width: 960px){
     .main{
         background-image: url(img/ignite.webp);
-        /* background-size: cover; */
+        background-size: cover;
         object-fit: fill;
         width: 100%;
         height: 702px;
         line-height: 2.5;
+        background-position: 50%;
     }
     .main_b h1{
         margin-right: 525px;
@@ -1055,4 +1294,113 @@ a{
         margin-right: 525px;
         font-size: 18px;
     }
- }
+    .section-code-w7{
+        display:flex;
+    }
+    .section-code-w7 a p{
+        color: #0062ad;
+        }
+        .section-code-w8 img{
+            width: 500px;
+            height: 450px;
+            border: 18px solid black;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: 50px;
+        }
+        .section-card-r1{
+            display: flex;
+        }
+        .section-code-w9 a p{
+            color:#0062ad;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .nhs-content{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .container-nhs{
+            display: none;
+        }
+        .container-innovation{
+            display: none;
+        }
+        .nhs-main{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .nhs-main h5{
+            font-size: 25px;
+            margin-top: 80px;
+        }
+        .nhs-content svg{
+            color: black;
+        }
+        .container-h{
+            display: none;
+        }
+        .container-main{
+            background-color: rgba( 26, 26, 31,.94);
+            border-radius: 12px;
+            padding: 10px;
+            position: relative;
+            border: 1px solid transparent;
+            margin-top: -250px;
+            width: 500px;
+            height: 200px;
+            margin-left: 20px;
+        }
+        .container-img {
+            width: 100%;
+            object-fit:
+        }
+        .container-p p{
+            color: #fff;
+        }
+        .container-casestudy h6{
+            color: #fff;
+        }
+        .nhs-content{
+            filter: grayscale(1);
+        }
+        .nhs{
+            padding: 10px 0;
+            
+        }
+        .nhs-forza{
+            padding: 10px 0;
+        }
+       .nhs-nba{
+        padding: 10px 12px;
+       }
+       .nhs-acs{
+        padding: 10px 0;
+       }
+       .nhs-pepsico{
+        padding: 10px 12px;
+       }
+       .nhs-ge{
+        padding: 10px 0;
+       }
+       .nhs-content div *:hover {
+        filter: grayscale(0);
+        text-decoration: underline;
+        border: 1px solid #4c4c51;
+    
+
+       }
+       .nhs:focus-within{
+        background-color: red;
+       }
+       .nhs-forza{
+        filter: grayscale(0);
+        text-decoration: underline;
+        border:1px soliid #4c4c51;
+       }
+        .container-casestudy a h6{
+            text-decoration: underline;
+        }
+}
