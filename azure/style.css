@@ -19,8 +19,9 @@ body {
 .nav-header {
     display: flex;
     height: 45.5px;
-    padding: 20px;
-    justify-content: space-between;
+    padding:24px 0 16px 24px;
+    width: 89%;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -30,19 +31,21 @@ body {
 
 .nav-bar {
     display: flex;
-    margin-left: -45px;
+    margin-left: -29px;
+    padding: 7.4px 12px 16px 12px;
+    gap: 15px;
 }
 
 .nav-azure {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 44px;
-    margin-top: 8px;
+    margin-top: 12px;
     font-size: 18px;
     margin-left: 0;
 }
 
 .nav-hamburger {
-    margin: 20px 20px;
+    margin: 25px 0 22px 10px;
 
 }
 
@@ -93,7 +96,7 @@ a {
     padding: 10px;
     background-color: #1a7bc5;
     height: 45px;
-    margin-top: -15px;
+    margin-top: -8px;
 
 
 }
@@ -811,11 +814,13 @@ a {
 }
 
 .class-img img {
-    width: 80%;
+    width: 100%;
 }
 
 .class-img {
     padding: 50px;
+    width: 50%;
+    margin-left: 10%;
 }
 
 .class-p h2 {
@@ -1149,12 +1154,15 @@ a {
     .navtop-g {
         margin: 0 6px;
     }
+    .navbar-h{
+        white-space: nowrap;
+    }
 
     .navtop-bar {
         display: flex;
         width: 100%;
         margin-top: 10px;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .nvatop-icon p {
@@ -1179,9 +1187,10 @@ a {
         padding: 10px;
         margin-top: 3px;
         margin: 0 10px;
+        white-space: nowrap;
     }
 
-    .navbar-signin {
+    .navbar-signin p {
         font-size: 14px;
     }
 
@@ -1784,7 +1793,7 @@ a {
         padding-right: 30px;
     }
 
-    .class-main {
+    .class-head {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1792,11 +1801,12 @@ a {
     }
 
     .class-img img {
-        width: 80%;
+        width: 100%;
     }
 
     .class-img {
         padding: 50px 3px;
+
     }
 
     .class-p h2 {
@@ -1960,8 +1970,10 @@ a {
     .nav_acc {
         border-radius: 4px;
         background-color: #89c402;
+        width: 80px;
+        text-align: center;
         margin: 0px 6px;
-        height: 25px;
+        height: 30px;
         white-space: nowrap;
     }
 
@@ -2194,7 +2206,7 @@ a {
         font-size: 24px;
     }
 
-    .banner-content {
+    .banner-contents {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
@@ -2300,8 +2312,8 @@ a {
 
 @media screen and (min-width: 1440px) {
     .navtop {
-        max-width: 70%;
-        margin-left: 14.5%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .explore {
@@ -2309,7 +2321,8 @@ a {
     }
 
     .main-elements-container {
-        margin-left: 100px;
+        margin-left: 5%;
+
     }
 
     .banner-card {
@@ -2319,6 +2332,32 @@ a {
         margin-left: 100px;
         margin-right: 100px;
     }
+    .content_micro{
+        margin: 5%;
+    }
+    .section-card-r1{
+        margin: 5%;
+    }
+    .class-head{
+        margin: 10%;
+    }
+    .banner-content{
+        margin-left: 5%;
+    }
+    .footer_card-u1{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .footer_card-v3{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .footer_card-v5{
+        margin-left: 5%;
+        margin-right: 5%;
+    
+    }
+
 }
 
 @media screen and (min-width: 391px) {
