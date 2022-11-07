@@ -240,10 +240,6 @@
 
 }
 @media screen and (min-width: 768px){
-    /* .nav_bar{
-        display: flex;
-        justify-content: space-between;
-    } */
     .nav_top_search{
         width: 344px;
     }
