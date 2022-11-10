@@ -236,6 +236,7 @@ body {
 }
 .main_cards{
     padding: 0 24px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.08);
 }
 .main_card{
     padding-top: 23px;
@@ -300,6 +301,28 @@ letter-spacing: 0.05ch;
 }
 .main_card:nth-child(1){
     padding-top: 168px;
+}
+.footer_section_a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 56px 0 0 0;
+}
+.footer_section_a p{
+    font-size: 18px;
+    color: #222222;
+    font-family: Airbnb_Cereal1
+}
+.footer_section_a button{
+    width: 132px;
+    height: 46px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #222222;
+    font-family: Airbnb_cereal3;
+    font-size: 16px;
+    margin: 24px 0 80px;
 }
 
 
@@ -739,4 +762,40 @@ letter-spacing: 0.05ch;
         right: 19.5px;
     }
 
+}
+@media screen and (min-width:1640px){
+    .nav_bar{
+        padding-left: 2.45%;
+    }
+    .nav_top_host_menu{
+        padding-right: 4.85%;
+    }
+    .nav_top_search{
+        margin-right: 77.5px;
+    }
+    .container_cards{
+        padding-left: 3.7%;
+    }
+    .container_cards-v2{
+        padding-right: 2.4%;
+    }
+    .main_cards{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 20px;
+        padding-left: 2.1%;
+        padding-right: 1%;
+
+    }
+    .main_card_img{
+        width: 16.88vw;
+        height: 16.033vw;
+    }
+    .main_card:nth-child(5){
+        padding-top: 202px;
+    }
+    .main_card_c{
+        width: 98%;
+    }
+    
 }
