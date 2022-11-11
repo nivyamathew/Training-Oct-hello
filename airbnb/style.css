@@ -60,7 +60,7 @@ body {
     color: #000;
     line-height: 20px;
     padding: 5px 3px 0 0;
-    margin-top: -8px;
+    margin-top: -9px;
     margin-left: 2.5px;
     width: 50%;
     font-family: Airbnb_Cereal1;
@@ -77,12 +77,13 @@ body {
 }
 
 .nav_sub span {
-    width: 29.5%;
+    width: 28.5%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     min-width: 20%;
-    font-size: 13px;
+    font-size: 12px;
+    font-family:    'Roboto', 'Helvetica Neue', sans-serif;
 }
 
 .nav_icon button {
@@ -115,13 +116,14 @@ body {
     margin-top: -19px;
     white-space: nowrap;
     text-align: center;
-    margin-left: 4px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+    margin-left: 3.75px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
     border-bottom: 1px solid rgb(0, 0, 0, 0.08);
     height: 47.75px;
     position: fixed;
     padding-top: 105px;
     background-color: #fff;
     z-index: 1;
+
 
 }
 .container_cards::-webkit-scrollbar{
@@ -136,31 +138,34 @@ body {
     margin-bottom: 5px;
     height: 44px;
 }
+.container_cards-v1 h6{
+    transform: translateY(-1px);
+}
 .container_cards-v1:nth-child(1){
-    min-width: 34.14px;
+    min-width: 83.66px;
     
 }
 .container_cards-v1:nth-child(2){
-    min-width: 64px;
-    margin-left: -4px;
+    min-width: 64.17px;
+    margin-left: -6px;
 } 
 .container_cards-v1:nth-child(3){
-    min-width: 45.37px;
-    margin-left: 5px;
+    min-width: 63.2px;
+    margin-left: -5px;
 }  
 .container_cards-v1:nth-child(4){
-   min-width: 64px;
-   margin-left: 6px;
+   min-width: 77.86px;
+   margin-left: -5px;
 }
 .container_cards-v1:nth-child(5){
-    min-width: 64px;
+    min-width: 62.02px;
     margin-left: -4px;
  }
  .container_cards-v1:nth-child(6){
-    min-width: 83.66px;
+    min-width: 84.61px;
  }
  .container_cards-v1:nth-child(7){
-    min-width: 64.17px;
+    min-width: 56px;
  }
  .container_cards-v1:nth-child(8){
     min-width: 64px;
@@ -209,7 +214,7 @@ body {
 }
 .container_cards-v1 h6{
     font-size: 12px;
-    font-family: Airbnb_Cereal2;
+    font-family:    'Roboto', 'Helvetica Neue', sans-serif;
 }
 .container_cards-v1:hover {
     color: #000;
@@ -240,10 +245,12 @@ body {
 }
 .main_card{
     padding-top: 23px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 }
 .main_card_img{
     width: 85vw;
     height: 81vw;
+    object-fit: cover;
 
 
 }
@@ -276,45 +283,49 @@ letter-spacing: 0.05ch;
     color:#222222;
 }
 .main_card_place{
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 4px;
     letter-spacing: 0.01ch;
+    font-family: system-ui, '-apple-system', 'BlinkMacSystemFont',  'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .main_card_date{
     font-family: Airbnb_Cereal2;
-    margin-top:2px;
+    margin-top:4px;
     font-size: 16px;
+    font-family:    'Roboto', 'Helvetica Neue', sans-serif;
 }
 .main_card_price{
     display: flex;
     gap: 5px;
     padding-top: 10px;
     padding-bottom: 36px;
+    
 }
 .main_card_price h6{
     color: #222222;
     font-size: 16px;
+    font-family:    'Roboto', 'Helvetica Neue', sans-serif;
 }
 .main_card_price p{
     color: #222222;
-    font-size: 18px;
+    font-size: 16px;
 }
 .main_card:nth-child(1){
     padding-top: 168px;
 }
-.footer_section_a{
+.section_a{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 56px 0 0 0;
 }
-.footer_section_a p{
+.section_a p{
     font-size: 18px;
     color: #222222;
     font-family: Airbnb_Cereal1
 }
-.footer_section_a button{
+.section_a button{
     width: 132px;
     height: 46px;
     background-color: #fff;
@@ -324,6 +335,109 @@ letter-spacing: 0.05ch;
     font-size: 16px;
     margin: 24px 0 80px;
 }
+.section_categories{
+    padding: 0 24px;
+}
+.section_b a{
+    color: #222222;
+    font-size: 22px;
+    width: 272px;
+    height: 52px;
+    font-family: Airbnb_Cereal1;
+    text-decoration: none;
+}
+.section{
+    display: flex;
+    gap: 30px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.08);
+    
+}
+.section p:nth-child(1){
+    margin: 6px 6px 6px 0;
+    padding: 10px;
+    color:#222222;
+    font-family: Airbnb_Cereal1;
+    font-size: 14px;
+    border-bottom: 2px solid #222222;
+}
+.section p:nth-child(2){
+    margin: 6px 0;
+    padding: 10px;
+    font-size: 14px;
+    font-family:Airbnb_Cereal1;
+}
+.categories{
+    display: grid;
+    padding: 24px 0 0;
+    grid-gap: 40px;
+    color: #222222;
+    font-size: 14px;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.08); 
+}
+.categories a{
+    color: #222222;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 50px;
+   
+}
+footer{
+    background-color: rgb(247 247 247);
+    color:#222222;
+    padding: 32px 20px 16px 24px;
+    font-family: sans-serif;
+}
+footer h3{
+ font-size: 15px;
+
+}
+.section_details{
+    margin: 9px 0 30px 0;
+    display: grid;
+    grid-gap: 15px;
+    font-size: 15px;
+    padding-bottom: 30px;
+     border-bottom: 1px solid rgb(0, 0, 0, 0.08);
+}
+.airbnb{
+    background-color: rgb(247 247 247);
+    color:#222222; 
+    font-family: sans-serif;
+    padding: 0 20px;
+    padding-bottom: 30px;
+     margin-top: -40px;
+}
+.airbnb h3{
+   font-size: 15px;
+
+}
+.language{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    padding-bottom: 20px;
+    margin-top: 27px;
+    letter-spacing: -0.1ch;
+}
+.airbnb p {
+    font-size: 15px;  
+    line-height: 20px;
+    margin-bottom: 1px;
+
+}
+.language h3:nth-child(3){
+    margin-left: 20px;
+}
+.social_media{
+    display: none;
+}
+.fixed_footer{
+    display: none;
+}
+
+
 
 
 @media screen and (min-width:375px) {
@@ -338,6 +452,7 @@ letter-spacing: 0.05ch;
         text-overflow: ellipsis;
         white-space: nowrap;
         min-width: 40%;
+    
     }
 
     .nav_icon {
@@ -364,6 +479,13 @@ letter-spacing: 0.05ch;
     .main_card_img{
         height: 84.25vw;
         width: 89vw;
+    }
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container_cards{
+        padding-top: 107px;
     }
 }
 
@@ -536,8 +658,48 @@ letter-spacing: 0.05ch;
         margin-left: 0;
         margin-right: 4px;
     }
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .section_details{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .social_media{
+        display: flex;
+        gap: 20px;
+        padding-left: 50px;
+    }
+    .airbnb{
+        text-align: center;
+    }
+    .language{
+        text-align: center;
+        justify-content: center;
+    }
+    .fixed_footer{
+        display: flex;
+        color: #222222;
+        position: fixed;
+        bottom: 0;
     
+        width: 95%;
+        padding: 15px 0 20px 0;
+        background-color: #fff;
+        justify-content: space-between;
+    }
+    .fixed_footer p{
+        font-size: 17px
+    }
 
+    .support{
+        display: flex;
+        font-size: 12px;
+        gap: 15px;
+        white-space: nowrap;
+    
+    }
 
 }
 @media screen and (min-width: 768px){
@@ -566,8 +728,11 @@ letter-spacing: 0.05ch;
     .container_cards-v1{
         height: 48px;
     }
+    .container_cards-v1:nth-child(2){
+        margin-left: -2px;
+    }
     .container_cards-v1:nth-child(3){
-        margin-left: 2px;
+        margin-left: -2px;
     }
     .container_cards-v1:nth-child(4){
         margin-left: 4px;
@@ -645,6 +810,7 @@ letter-spacing: 0.05ch;
         right: 33.5px;
         top: 16px;
     }
+   
     
 }
 
@@ -682,7 +848,7 @@ letter-spacing: 0.05ch;
     
 
 }
-@media screen and (min-width: 1128px){
+ @media screen and (min-width: 1128px){
 .nav_top_icon{
     display: none;
 }
@@ -719,9 +885,26 @@ letter-spacing: 0.05ch;
 }
 .main_card_c{
     width: 92%;
+}
+ .categories{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 48px 80px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.08);
+    margin-bottom: 10px;
+    
+}
+.section_details{
+    display: flex;
+    flex-direction: column; 
+    border-bottom: none; 
+} 
 
-}
-}
+} 
 @media screen and (min-width:1440px){
     .nav_bar{
         padding-left: 2.75%;
@@ -761,30 +944,31 @@ letter-spacing: 0.05ch;
     .main_card_wishlist{
         right: 19.5px;
     }
+   
 
 }
 @media screen and (min-width:1640px){
     .nav_bar{
-        padding-left: 2.45%;
+        padding-left: 2.2%;
     }
     .nav_top_host_menu{
-        padding-right: 4.85%;
+        padding-right: 4.35%;
     }
     .nav_top_search{
-        margin-right: 77.5px;
+        margin-right: 102px;
     }
     .container_cards{
         padding-left: 3.7%;
     }
     .container_cards-v2{
-        padding-right: 2.4%;
+        padding-right: 2.2%;
     }
     .main_cards{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-column-gap: 20px;
-        padding-left: 2.1%;
-        padding-right: 1%;
+        padding-left: 1.55%;
+        padding-right: .3%;
 
     }
     .main_card_img{
@@ -796,6 +980,17 @@ letter-spacing: 0.05ch;
     }
     .main_card_c{
         width: 98%;
+    }
+    .section_categories{
+        padding-left: 6%;
+    }
+    
+    .airbnb{
+        display: none;
+    }
+    .fixed_footer{
+        padding-left: 3%;
+        padding-right: 5%;
     }
     
 }
