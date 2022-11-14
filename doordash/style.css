@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: "ttnorms1";
+    src: url(img/font/TTNorms-Bold.woff2);
+}
+@font-face{
+    font-family: "ttnorms2";
+    src: url(img/font/TTNorms-Medium.woff2);
+}
+@font-face{
+    font-family: "ttnorms3";
+    src: url(img/font/TTNorms-Regular.woff2);
+}
+.nav_bar{
+    background-image: url(img/header.avif);
+    background-size: cover;
+    object-fit: fill;
+    height: 450px;
+    width: 100%;
+    background-position: 50% 50%;
+    font-family: ttnorms1;
+}
+.nav_top{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px;
+    transform: translate(1px);
+}
+.nav_signin{
+    color: white;
+    margin-top: 5px;
+    font-size: 15px;
+    letter-spacing: -0.02ch;
+    padding-right: 5px;
+}
+.nav_signup{
+    background-color: white;
+    border-radius: 24px;
+    width: 73px;
+    height: 22px;
+    text-align: center;
+    padding: 9px;
+    margin-top: -4px;
+    color: #494949;
+    margin-right: 5px;
+}
+.nav_signup h3{
+    font-size: 16px;
+    margin-top: 1px;
+}
+.nav_icon{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.nav_doordash_icon{
+    display: none;
+}
+.nav_icon svg{
+    width: 56px;
+    height: 31.82px;
+}
+.nav_head{
+     display: flex;
+     font-size: 32px;
+     color: #fff;
+     font-weight: 700;
+     line-height: 39px;
+     letter-spacing: -0.04ch;
+     text-align: center;
+     max-width: 334px;
+     padding: 20px;
+     margin-top: -3px;
+     transform: translateX(0.5px);
+     margin-left: -1px;
+}
+.nav_search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 8px;
+}
+.nav_search_bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search_bar{
+    display: flex;
+    width: 267px;
+    height: 40px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 4px 4px 4px;
+    border-radius: 20px;
+    box-shadow:1px rgb(214 214 214);
+}
+.search_location{
+    display: none;
+}
+.search_address{
+    color: #717171;
+    font-size: 16px;
+    font-family: ttnorms2;
+    transform: translateX(0.25px);
+}
+.search_icon{
+    margin: 4px 8px 0 1px;
+}
+.search_arrow{
+    margin: 4px 0px 0px 36px;
+    transform: translateX(-0.79px);
+}
+.search_arrow_orange{
+    display: none;
+}
+.nav_signin_saved{
+    color: #fff;
+    text-align: center;
+    display: flex;
+     margin: 17px; 
+    justify-content: center;
+    font-family: ttnorms2;
+    letter-spacing: -0.001ch;
+}
+.nav_signin_saved a{
+    color: white;
+}
+.section_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_card_button{
+    background-color: #eb1000;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+@media screen and (min-width: 425px){
+    .nav_top{
+        transform: translateX(1px);
+    }
+    .nav_signin{
+        letter-spacing: -0.01ch;
+        padding-right: 5px;
+    }
+     .nav_head{
+        line-height: 40px;
+        margin-top: -4px;
+    } 
+    .nav_search{
+        padding-top: 11px;
+    }
+    .search_bar{
+        margin-top: -2.5px;
+    }
+    .search_address{
+        transform: translate(0.25px, -1.08px);
+    }
+ } 
+ @media screen and (min-width: 768px){
+    .nav_top{
+        transform: translateX(1px);
+    }
+    .search_icon{
+        display: none;
+    }
+    .search_location{
+        display: flex;
+        margin: 0 2px;
+    }
+    .search_bar{
+        margin-top: -3px;
+        width: 400px;
+        border-radius: 32px;
+        justify-content: flex-start;
+    }
+    .search_address{
+        transform: translate(6px, 0px);
+    }
+    .search_arrow{
+        transform: translateX(143px);
+    }
+    .nav_signin_saved{
+        transform: translateY(0px);
+    }
+ }
+ @media screen and (min-width: 960px){
+    .nav_bar{
+        height: 580px;
+    }
+    .nav_doordash{
+        display: flex;
+        margin-right: -4px;
+    }
+    .nav_doordash_icon{
+        display: flex;
+        justify-content: center;
+        gap: 9px;
+        transform: translateY(19px);
+    }
+    .nav_icon{
+        display: none;
+    }
+    .nav_symbol{
+        transform: translate(-3px, -3px);
+    }
+    .nav_top{
+        margin-top: -28px;
+        margin-right: 1px;
+    }
+    .nav_head{
+        max-width: 668px;
+        font-size: 64px;
+        line-height: 75.5px;
+        margin-top: 40px;
+    }
+    .search_address{
+        transform: translate(6px, -1.8px);
+    }
+    .nav_search{
+        padding-top: 16px;
+    }
+    .nav_signin_saved{
+        margin-top: 16px;
+    }
+ }
+ @media screen and (min-width: 1184px){
+    .search_arrow{
+        display: none;
+    }
+    .search_arrow_orange{
+        display: flex;
+        background-color: #eb1000;
+        border-radius: 100px;
+        height: 40px;
+        width: 40px;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(171px);
+    }
+ }
