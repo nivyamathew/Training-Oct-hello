@@ -75,7 +75,7 @@ body{
     border-radius: 100px;
 }
 .section_card_img{
-    width: 83.5%;
+    width: 83.6%;
     height: 26.75vw;
     padding: 12px 0px 4px 6px;
     margin: 10px 0px 1px;
@@ -109,8 +109,55 @@ body{
     margin-top: 1px;
 }
 
-/* ---------------------------------768--------------------------------------*/
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: 375px){
+    .section_card_img{
+        width: 78.05%;
+    }
+    .section_cards{
+        transform: translate(7px, -10px);
+    }
+    .section_card:nth-child(4){
+        transform: translate(1px, -6.5px);
+    }
+    .section_card:nth-child(5){
+        transform: translate(0px, -6.5px);
+        
+    }
+    .section_card:nth-child(6){
+        transform: translate(0px,-6.5px);
+    }
+    .section_card_name{
+        transform: translate(-8px, -4px);
+    }
+}
+
+
+@media screen and (min-width: 425px){
+    .section_card_img{
+        width: 94.05px;
+        transform: translate(8.5px, -0.5px);
+    }
+    .section_cards:nth-child(1){
+        transform: translate(0.5px, 0px);
+    }
+    .section_card:nth-child(4){
+        transform: translate(0px, -19.5px);
+    }
+    .section_card:nth-child(5){
+        transform: translate(0px, -19.5px);
+        
+    }
+    .section_card:nth-child(6){
+        transform: translate(0px,-19.5px);
+    }
+    .section_card_name{
+        transform: translate(-8px, -18px);
+    }
+}
+
+/* ---------------------------------640--------------------------------------*/
+@media screen and (min-width: 640px){
     
     .nav_header{
         padding: 7px 0px 0px 12px;
@@ -122,6 +169,33 @@ body{
     .nav_name{
         padding: 10px 6px 6px 0px;
         transform: translate(-3px, -4px);
+    }
+    .section_head{
+            font-size: 26px;
+            padding: 19px 12px 0px;
+            margin-top: -11px;
+            line-height: 42px;
+    }
+    .section_cards{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .section_card:nth-child(4){
+        transform: translate(0px, 0px);
+    }
+    .section_card:nth-child(5){
+        transform: translate(0px, 0px);
+        
+    }
+    .section_card:nth-child(6){
+        transform: translate(0px,0px);
+    }
+    .section_card_img{
+        width: 81.05px;
+        transform: translate(0.5px, -5.5px);
+    }
+    .section_card_name{
+        transform: translate(-8px, -87px);
     }
 }
 
