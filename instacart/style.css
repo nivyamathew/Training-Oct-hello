@@ -14,6 +14,9 @@
     font-family: "instacart3";
     src: url(assets/font/eina-semibold-3c45702adeba381bbd0bc600c987febd.woff2);
 }
+body{
+    color: #343538;
+}
 .nav_bar{
     display: flex;
     background-color: #c10d67;
@@ -59,6 +62,7 @@
 }
 .nav_log{
     display: flex;
+    transform: translateX(0px);
 }
 .nav_top{
     display: flex;
@@ -84,10 +88,32 @@
     transform: translate(-13px, 2px);
     font-family: 'instacart3';
     font-size: 15px;
+    color: #343538;
+}
+.section_head{
+    font-size: 16px;
+    background-color: #deedd6;
+    padding: 15px 10px;
+    margin-top: -11px;
+}
+.section_head h1{
+    width: 256px;
+    margin: 10px;
+    font-family: 'instacart1';
+    transform: translate(-4px, -8px);
+    line-height: 40px;
+    letter-spacing: -0.03ch
+}
+
+.section_button{
+    display: none;
+}
+.section_sub{
+    display: none;
 }
 @media screen and (min-width: 375px){
     .nav_logo{
-        width: 150px;
+        width: 149px;
     }
 }
 
@@ -96,7 +122,7 @@
         display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px -2px 0px;
+    margin: 0px -2px 0px;
 }
 }
 
@@ -112,6 +138,86 @@
         font-size: 18px;
     }
     .nav_bar{
-        padding: 10px;
+        padding: 6px;
+        margin: -2px -2px 0px;
+    }
+    .nav_adv_logo img{
+        width: 100%;
+    }
+    .nav_adv_logo{
+        width: 36px;
+        height: 36px;
+        transform: translateX(-9.75px);
+    }
+    .nav_adv{
+        transform: translateX(-10.25px);
+    }
+    .nav_logo{
+        transform: translate(-16px, 0px);
+        padding: 10px 0px;
+        margin-right: auto;
+    }
+    .nav_hamburger{
+        padding: 12px 24px;
+    }
+    .nav_login{
+        transform: translate(-54px, 11px);
+        font-size: 18px;
+    }
+    .nav_signup{
+        width: 97.23px;
+        height: 42px;
+        font-size: 26px;
+        transform: translate(-26.5px, 3px);
+    }
+    .section_button{
+        display: flex;
+        background-color: #fff;
+        padding: 10px 12px;
+        width: 47px;
+        height: 27px;
+        border-radius: 9px;
+    }
+    .section_country{
+        height: 23px;
+        width: 22px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+    }
+    .section_arrow{
+        background-color: #efefef;
+        padding: 6px;
+    }
+    .section_country svg{
+        height: 39.5px;
+        width: 35px;
+        border-radius: 50%;
+        position: absolute;
+        top: -8px;
+    
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .nav_log{
+        transform: translate(-1.5px);
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .nav_bar{
+        transform: translate(-1px, 0px);
+    }
+    .nav_log{
+        transform: translate(-4px);
+    }
+}
+@media screen and (min-width: 1800px){
+    .nav_log{
+        transform: translateX(2px);
+    }
+    .nav_bar{
+        transform: translate(1px, 0);
     }
 }
