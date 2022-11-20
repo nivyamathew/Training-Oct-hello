@@ -209,10 +209,7 @@ body {
 
 .content_card_img img{
     width: 100%;
-}
-.content_card_img{
-    width: 300px;
-    height: 185px;
+    height: 100%;
 }
 .content_cards{ 
     display: flex;
@@ -223,13 +220,39 @@ body {
     line-height: 32px;
     font-family: 'instacart3';
 }
+.content_card{
+    background-color: #f6f7f8;
+    border-radius: 8px;
+    padding: 0px;
+    margin-right: 8px;
+    min-width: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.content_card_detail{
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400px;
+    max-width: 235px;
+    font-family: 'instacart2';
+    margin: 15px 0px;
+}
+.content_card_section{
+    padding: 32px;
+}
 @media screen and (min-width: 375px) {
     .nav_logo {
         width: 149px;
     }
     .section_scanner{
         display: flex;
-        background-color: #b1d5d4;
+        background-color: #b1e5d4;
+        height: 100px;
+        width: 100%;
+        max-width: 1152px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 16px rgb 
+
     }
     .section_scanner_head{
         font-size: 23px;
@@ -439,7 +462,24 @@ body {
         margin: 0;
         width: 100%;
     }
-}
+    .content_cards{
+        padding: 32px;
+        min-height: 160px;
+    }
+    .content_card{
+        min-width: 304px;
+    }
+    .content_card_head{
+        font-size: 28px;
+    }
+    .content_card_detail{
+        margin: 48px 0px 0px 0px;
+        font-size: 18px;
+    }
+
+
+
+}    
 
 @media screen and (min-width: 1440px) {
     .nav_bar {
