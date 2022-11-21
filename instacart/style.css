@@ -8,6 +8,7 @@
     src: url(assets/font/eina-bold-df33d802f345a9037eb82e0c80e76547.woff2);
 }
 
+
 @font-face {
     font-family: "instacart2";
     src: url(assets/font/eina-regular-962b94746f466cf38b0dcc93ebf0703e.woff2);
@@ -153,6 +154,9 @@ body {
 }
 .section_card_header p:nth-child(2){
     color: #0aad0a;
+}
+.section_card_header:hover:nth-child(2){
+    text-decoration: underline;
 }
 .section_card_img img{
     width: 100%;
@@ -454,6 +458,7 @@ footer{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ded9d9;
+    height: 70px;
 }
 .departments:nth-child(4){
     border-bottom: none;
@@ -538,7 +543,7 @@ footer{
 .social_medias svg{
     width: 35px;
     height: 35px;
-    padding: 20px 14px 20px 0px;
+    padding: 20px 10px 20px 0px;
 }
 .apple_logo{
     font-size: 12px;
@@ -546,6 +551,7 @@ footer{
     color: #72767e;
     margin: 0px 0px 40px;
     padding: 0px 0px 0px 6px;
+    line-height: 18px;
 }
 .terms_and_social{
     padding: 0px 20px;
@@ -923,15 +929,13 @@ footer{
     .section_questions{
         margin-inline: auto;
         max-width: 1024px;
-    }
-    .more_details{
-        display: none; 
-    }
-    
+    } 
     .products{
         display: flex;
         margin: 0px;
-        
+    }
+    .products li:hover{
+        text-decoration: underline;
     }
     .details{
         gap: 0px;
