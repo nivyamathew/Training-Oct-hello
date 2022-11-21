@@ -89,8 +89,8 @@ body {
 
 .nav_signup {
     color: #fff;
-    font-family: 'instacart2';
-    font-size: 22px;
+    font-family: 'instacart3';
+    font-size: 15px;
     border-radius: 32px;
     background-color: #0aad0a;
     text-align: center;
@@ -99,7 +99,7 @@ body {
     transform: translate(4px, -7px);
 }
 
-.nav_signup h6 {
+.nav_signup p {
     transform: translate(0px, 9px);
 }
 
@@ -117,13 +117,14 @@ body {
     margin-top: -11px;
 }
 
-.section_head h1 {
+.section_header p {
     width: 256px;
     margin: 10px;
     font-family: 'instacart1';
     transform: translate(-4px, -8px);
     line-height: 40px;
-    letter-spacing: -0.03ch
+    font-size: 31px;
+    
 }
 
 .section_button {
@@ -189,7 +190,7 @@ body {
     font-family: 'instacart3';
     line-height: 18px;
 }
-.section_card_showmore{
+.section_card_showall{
     font-size: 18px;
     font-family: 'instacart3';
     line-height: 26px;
@@ -206,7 +207,52 @@ body {
     line-height: 32px;
     margin-top: 30px;
 }
-
+/* .section_scanner_img img{
+    width: 100px;
+    border-radius: 8px;
+}
+.section_scanner_head{
+    font-size: 23px;
+    color: #000;
+    line-height: 28px;
+    text-align: center;
+}
+.section_scanner_detail{
+    font-size: 15px;
+    font-family: 'instacart2';
+    line-height: 22px;
+    text-align: center;
+} */
+.section_scanner{
+    display: flex;
+    background-color: #b1e5d4;
+    max-width: 1152px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px rgb(0 0 0 /14%); 
+}
+.section_scanner_img img{
+    height: 100px;
+    width: 100%;
+}
+.section_scanner_head{
+    font-size: 23px;
+    font-family: 'instacart3';
+    color: #000;
+    width: 190px;
+    padding: 0px 0px 0px 30px;
+    transform: translateY(-30px);
+}
+.section_scanner_detail{
+    font-size: 15px;
+    font-family: 'instacart2';
+    padding-left: 30px;
+    transform: translateY(-30px);
+    width: 190px;
+}
+.section_hand_img{
+    display: none;
+}
 .content_card_img img{
     width: 100%;
     height: 100%;
@@ -240,25 +286,310 @@ body {
 .content_card_section{
     padding: 32px;
 }
+.content_card_shopping{
+    color: #fff;
+    background-color: #0aad0a;
+    border-radius: 12px;
+    height: 56px;
+    margin-top: 48px;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+    cursor:pointer;
+    margin-bottom: 32px;
+}
+.content_card_shop{
+    display: flex;
+    justify-content: center;
+}
+.content_card_shopping p{
+    font-size: 18px;
+    font-family: 'instacart3';
+    line-height: 26px;
+   
+}
+.content_card_content{
+    display: flex;
+    flex-direction: column;
+    
+}
+.container_section{
+    padding: 32px;
+}
+.container_section_head{
+    font-size: 23px;
+    font-family: 'instacart2';
+    line-height: 32px;
+    text-align: center;
+    max-width: 450px;
+    padding: 0px 0px 32px;
+}
+.container_section_img img{
+    width: 100%;
+    margin: 0px 0px 6px;
+    border-radius: 12px;
+}
+.container_card_head{
+    font-size: 28px;
+    font-family: 'instacart3';
+}
+.container_card{
+    background-color: #f6f7f8;
+    margin: 9px 0px;
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.container_section_image{
+    display: none;
+}
+.container_card_detail{
+    display: none;
+}
+.section_questions{
+    padding: 32px 32px 60px;
+    font-family: 'instacart2';
+    border-bottom: 1px solid #ded9d9;
+}
+.section_question_head{
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 23px;
+}
+.common_questions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px;
+    color: #424242;
+    gap: 21px;
+    border-bottom: 1px solid #ded9d9;
+}
+.common_question{ 
+    font-size: 24px;
+    line-height:  36px;
+}
+footer{
+    padding: 0px 16px;
+}
+.products{
+    display: none;
+}
+.details{
+    padding: 0px 16px;
+}
+.delivery_section{
+    display: flex;
+    justify-content: center;
+}
+.delivery_detail{
+    padding: 0px 24px 40px;
+}
+
+.delivery_logo img{
+    width: 33px;
+    height: 33px;
+}
+.delivery_head{
+    padding: 20px 0px 13px 6px;
+}
+.delivery_logo{
+    padding: 15px 0px 20px;
+}
+
+.details p{
+    font-size: 18px;
+    font-family: 'instacart3';
+}
+.android{
+    display: flex;
+}
+.ios{
+    display: flex;
+}
+.ios_logo img{
+    width: 15px;
+    height: 15px;
+}
+.ios_logo{
+    margin:0px 13px 0px 0px;
+}
+.mobile{
+    display: flex;
+    justify-content: center;
+}
+.android_logo img{
+    width: 15px;
+    height: 15px;
+}
+.android_logo{
+    margin:0px 13px 0px 0px;
+}
+
+.ios{
+    padding: 7px 25px 7px 0px;
+}
+.android{
+    padding: 7px 25px 7px 0px;
+}
+.shopper{
+    padding: 0px 16px;
+}
+.shopper p{
+    font-size: 18px;
+    font-family: 'instacart3';
+}
+.shopper_details{
+    padding: 0px 24px 40px;
+}
+.shopper_section{
+    display: flex;
+    justify-content: center;
+    
+}
+.departments{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ded9d9;
+}
+.departments:nth-child(4){
+    border-bottom: none;
+}
+.details{
+    border-bottom: 1px solid #ded9d9;
+}
+.shopper{
+    border-bottom: 1px solid #ded9d9;
+}
+.shopper_head{
+    padding: 26px 0px 13px 6px;
+}
+.shopper_logo{
+    padding: 26px  0px  20px;
+}
+.mobile p{
+    font-size: 15px;
+}
+.department_details{
+    padding: 0px 20px;
+    margin: 0px 0px 40px;
+}
+.department{
+    padding: 20px 0px 13px;
+}
+.more_details{
+    margin: 25px 0px;
+}
+.content_access_head{
+    font-family: 'instacart1';
+    font-size: 18px;
+    padding: 12px 0px;
+}
+.content_access{
+    padding: 20px;
+    border-bottom: 1px solid #ded9d9;
+}
+.content_access_detail{
+    font-family: 'instacart2';
+    font-size: 15px;
+    margin: 0px 12px 0px 0px;
+}
+.content_access_button p{
+    background-color: #fff;
+    font-size: 16px;
+    color: rgb(202, 196, 196);
+    font-family: 'instacart3';
+    border-radius: 100px;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    transform: translateX(4px);
+}
+.content_access_button{
+    display: flex;
+    align-items: center;
+    background-color: rgb(202, 196, 196);
+    height: 32px;
+    width: 55px;
+    border-radius: 32px;
+    margin: 3px 3px 3px 4px;
+    
+}
+.content_access_section{
+    display: flex;
+    justify-content: space-between;
+}
+.legal{
+    font-size: 18px;
+    font-family: 'instacart3';
+    padding: 20px 0px 0px;
+}
+.terms{
+    display: flex;
+    font-size: 15px;
+    font-family: 'instacart3';
+}
+.terms p{
+    padding: 20px 20px 0px 0px;
+}
+.social_medias svg{
+    width: 35px;
+    height: 35px;
+    padding: 20px 14px 20px 0px;
+}
+.apple_logo{
+    font-size: 12px;
+    font-family: 'instacart2';
+    color: #72767e;
+    margin: 0px 0px 40px;
+    padding: 0px 0px 0px 6px;
+}
+.terms_and_social{
+    padding: 0px 20px;
+}
+
 @media screen and (min-width: 375px) {
     .nav_logo {
         width: 149px;
     }
     .section_scanner{
         display: flex;
-        background-color: #b1e5d4;
-        height: 100px;
-        width: 100%;
-        max-width: 1152px;
+        justify-content: space-between;
+    }
+    .section_scanner_scan{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section_scanner_img img{
+        width: 100px;
         border-radius: 8px;
-        box-shadow: 0px 0px 16px rgb 
-
     }
     .section_scanner_head{
         font-size: 23px;
         font-family: 'instacart3';
+        color: #000;
         line-height: 28px;
+        width: 100%;
+        transform: translateY(0);
     }
+    .section_scanner_detail{
+        font-size: 15px;
+        font-family: 'instacart2';
+        line-height: 22px;
+        transform: translateY(0px);
+        width: 100%;
+    }
+    
+    .common_questions{
+        gap: 44px;
+    }
+    .content_access_button{
+        transform: translateY(-4px);
+}
 }
 
 
@@ -268,6 +599,9 @@ body {
         justify-content: center;
         align-items: center;
         margin: 0px -2px 0px;
+    }
+    .common_questions{
+        gap: 55px;
     }
 }
 
@@ -330,8 +664,11 @@ body {
     .nav_signup {
         width: 98.23px;
         height: 42px;
-        font-size: 26px;
+        font-size: 18px;
         transform: translate(-26.5px, 3px);
+    }
+    .nav_signup p{
+        transform: translate(0px, 8px);
     }
 
     .section_button {
@@ -341,7 +678,8 @@ body {
         width: 47px;
         height: 25px;
         border-radius: 9px;
-        transform: translate(31px, 24px);
+        transform: translate(29px, 23px);
+        border: 1px solid #ded9d9;
     }
 
     .section_country {
@@ -351,6 +689,7 @@ body {
         overflow: hidden;
         position: relative;
         transform: translate(1px, 1px);
+        filter: grayscale(0.5);
     }
 
     .section_arrow {
@@ -380,25 +719,24 @@ body {
     .section_head {
         background-image: url(assets/img/bg1.webp);
         background-repeat: no-repeat;
-        position: absolute;
+    
         height: 100%;
         width: 100%;
         max-height: 184px;
         background-position: right center;
         background-size: contain;
-        padding: 18px 10px;
+        padding: 29.5px 10px;
         margin-top: -6px;
     }
 
-    .section_header h1 {
+    .section_header p {
         width: 577px;
-        font-size: 39px;
+        font-size: 41px;
         padding-left: 30px;
         line-height: 52px;
-        margin-top: -17px;
-        transform: translate(93.5px, -5.5px);
-        letter-spacing: 0.05ch;
-        font-family: 'instacart2';
+        margin-top: -19px;
+        transform: translate(93.5px, -6.5px);
+        font-family: 'instacart3';
     }
 
     .section_sub {
@@ -413,11 +751,11 @@ body {
         gap: 8.5px;
         font-size: 31px;
     }
-    .section_cards{
-        margin-top: 235px;
-    }
     .section_card_arrow{
         display: none;
+    }
+    .section_container{
+        transform: translate(0.75px, -12px);
     }
     .section_card{
         box-shadow:0px 2px 8px rgb(0 0 0 /16%);
@@ -429,12 +767,98 @@ body {
     .section_card_class{
         transform: translateY(-4px);
     }
-    .section_card_showmore{
+    .section_card_showall{
         font-size: 18px;
+        margin: 60px 0px 30px;
     }
     .section_card_counton{
         font-size: 28px;
     }
+    .section_hand_img{
+        display: flex;
+    }
+    .section_scanner_img{
+        margin: 0px 0px 0px 40px;
+    }
+    .section_scanner{
+        margin-inline: auto;
+        max-width: 1150px;
+    }
+    
+    .container_section_img{
+        display: none;
+    }
+    .container_section_image{
+        display: flex;
+    }
+    .container_section_image img{
+        width: 100%;
+        margin: 0px 0px 6px;
+        border-radius: 12px;
+        max-width: 1080px;
+        margin-inline: auto;
+    }
+    .container_section_head{
+        font-size: 28px;
+        margin-inline: auto;
+        padding: 0px 0px 32px;
+    }
+    .section_question_head{
+        font-size: 31px;
+    }
+    .common_question{
+        font-size: 28px;
+        line-height: 36px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+    }
+    .common_questions{
+        padding: 24px 0px;
+        gap: 161px;
+    }
+    .section_questions{
+        padding: 32px 32px 100px;
+    }
+    .details{
+        display: flex;
+        justify-content: space-between;
+    }
+    .shopper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .departments{
+        gap: 110px;
+    }
+    footer{
+        padding: 0px 39px;
+    }
+    .shopper:nth-child(2) .departments{
+        gap: 100px;
+    }
+    .content_access{
+        display: flex;
+        padding: 20px 80px 48px 40px;
+    }
+    .content_access_section{
+        padding: 10px 0px 0px;
+    }
+    .content_access_head{
+        width: 40%;
+    }
+    .legal_terms{
+        display: flex;
+        justify-content: space-around;
+    }
+    .social_medias svg{
+        width: 20px;
+        height: 20px
+    }
+    .apple_logo{
+        padding: 0px 0px 39px;
+    }
+    
 
 }
 
@@ -465,6 +889,9 @@ body {
     .content_cards{
         padding: 32px;
         min-height: 160px;
+        gap: 16px;
+        margin-inline: auto;
+        max-width: 1160px;
     }
     .content_card{
         min-width: 304px;
@@ -476,10 +903,95 @@ body {
         margin: 48px 0px 0px 0px;
         font-size: 18px;
     }
-
-
-
-}    
+    .content_card:nth-child(1) .content_card_img{
+        transform: translatey(23px);
+    }
+     .content_card:nth-child(2) .content_card_detail{
+        transform: translateY(32px);
+    } 
+    .content_card_img{
+        transform: translateY(2px);
+    }
+    .container_card_detail{
+        display: flex;
+        font-size: 19px;
+        font-family: 'instacart2';
+    }
+    .common_questions{
+        gap: 234px;
+    }
+    .section_questions{
+        margin-inline: auto;
+        max-width: 1024px;
+    }
+    .more_details{
+        display: none; 
+    }
+    
+    .products{
+        display: flex;
+        margin: 0px;
+        
+    }
+    .details{
+        gap: 0px;
+    }
+    
+    .products li{
+        list-style-type: none;
+        padding: 7px 0px;
+        font-size: 15px;
+        font-family: 'instacart2'
+    }
+    .departments{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        border-bottom: none;
+        justify-content: flex-start;
+    }
+    .department_details{
+        display: flex;
+        gap: 9px;
+    }
+    .department{
+        white-space: nowrap;
+        padding: 20px 0px 13px;
+    }
+    .shopper:nth-child(2) .departments{
+        gap: 0px;
+    }
+    .terms_and_privacy{
+        display: flex;
+        gap: 170px;
+    }
+    .legal_terms{
+        justify-content: space-between;
+    }
+    footer{
+        margin-inline: auto;
+        max-width: 1224px;
+    }
+} 
+@media screen and (min-width: 1280px){
+    .container_cards{
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+        justify-content: center;
+        max-width: 1280px;
+        margin-inline: auto;
+    }
+    .container_card{
+        width: 202px;
+    }
+    .container_card_detail{
+        font-size: 23px;
+    }
+    .container_card_head{
+        font-size: 32px;
+    }
+}   
 
 @media screen and (min-width: 1440px) {
     .nav_bar {
@@ -506,8 +1018,12 @@ body {
 
      .section_header{
         width: 568px;
-        font-size: 37px;
+        font-size: 31px;
+        font-family: 'instacart3';
     } 
+    .content_card:nth-child(2) .content_card_img img{
+        transform: translateY(32px);
+    }
 }
 
 @media screen and (min-width: 1800px) {
