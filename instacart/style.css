@@ -931,7 +931,7 @@ footer{
     }
     .section_questions{
         margin-inline: auto;
-        max-width: 1024px;
+        max-width: 960px;
     } 
     .more_details{
         display: none;
