@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'yelp1';
+    src: url(assets/font/open-sans-bold.yji-1145ff0b749fff2d31bb.woff2);
+}
+@font-face {
+    font-family: 'yelp2';
+    src: url(assets/font/open-sans-regular.yji-aff9b80e384301f2ae0c.woff2);
+}
+@font-face {
+    font-family: 'yelp3';
+    src: url(assets/font/open-sans-semibold.yji-d3abae27d3eac73b40a5.woff2);
+}
+@font-face {
+    font-family: 'yelp4';
+    src: url(assets/font/poppins-bold.yji-9690ce6275ddc5645cfa.woff2);
+}
+@font-face {
+    font-family: 'yelp5';
+    src: url(assets/font/poppins-medium.yji-dc16a3592fdb61b620cc.woff2);
+}
+.header{
+    background-image: url(assets/img/bg.jpg);
+    background-size: cover;
+    object-fit: fill;
+    height: 100%;
+    color: #fff;
+}
+.nav_top{
+     display: flex;
+     padding: 24px 40px 0px;
+     gap: 32px;
+}
+.nav_search_bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 48px;
+    border-radius: 4px;
+    
+}
+.search_button{
+    background-color: #e00707;
+}
+.nav_button{
+    display: flex;
+    font-family: 'yelp5';
+    font-size: 16px;
+}
+.nav_details{
+    display: flex;
+    margin: 0px 0px 0px 16px;
+    font-size: 14px;
+    font-family: 'yelp3';
+}
+.nav_logo{
+    padding: 4px 0px 0px;
+}
+.nav_search_bar p{
+    font-size: 16px;
+    font-family: 'yelp2';
+    color: #817878;
+    padding: 0px 16px;
+    width: 309.22px;
+    height: 22px;
+   
+}
+.search_tacos{
+    display: flex;
+    align-items: center;
+}
+.search_item{
+    border-right: 2px solid #e3e3e3;
+    height: 23px
+}
+.search_place p{
+    color:#000;
+    padding: 13px 16px; 
+    width: 311.22px;
+}
+.search_button{
+    border-radius: 0 4px 4px 0;
+    height: 24px;
+    max-width: 56px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+}
+.search_button svg{
+    height: 24px;
+    width: 24px;
+}
+.nav_business{
+    padding: 12px 16px;
+}
+.nav_review{
+    padding: 12px 16px;
+}
+.nav_login p{
+    padding: 8px 16px;
+}
+.nav_login{
+    border: 2px solid rgba(200, 201, 202,1);
+    border-radius: 4px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    transform: translate(7px, 2.75px);
+}
