@@ -350,6 +350,8 @@ body {
 .section_questions{
     padding: 32px 32px 60px;
     font-family: 'instacart2';
+}
+.questions{
     border-bottom: 1px solid #ded9d9;
 }
 .section_question_head{
@@ -931,6 +933,9 @@ footer{
         margin-inline: auto;
         max-width: 1024px;
     } 
+    .more_details{
+        display: none;
+    }
     .products{
         display: flex;
         margin: 0px;
@@ -947,6 +952,15 @@ footer{
         padding: 7px 0px;
         font-size: 15px;
         font-family: 'instacart2'
+    }
+    .shopper{
+        height: 316px;
+    }
+    .details{
+        height: 388px;
+    }
+    .products li{
+        width: 184px;
     }
     .departments{
         display: flex;
@@ -976,6 +990,7 @@ footer{
     footer{
         margin-inline: auto;
         max-width: 1224px;
+        padding: 0px 49px;
     }
 } 
 @media screen and (min-width: 1280px){
