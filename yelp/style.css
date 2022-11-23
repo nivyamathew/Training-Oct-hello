@@ -22,13 +22,7 @@
     font-family: 'yelp5';
     src: url(assets/font/poppins-medium.yji-dc16a3592fdb61b620cc.woff2);
 }
-/* .header{
-    background-image: url(assets/img/bg.jpg);
-    background-size: cover;
-    object-fit: fill;
-    height: 100%;
-    color: #fff;
-} */
+
 .header{
     color: #fff;
     width: 100%;
@@ -39,7 +33,7 @@
     animation-name: slide-bg;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-direction: upward;
+    animation-direction: downward;
 }
 @keyframes slide-bg{
     0%{
