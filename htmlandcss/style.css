@@ -1,0 +1,139 @@
+/* {
+    padding: 5em;
+    text-align: center;
+}
+.box{
+    background: aquamarine;
+    padding: 2em;
+    width: 50%;
+    margin: 0em auto 10em;
+    border: 5px solid black;
+    outline: 5px solid yellow;
+    outline-offset: 5px;
+}
+.button{body
+    text-decoration: none;
+    display: inline-block;
+    background: steelblue;
+    padding: 1em 3em;
+    color: #fff;
+    outline: 3px solid blue;
+    transition: all ease-in-out 300ms;
+}
+.button:hover{
+    outline: 3px solid blue;
+    outline-offset: -5px;
+}
+body{
+    margin: 100px;
+}
+.container{
+    width:100vw;
+    height: 100vh;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background: #3dccc7;
+    /* transition-duration: 1000ms;
+    transition-property: background, transform;
+    transition-timing-function: cubic-bezier(1, .11, .22, 1.41);
+    transition-delay: 2s; 
+    transition: 1s 250ms background ease-in;
+}*/
+/*.box:hover{
+    background: #ff6b6b;
+    transform: rotate(45deg);
+} 
+@import url("https://fonts.googleapis.com/css/family=Crimson+Text:400,700');")
+
+*, *::after, *::before {
+    box-sizing : border-box;
+    margin-top: 0;
+}
+body{
+    background: #f5f5f5;
+    color: #18314f;
+    font-family: 'crimson Text', serif;
+    font-size: 1.5rem;
+}
+h1{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    line-height: 1;
+    font-weight: 400;
+    margin: 3em 0;
+}
+h2{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 3em;
+    letter-spacing: 8px;
+    text-align: center;
+    color: #8bbeb2;
+}
+h2::ahter{
+    content: '';
+    display: block;
+    border-bottom: 1px solid rgba(#18314f, .25);
+    width: 20%;
+    margin: 3em auto 0;
+}
+h2 span{
+    font-size: 5em;
+    font-weight: 700;
+    display: block;
+    color: #18314f;
+}
+a{
+    color: #8bbeb2;
+}
+a:hover{
+    color: #7ae7c7;
+}
+section{
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0, 0.25);
+    width: 80%;
+    margin: 50px auto;
+    padding: 50px;
+}
+.universal code{
+
+        background: #C3DDD7;
+        padding: 0.25em;
+    }
+    .example{
+        padding: 1em;
+        background: #C3DDD7;
+    }
+    .direct-children p{
+        margin: 0;
+    }
+    .adjacent-sibling .box{
+        height: 75px;
+        width: 75px;
+        background: rgba(0,0,0, 0.5);
+        display: inline-block;
+    }
+    .general-sibling .box {
+        height: 75px;
+        width: 75px;
+        background: rgba(0,0,0,.5);
+        display: inline-block;
+      }
+      .general-sibling .box ~ .box{
+        background: red ;
+      }*/
+      .body{
+        background-color: rgb(201, 201, 108);
+      }
+.box{
+    background: white;
+    padding: 2em;
+    box-shadow: 0px 0px 20px 20px black,
+                20px 20px 50px 50px red ;
+}
