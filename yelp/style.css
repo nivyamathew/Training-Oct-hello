@@ -33,7 +33,7 @@
     animation-name: slide-bg;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-direction: downward;
+    animation-direction: upward;
 }
 @keyframes slide-bg{
     0%{
