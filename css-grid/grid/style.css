@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,600');
+body{
+    font-family:sans-serif;
+    font-weight: 300;
+    display: grid;
+  grid-template-columns: [page-start] 1fr [content-start] 80vw [content-end] 1fr [page-end];
+  grid-template-rows: [hero-start] 60vh [info-start] 5em [hero-end] 5em [info-end] auto [bottom];
+}
+
+.title {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.title span {
+  font-weight: 300;
+  display: block;
+}
+
+.small-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.section-one {
+  background: url(img/index1.jpeg);
+  background-color: #777;
+  background-blend-mode: multiply;
+  background-size: cover;
+  text-align: center;
+  
+  grid-column: page-start / page-end;
+  grid-row: hero-start / hero-end;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-two {
+  background: #DDD;
+  text-align: center;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  grid-column: content-start / content-end;
+  grid-row: info-start / info-end;
+  z-index: 10;
+}
+
+.section-three {
+  background: lightblue;
+  grid-column: page-start / page-end;
+  grid-row: hero-end / bottom;
+  padding: 150px 0;
+  
+  display: grid;
+  grid-template-columns: inherit;
+}
+
+.container {
+  background: pink;
+  grid-column: content-start / content-end;
+}
+    
