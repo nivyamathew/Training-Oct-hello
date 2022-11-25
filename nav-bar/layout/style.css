@@ -1,0 +1,41 @@
+*, *::before, *::after{
+box-sizing: border-box;
+}
+body{
+    color:rgba(4, 140, 168, 1);
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.unstyled-list{
+    margin:0;
+    padding: 0;
+    list-style: none; 
+}
+.main-nav{
+    background-color: rgba(211, 24, 105, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+li{
+    flex: 1 1 auto;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
