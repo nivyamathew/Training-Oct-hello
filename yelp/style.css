@@ -1,74 +1,87 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
 @font-face {
     font-family: 'yelp1';
     src: url(assets/font/open-sans-bold.yji-1145ff0b749fff2d31bb.woff2);
 }
+
 @font-face {
     font-family: 'yelp2';
     src: url(assets/font/open-sans-regular.yji-aff9b80e384301f2ae0c.woff2);
 }
+
 @font-face {
     font-family: 'yelp3';
     src: url(assets/font/open-sans-semibold.yji-d3abae27d3eac73b40a5.woff2);
 }
+
 @font-face {
     font-family: 'yelp4';
     src: url(assets/font/poppins-bold.yji-9690ce6275ddc5645cfa.woff2);
 }
+
 @font-face {
     font-family: 'yelp5';
     src: url(assets/font/poppins-medium.yji-dc16a3592fdb61b620cc.woff2);
 }
 
-.header{
+.header {
     color: #fff;
     width: 100%;
-    height: 500px;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     animation-duration: 10s;
-    animation-name: slide-bg; 
+    animation-name: slide-bg;
     animation-delay: 0s;
-     animation-iteration-count: infinite;
-     animation-direction: upward; 
+    animation-iteration-count: infinite;
+    animation-direction: initial;
     /* animation: 10s infinite upward 'slide-bg';  */
 }
-@keyframes slide-bg{
-    0%{
-        opacity: 0.5;
+
+@keyframes slide-bg {
+    0% {
+        opacity: 0.6;
         background-image: url(assets/img/bg.jpg);
     }
-    33%{
+
+    33% {
         opacity: 1;
         background-image: url(assets/img/bg.jpg);
     }
-    34%{
-        opacity: 0.5;
+
+    34% {
+        opacity: 0.6;
         background-image: url(assets/img/bg2.jpg);
     }
-    68%{
+
+    68% {
         opacity: 1;
         background-image: url(assets/img/bg2.jpg);
     }
-    69%{
-        opacity: 0.5;
+
+    69% {
+        opacity: 0.6;
         background-image: url(assets/img/bg3.jpg);
     }
-    100%{
+
+    100% {
         opacity: 1;
         background-image: url(assets/img/bg3.jpg);
     }
 
 }
-.nav_top{
-     display: flex;
-     padding: 24px 40px 0px;
-     gap: 32px;
+
+.nav_top {
+    display: flex;
+    padding: 24px 40px 0px;
+    gap: 32px;
 }
-.nav_search_bar{
+
+.nav_search_bar {
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -76,49 +89,58 @@
     width: 100%;
     gap: 0px;
     border-radius: 4px;
-    
+
 }
-.search_button{
+
+.search_button {
     background-color: #e00707;
 }
-.nav_button{
+
+.nav_button {
     display: flex;
     font-family: 'yelp5';
     font-size: 16px;
 }
-.nav_details{
+
+.nav_details {
     display: flex;
     margin: 0px 0px 0px 16px;
     font-size: 14px;
     font-family: 'yelp3';
     white-space: nowrap;
 }
-.nav_logo{
+
+.nav_logo {
     padding: 4px 0px 0px;
 }
-.nav_search_bar p{
+
+.nav_search_bar p {
     font-size: 16px;
     font-family: 'yelp2';
     color: #817878;
     padding: 0px 16px;
     width: 309.22px;
     height: 22px;
-   
+
 }
-.search_tacos{
+
+.search_tacos {
     display: flex;
     align-items: center;
 }
-.search_item{
+
+.search_item {
     border-right: 2px solid #e3e3e3;
     height: 23px
 }
-.search_place p{
-    color:#000;
-    padding: 13px 16px; 
+
+.search_place p {
+    color: #000;
+    padding: 13px 16px;
     width: 311.22px;
 }
-.search_button{
+
+.search_button {
     border-radius: 0 3px 3px 0;
     height: 25px;
     max-width: 56px;
@@ -126,49 +148,173 @@
     display: flex;
     align-items: center;
 }
-.search_button svg{
+
+.search_button svg {
     height: 24px;
     width: 24px;
 }
-.nav_business{
+
+.nav_business {
     padding: 12px 16px;
 }
-.nav_review{
+
+.nav_review {
     padding: 12px 16px;
 }
-.nav_login p{
+
+.nav_login p {
     padding: 8px 16px;
 }
-.nav_login{
-    border: 2px solid rgba(200, 201, 202,1);
+
+.nav_login {
+    border: 2px solid rgba(200, 201, 202, 1);
     border-radius: 4px;
     height: 36px;
     display: flex;
     align-items: center;
     transform: translate(7px, 2.75px);
 }
-.nav_signup{
+
+.nav_signup {
     background-color: #e00707;
     border-radius: 4px;
-     height: 24px; 
+    height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2px 0px 0px 20px;
     padding: 8px 15px;
-    
+
 }
-.nav_bar{
+
+.nav_bar {
     display: flex;
     padding: 0px 40px;
     margin-left: 110px;
 }
-.nav_services{
+
+.nav_services {
     display: flex;
     font-size: 14px;
     font-family: 'yelp2';
     padding: 16px 18px 20px;
 }
-.nav_bar svg{
-     transform: translate(4px, -3px); 
+
+.nav_bar svg {
+    transform: translate(4px, -3px);
+}
+
+.nav_section_hvac {
+    width: 10px;
+    height: 0;
+    position: relative;
+    animation: scroll 10s infinite;
+    animation-delay: 0s;
+    border-radius: 5px;
+}
+
+.nav_scroll_hvac,
+.nav_scroll_cleaner,
+.nav_scroll_sweep {
+    width: 10px;
+    height: 90px;
+    margin-bottom: 10px;
+    background-color: #817878;
+    border-radius: 5px;
+}
+
+.nav_section_cleaner {
+    width: 10px;
+    height: 0;
+    position: relative;
+    animation: scroll 10s infinite;
+    animation-delay: 3s;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.nav_section_sweep {
+    width: 10px;
+    height: 0;
+    position: relative;
+    animation: scroll 10s infinite;
+    animation-delay: 7s;
+    border-radius: 5px;
+}
+
+.nav_section_scroll {
+    padding: 0px 40px;
+}
+
+@keyframes scroll {
+
+    33%,
+    66.66%,
+    100% {
+        top: 0;
+        background-color: #fff;
+        height: 88px;
+    }
+}
+
+
+.animation {
+    display: flex;
+    justify-content: flex-start;
+    padding: 60px 7px 200px;
+    margin: 0px 108px
+}
+
+
+.nav_animation h1 {
+    font-size: 48px;
+    font-family: 'yelp5';
+    width: 480px;
+}
+
+.nav_animation p {
+    background-color: #e00707;
+    font-size: 16px;
+    font-family: 'yelp5';
+    padding: 12px 32px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation_hvac p {
+    width: 141px;
+}
+
+.animation_sweep p {
+    width: 223px;
+}
+
+.animation_cleaner p {
+    width: 206px;
+}
+
+.animation_hvac {
+    animation-duration: 10s;
+    animation-name: text;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-direction: revert;
+}
+
+.animation_cleaner {
+    animation-delay: 10s;
+    animation-name: text;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: revert;
+}
+.picture_name a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'yelp1'
 }
