@@ -35,14 +35,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     animation-duration: 10s;
-    animation-name: slide-bg;
+    animation-name: slidein;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-direction: initial;
-    /* animation: 10s infinite upward 'slide-bg';  */
+    animation-direction: initial; 
+    /* animation: slidein 10s  infinite initial ; */
 }
 
-@keyframes slide-bg {
+@keyframes slidein {
     0% {
         opacity: 0.6;
         background-image: url(assets/img/bg.jpg);
@@ -77,6 +77,7 @@
 
 .nav_top {
     display: flex;
+    justify-content: space-between;
     padding: 24px 40px 0px;
     gap: 32px;
 }
@@ -89,6 +90,7 @@
     width: 100%;
     gap: 0px;
     border-radius: 4px;
+    max-width: 1400px;
 
 }
 
@@ -189,8 +191,7 @@
 
 .nav_bar {
     display: flex;
-    padding: 0px 40px;
-    margin-left: 110px;
+    transform: translate(-2px, 1px);
 }
 
 .nav_services {
@@ -262,7 +263,7 @@
 .animation {
     display: flex;
     justify-content: flex-start;
-    padding: 60px 7px 200px;
+    padding: 60px 7px 100px;
     margin: 0px 108px
 }
 
@@ -304,6 +305,7 @@
     animation-iteration-count: infinite;
     position: relative;
     animation-direction: revert;
+    animation: 
 }
 
 .animation_cleaner {
@@ -316,5 +318,20 @@
 .picture_name a{
     text-decoration: none;
     font-size: 14px;
-    font-family: 'yelp1'
+    font-family: 'yelp1';
+    color: #FFF;
+}
+.picture_name{
+    margin: 0 108px;
+    padding: 0px 40px 79px;
+    transform: translate(8px, -15px);
+}
+.picture_name p{
+    font-family: 'yelp2';
+    font-size: 14px;
+}
+@media screen and (min-width: 2560px){
+ .nav_search_bar p{
+    width: 424px;
+ }
 }
