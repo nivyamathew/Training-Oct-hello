@@ -90,7 +90,7 @@
     width: 100%;
     gap: 0px;
     border-radius: 4px;
-    max-width: 1400px;
+    max-width: 1124px;
 
 }
 
@@ -122,6 +122,7 @@
     color: #817878;
     padding: 0px 16px;
     width: 309.22px;
+    max-width: 456px;
     height: 22px;
 
 }
@@ -139,7 +140,8 @@
 .search_place p {
     color: #000;
     padding: 13px 16px;
-    width: 311.22px;
+     width: 311.22px; 
+    max-width: 456px;
 }
 
 .search_button {
@@ -263,8 +265,10 @@
 .animation {
     display: flex;
     justify-content: flex-start;
-    padding: 60px 7px 100px;
-    margin: 0px 108px
+    padding: 62px 7px 100px;
+    margin: 0px 108px;
+    max-width: 1211px;
+    margin-inline: auto;
 }
 
 
@@ -272,6 +276,10 @@
     font-size: 48px;
     font-family: 'yelp5';
     width: 480px;
+    line-height: 56px;
+}
+.nav_animation{
+    transform: translate(-10px,11px);
 }
 
 .nav_animation p {
@@ -290,31 +298,15 @@
     width: 141px;
 }
 
-.animation_sweep p {
-    width: 223px;
-}
-
-.animation_cleaner p {
-    width: 206px;
-}
 
 .animation_hvac {
-    animation-duration: 10s;
-    animation-name: text;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    position: relative;
-    animation-direction: revert;
-    animation: 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
 }
 
-.animation_cleaner {
-    animation-delay: 10s;
-    animation-name: text;
-    animation-delay: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: revert;
-}
+
 .picture_name a{
     text-decoration: none;
     font-size: 14px;
@@ -323,8 +315,10 @@
 }
 .picture_name{
     margin: 0 108px;
-    padding: 0px 40px 51px;
-    transform: translate(8px, -14px);
+    padding: 0px 40px 49px;
+    transform: translate(8px, -16px);
+    max-width: 1144px;
+    margin-inline: auto;
 }
 .picture_name p{
     font-family: 'yelp2';
@@ -363,6 +357,8 @@
     margin: 0 108px;
     padding: 0 40px;
     color:#2d2e2f;
+     max-width: 1144px;
+    margin-inline: auto; 
     
 }
 .section_card{
@@ -371,6 +367,7 @@
     border: 1px solid #ebebeb;
     width: 309.96px;
     height: 342px;
+    
 }
 .section_reviewer_name a{
     color: #2d2e2f;
@@ -550,6 +547,8 @@ height: 210px;
     padding: 45px 40px;
     margin: 0px 108px;
     color:#2d2e2f;
+     max-width: 1144px;
+    margin-inline: auto; 
 }
 .category_cards{
     display: grid;
@@ -600,6 +599,8 @@ footer{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 32px;
+    max-width: 1144px;
+    margin-inline: auto;
 }
 .section_about p{
     font-size: 16px;
@@ -613,6 +614,9 @@ footer{
     font-size: 14px;
     font-family: 'yelp2';
     list-style-type: none;
+}
+.section_about li:hover{
+    text-decoration: underline;
 }
 .section_languages li, .section_countries li{
     display: flex;
@@ -640,4 +644,7 @@ footer{
     color:#6e7072;
     font-family: 'yelp2';
     padding: 0px 40px 60px;
+     max-width: 1144px;
+    margin-inline: auto; 
 }
+
