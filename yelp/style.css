@@ -91,11 +91,8 @@
 
 }
 .nav_search_details{
-    max-width: 1144px;
-    /* margin-right: 25%;
-    margin-left: 10%; */
-    margin-inline: auto;
-
+    max-width: 1245px;
+    margin-left: auto;
 }
 
 .search_button {
@@ -126,7 +123,6 @@
     color: #817878;
     padding: 0px 16px;
     width: 21.47vw;
-    max-width: 500px;
     height: 22px;
 
 }
@@ -145,7 +141,7 @@
     color: #000;
     padding: 13px 16px;
      width: 21.613vw;
-    max-width: 500px;
+    
 }
 
 .search_button {
@@ -198,6 +194,8 @@
 .nav_bar {
     display: flex;
     transform: translate(-2px, 1px);
+    max-width: 1144px;
+    margin-inline: auto;
 }
 
 .nav_services {
@@ -651,5 +649,14 @@ footer{
     padding: 0px 40px 60px;
      max-width: 1144px;
     margin-inline: auto; 
+} 
+@media screen and (min-width: 1750px){
+    .nav_search_details{
+        margin-inline: auto;
+    }
+    .nav_logo {
+        width: 250px;
+    }
 }
+
 
