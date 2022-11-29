@@ -155,12 +155,13 @@ header {
     background-color: rgb(204, 202, 202);
 }
 .content_card{
-    padding: 0px 5px;
+    padding: 0px 10px;
 }
 .content_img img {
     width: 96px;
     height: 114px;
     padding-top: 4px;
+    margin-left: auto;
 }
 
 .content_section {
@@ -243,13 +244,12 @@ header {
 .wishlist svg{
     width: 20px;
     height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 1px 3px rgba(0 0 0 / 16%);
+    padding: 5px;
 }
 .wishlist{
-    border: ipx solid rgba(255, 255, 255, 1.00);
-    border-radius: 100px;
-    box-shadow: 0px 1px 3px rgba(0 0 0 / 16%);
-    width: 36px;
-    height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,7 +264,7 @@ header {
 .storage{
     border: 1px solid rgb(240, 240, 240, 1.00);
     width: 139.15px;
-    margin: -6px 0px 10px 3.5px;
+    margin: -6px 0px 10px 5px;
     height: 22px;
     padding: 0px 8px;
     display: flex;
@@ -276,7 +276,7 @@ header {
 }
 .display{
     border: 1px solid rgb(240, 240, 240, 1.00);
-    margin: 0px 0px 10px 3.5px;
+    margin: 0px 0px 10px 5px;
     height: 22px;
     width: 143.66px;
     padding: 0px 8px;
@@ -295,7 +295,7 @@ header {
 }
 .camera{
     border: 1px solid rgb(240, 240, 240, 1.00);
-    margin: 0px 0px 10px 3.5px;
+    margin: 0px 0px 10px 5px;
     width: 94.88px;
     height: 22px;
     padding: 0px 8px;
