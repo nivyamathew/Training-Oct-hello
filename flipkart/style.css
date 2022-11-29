@@ -1,0 +1,342 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'flipkart';
+    src: url(assets/font/roboto-regular.woff2);
+}
+
+header {
+    background-color: rgb(40, 116, 240);
+    color: #fff;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'flipkart';
+    justify-content: space-between;
+    padding: 6px 12px 0px;
+}
+
+.nav_bar {
+    display: flex;
+    gap: 11px;
+}
+
+.nav_search_bar {
+    display: flex;
+    gap: 32px;
+}
+
+.nav_logo img {
+    width: 100%
+}
+
+.nav_logo {
+    width: 23px;
+    height: 23px;
+    transform: translateY(-2px);
+}
+
+.nav_page {
+    transform: translate(1px, -1px);
+    font-size: 16px;
+    width: 21.563vw;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nav_login {
+    width: 52.5px;
+    color: #eaeaea;
+}
+
+.nav_cart {
+    transform: translate(-7px, 2px);
+}
+
+.nav_search {
+    transform: translate(2px, -1px);
+}
+
+.nav_sort_filter img {
+    width: 24px;
+    height: 24px;
+}
+
+.nav_top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 48px;
+}
+
+.nav_sort_filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    width: 50%;
+}
+
+.nav_border {
+    width: 1px;
+    height: 48px;
+    background-color: #ebebeb;
+}
+
+.nav_tokens {
+    display: flex;
+    padding: 0px 11px;
+    overflow: scroll;
+    height: 56px;
+}
+
+.nav_tokens::-webkit-scrollbar {
+    display: none;
+}
+
+.nav_token {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 98.47px;
+    white-space: nowrap;
+    height: 36px;
+    border: 1px solid rgb(219 219 219);
+    border-radius: 4px;
+    margin: 8px 4px 0px;
+    padding: 2px 8px 0px 4px;
+    color: #212121;
+}
+
+.nav_token:nth-child(2) {
+    background-color: #f5f7fa;
+    color: #747178;
+    gap: 3.5px;
+    padding: 2px 11px 0px 4px;
+}
+
+.nav_token:nth-child(3) {
+    background-color: #f5f7fa;
+    color: #747178;
+    gap: 4.5px;
+    padding: 2px 11px 0px 4px;
+
+}
+
+.nav_token:nth-child(4) {
+    padding: 2px 8px 0px 4px;
+}
+
+.nav_token_detail p {
+    font-size: 12px;
+    font-family: 'flipkart';
+    line-height: 17px;
+}
+
+.nav_token_img img {
+    width: 32px;
+    height: 32px;
+    margin: 0px 4px 0px 0px;
+}
+
+.nav_token_img {
+    transform: translateY(1px);
+}
+
+.nav_bottom_border {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(204, 202, 202);
+}
+.content_card{
+    padding: 0px 5px;
+}
+.content_img img {
+    width: 96px;
+    height: 114px;
+    padding-top: 4px;
+}
+
+.content_section {
+    padding: 12px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_details{
+    margin: 8px 0px 6px;
+    padding: 0px 20px 0px 12px;
+}
+.content_name{
+    font-size:  14px;
+    font-family: 'flipkart';
+    color: #212121;
+    width: 50vw;
+}
+.content_rating{
+    margin: 8px 0px 6px;
+    display: flex;
+    align-items: center;
+}
+.rating{
+    background-color: #008c00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    gap: 2px;
+    width: 38.88px;
+    height: 21px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.rating span{
+    font-size: 11px;
+}
+.flipkart_logo img{
+    width: 55.02px;
+    height: 13px;
+    margin-top: 1px;
+    transform: translate(1px, 1px);
+    font-family: auto;
+
+}
+.reviewers{
+    font-size: 12px;
+    font-family:'flipkart';
+    color: #878787;
+    margin: 0px 0px 0px 5px;
+    padding: 0px 0px 2px;
+}
+.content_price{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.old_price{
+    font-family: 'auto';
+    font-size: 12px;
+    color: #878787;
+    text-decoration: line-through;
+}
+.price{
+    font-size: 16px;
+    font-family: 'auto';
+}
+.free_delivery{
+    font-size: 12px;
+    font-family: 'flipkart';
+    margin: 4px 0px;
+}
+.bank_offer{
+    color: #26a541;
+    font-size: 12px;
+    font-family: 'auto';
+    margin: 6px 0px;
+}
+.wishlist svg{
+    width: 20px;
+    height: 24px;
+}
+.wishlist{
+    border: ipx solid rgba(255, 255, 255, 1.00);
+    border-radius: 100px;
+    box-shadow: 0px 1px 3px rgba(0 0 0 / 16%);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 8px;
+    transform: translate(-3px, -61px);
+}
+.special_about{
+    color: #878787;
+    font-size: 12px;
+    font-family: 'auto';
+}
+.storage{
+    border: 1px solid rgb(240, 240, 240, 1.00);
+    width: 139.15px;
+    margin: -6px 0px 10px 3.5px;
+    height: 22px;
+    padding: 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_display{
+    display: flex;
+}
+.display{
+    border: 1px solid rgb(240, 240, 240, 1.00);
+    margin: 0px 0px 10px 3.5px;
+    height: 22px;
+    width: 143.66px;
+    padding: 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.battery{
+    border: 1px solid rgb(240, 240, 240, 1.00);
+    margin: 0px 0px 10px 8px;
+    height: 22px;
+    padding: 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.camera{
+    border: 1px solid rgb(240, 240, 240, 1.00);
+    margin: 0px 0px 10px 3.5px;
+    width: 94.88px;
+    height: 22px;
+    padding: 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+    .nav_token:nth-child(2) {
+        padding: 2px 8px 0px 0px;
+    }
+
+    .nav_token:nth-child(3) {
+        transform: translate(-4px, 1px);
+        padding: 2px 0px 0px 0px;
+        gap: 0px;
+    }
+}
