@@ -7,7 +7,6 @@
     font-family: 'flipkart';
     src: url(assets/font/roboto-regular.woff2);
 }
-
 header {
     background-color: rgb(40, 116, 240);
     color: #fff;
@@ -18,6 +17,7 @@ header {
     font-family: 'flipkart';
     justify-content: space-between;
     padding: 6px 12px 0px;
+   
 }
 
 .nav_bar {
@@ -71,6 +71,11 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 48px;
+    background-color: #fff;
+    position: sticky;
+    z-index: 0;
+    top: 0;
+
 }
 
 .nav_sort_filter {
@@ -93,6 +98,9 @@ header {
     padding: 0px 11px;
     overflow: scroll;
     height: 56px;
+    background-color: #fff;
+    position: relative;
+    z-index: -1;
 }
 
 .nav_tokens::-webkit-scrollbar {
@@ -153,32 +161,34 @@ header {
     width: 100%;
     height: 2px;
     background-color: rgb(204, 202, 202);
-}
+    position: sticky;
+    z-index: 0;
+    top: 48px;
+} 
 .content_card{
-    padding: 0px 10px;
+    padding: 0px 5px;
+    border-bottom: rgb(240, 240, 240, 1.00);
 }
 .content_img img {
     width: 96px;
     height: 114px;
-    padding-top: 4px;
-    margin-left: auto;
+    padding-top: 16px;
+  
 }
 
 .content_section {
     padding: 12px 0px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .content_details{
     margin: 8px 0px 6px;
-    padding: 0px 20px 0px 12px;
+    padding: 0px 4px 0px 12px;
 }
 .content_name{
     font-size:  14px;
     font-family: 'flipkart';
     color: #212121;
-    width: 50vw;
+    width: 160px;
 }
 .content_rating{
     margin: 8px 0px 6px;
@@ -241,20 +251,24 @@ header {
     font-family: 'auto';
     margin: 6px 0px;
 }
-.wishlist svg{
-    width: 20px;
-    height: 24px;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 0px 1px 3px rgba(0 0 0 / 16%);
-    padding: 5px;
+.wishlist img{
+    width: 18px;
+    height: 16px;
 }
+   
 .wishlist{
     display: flex;
     justify-content: center;
-    align-items: center;
-    right: 8px;
-    transform: translate(-3px, -61px);
+    align-items: flex-start;
+    margin-top: -4px;
+    margin-right: 4px;
+    background-color: #fff;
+    border-radius: 47%;
+    box-shadow: 0px 1px 2px rgba(0 0 0 / 16%);
+    padding: 9px 8px;
+    height: 16px;
+    width: 18px;
+   
 }
 .special_about{
     color: #878787;
@@ -263,10 +277,10 @@ header {
 }
 .storage{
     border: 1px solid rgb(240, 240, 240, 1.00);
-    width: 139.15px;
     margin: -6px 0px 10px 5px;
+    width: 140.33px;
     height: 22px;
-    padding: 0px 8px;
+    padding: 0px 6px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,7 +292,6 @@ header {
     border: 1px solid rgb(240, 240, 240, 1.00);
     margin: 0px 0px 10px 5px;
     height: 22px;
-    width: 143.66px;
     padding: 0px 8px;
     display: flex;
     justify-content: center;
@@ -286,7 +299,7 @@ header {
 }
 .battery{
     border: 1px solid rgb(240, 240, 240, 1.00);
-    margin: 0px 0px 10px 8px;
+    margin: 0px 0px 10px 10px;
     height: 22px;
     padding: 0px 8px;
     display: flex;
@@ -294,44 +307,81 @@ header {
     align-items: center;
 }
 .camera{
+    display: flex;
+}
+.rear_camera, .front_camera{
     border: 1px solid rgb(240, 240, 240, 1.00);
-    margin: 0px 0px 10px 5px;
-    width: 94.88px;
+    margin: 0px 0px 10px 5px;  
     height: 22px;
     padding: 0px 8px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.front_camera{
+    margin: 0px 0px 0px 10px;
+}
+ hr{
+    height: 1px;
+    background-color: rgba(234,234,234,1.00);
+    border: none;
+    display: block;
+    width: 100%;
 
+}
+.content_border{
+    height: 2px;
+}
+.content_offer{
+    background-color: #f0f0f0;
+    padding: 8px 0px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.content_time{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #ffff;
+    padding: 16px;
+}   
+.time_img img{
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+}
+.more_offer img{
+    height:10px;
+    width: 6px;
+    transform: translate(-1px, 1px);
+}
+.content_deals{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.time_deals{
+    padding: 0px 20px 0px 18px;
+}
+.time_head{
+    font-size: 16px;
+    color: #212121;
+    margin: 0px 0px 2px;
+}
+.offer{
+    font-size: 12px;
+    color: #878787;
+    font-family: 'flipkart';
+}
+.offer_percent{
+    font-size: 12px;
+    color: #4bb550;
+}
 @media screen and (min-width:768px) {
     .nav_token:nth-child(2) {
         padding: 2px 8px 0px 0px;
+    }
+    .nav_token:nth-child(2) .nav_token_img img{
+        margin: 0px 4px 0px -1px;
     }
 
     .nav_token:nth-child(3) {
@@ -339,4 +389,4 @@ header {
         padding: 2px 0px 0px 0px;
         gap: 0px;
     }
-}
+} 
