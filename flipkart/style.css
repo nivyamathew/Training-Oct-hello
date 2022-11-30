@@ -216,6 +216,8 @@ header {
     margin-top: 1px;
     transform: translate(1px, 1px);
     font-family: auto;
+    position: relative;
+    z-index: -1;
 
 }
 .reviewers{
@@ -232,7 +234,7 @@ header {
 }
 .old_price{
     font-family: 'auto';
-    font-size: 12px;
+    font-size: 16px;
     color: #878787;
     text-decoration: line-through;
 }
@@ -373,20 +375,133 @@ header {
     font-family: 'flipkart';
 }
 .offer_percent{
-    font-size: 12px;
+    font-size: 16px;
     color: #4bb550;
+}
+.flip_desktop{
+    display: none;
 }
 @media screen and (min-width:768px) {
     .nav_token:nth-child(2) {
-        padding: 2px 8px 0px 0px;
+        padding: 2px 7px 0px 0px;
     }
     .nav_token:nth-child(2) .nav_token_img img{
         margin: 0px 4px 0px -1px;
     }
 
     .nav_token:nth-child(3) {
-        transform: translate(-4px, 1px);
         padding: 2px 0px 0px 0px;
-        gap: 0px;
+    }
+    .nav_token:nth-child(3) .nav_token_img img{
+        transform: translate(-4px, 0px);
+    }
+    .nav_token:nth-child(3) .nav_token_detail{
+        transform: translateX(-5px);
+    }
+    .nav_token:nth-child(4) {
+         margin: 8px 3px 0px;
+    }
+    .nav_token:nth-child(4) .nav_token_img img{
+        transform: translate(-2px, 0px);
+    }
+    .nav_token:nth-child(4) .nav_token_detail{
+        transform: translateX(-2.25px);
     }
 } 
+
+/* //////////////////////////// DESKTOP VIEW //////////// */
+@media screen and (min-width: 911px){
+    .flip_mobile{
+        display: none;
+    }
+    .flip_desktop{
+        display: flex;
+    }
+    .nav_header{
+      background-color: rgb(40, 116, 240);
+      color: #fff;  
+      width: 100%;
+      height: 52px;
+      display: flex;
+      align-items: center;
+    }
+    .nav_flipkart_logo{
+        margin-left: 173px;
+    }
+    .nav_flipkart_img img{
+        width: 70px;
+        height: 19px;
+    }
+    .nav_explore_img img{
+        width: 9px;
+        height: 9px;
+        margin-top: 1px
+    }
+    .nav_explore_plus{
+        display: flex;
+        align-items: center;
+        margin-top: -9px;
+        width: 75px;
+        letter-spacing: 0.004ch;
+        transform: translateY(1px);
+    }
+    .nav_explore_plus code{
+        color: #ffe500;
+        font-weight: 500;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 10px;
+        font-style: italic;
+    }
+    .nav_explore_plus p{
+        font-style:italic;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 10px;
+        color: #f0f0f0;
+    }
+    .nav_explore_img{
+        transform: translate(2px, -1px);
+    }
+    .search_bar{
+        display: flex;
+        align-items: center;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 2px;
+        margin: 0px 0px 0px 6px;
+        height: 32px;
+        font-size: 13px;
+        font-family: 'flipkart';
+        color: grey;
+    }
+    .search_products{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .search_items{
+        padding: 0px 16px 0px 14px;
+    }
+    .search_icon svg{
+        width: 17.7px;
+        height: 19px;
+        padding: 4.75px 12px 0px 8px;
+    }
+    .login{
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 2px;
+        color: rgb(40, 116, 240);
+        font-family: 'flipkart';
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        height: 17px;
+        padding: 6px 38px 4px 37px;
+        margin:  0px 18px 1px;
+    }
+    .nav_seller{
+        font-family: 'flipkart';
+        font-weight: 800px;
+        font-size: 14px;
+    }
+}
