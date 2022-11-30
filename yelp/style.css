@@ -1,7 +1,9 @@
+
 * {
     padding: 0;
     margin: 0;
 }
+
 
 @font-face {
     font-family: 'yelp1';
@@ -27,6 +29,7 @@
     font-family: 'yelp5';
     src: url(assets/font/poppins-medium.yji-dc16a3592fdb61b620cc.woff2);
 }
+
 .header {
     color: #fff;
     width: 100%;
@@ -67,11 +70,13 @@
     }
 
     100% {
+
         opacity: 1;
         background-image: url(assets/img/bg3.jpg);
     }
 
 }
+
 
 .nav_top {
     display: flex;
@@ -81,6 +86,7 @@
 }
 
 .nav_search_bar {
+
     display: flex;
     justify-content: space-between;
     background-color: white;
@@ -88,6 +94,7 @@
     width: 100%;
     gap: 0px;
     border-radius: 4px;
+
 
 }
 .nav_search_details{
@@ -100,12 +107,15 @@
 }
 
 .nav_button {
+
     display: flex;
     font-family: 'yelp5';
     font-size: 16px;
 }
 
+
 .nav_details {
+
     display: flex;
     margin: 0px 0px 0px 16px;
     font-size: 14px;
@@ -113,15 +123,18 @@
     white-space: nowrap;
 }
 
+
 .nav_logo {
     padding: 4px 0px 0px;
 }
 
 .nav_search_bar p {
+
     font-size: 16px;
     font-family: 'yelp2';
     color: #817878;
     padding: 0px 16px;
+
     width: 21.47vw;
     height: 22px;
 
@@ -153,6 +166,7 @@
     align-items: center;
 }
 
+
 .search_button svg {
     height: 24px;
     width: 24px;
@@ -179,6 +193,7 @@
     transform: translate(7px, 2.75px);
 }
 
+
 .nav_signup {
     background-color: #e00707;
     border-radius: 4px;
@@ -188,6 +203,7 @@
     align-items: center;
     margin: 2px 0px 0px 20px;
     padding: 8px 15px;
+
 
 }
 
