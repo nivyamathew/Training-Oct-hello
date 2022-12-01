@@ -580,6 +580,9 @@ header {
         background-color: #fff;
      }
      .section_card_img img{
+        width: 100%;
+     }
+     .section_card_img{
         width: 270px;
         height: 145px;
         border-bottom: 1px solid #ebebeb;
@@ -588,7 +591,7 @@ header {
         font-size: 16px;
         font-family: Arial,sans-serif;
         color: #212121;
-        padding: 14px 16px;
+        padding: 19px 16px;
         margin: -4px 0px 0px;
      }
      .section_deal_mb{
@@ -633,30 +636,153 @@ header {
         margin: 0px 0px 0px 15px;
        }
        .section_price{
-        padding: 17px 16px 16px 16px;
+        padding: 17px 10px 16px 10px;
+        border-bottom: 1px solid #ebebeb;
        }
        .section_price_head{
         font-size: 13px;
         letter-spacing: 0.3px;
-        padding: 0px 0px 8px 0px;
+        padding: 0px 6px 8px 6px;
        }
        .section_graph{
         display: flex;
         align-items: flex-end;
+        padding: 0px 6px;
        }
        .first_graph{
         background-color: #e0e0e0;
         width: 142px;
-        height: 20px;
+        height: 25px;
        }
        .second_graph{
         background-color: #e0e0e0;
         width: 47px;
-        height: 17px;
+        height: 22px;
        }
        .third_graph{
         background-color: #e0e0e0;
         width: 48px;
-        height: 20px;
+        height: 25px;
        }
+       .section_graph_base{
+        display: flex;
+        margin-top: -2px;
+       }
+       .section_start{
+        background-color: #fff;
+        border-radius: 50px;
+        width: 11px;
+        height: 11px;
+         border: 1px solid #bababa;
+         transform: translate(0.25px, -4px);  
+
+       }
+       .section_base{
+        background-color: #2874f0;
+        width: 255px;
+        height: 6px;
+        
+       }
+       .section_end{
+        background-color: #fff;
+        border-radius: 50px;
+        border: 1px solid #bababa;
+        width: 11px;
+        height: 11px;
+        transform: translate(-0.25px, -4px); 
+     }
+     .section_dots{
+        display: flex;
+        padding: 0px 2px 0px 6px;
+        justify-content: space-between;
+        color: #bababa;
+        transform: translateY(-9px);
+     }
+     .price_range{
+        padding: 0px 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .price_section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #ebebeb;
+        padding: 0px 8px 0px 5px;
+        margin-top: -1px;
+        height: 22px;
+        font-size: 14px;
+     }
+     .price_section:nth-child(1){
+        width: 83px;
+     }
+     .price_section:nth-child(3){
+        width: 91px;
+        padding: 0px 10px 0px 5px;
+     }
+     .price_diff{
+        font-size: 14px;
+        color: #878787;
+     }
+     .section_brand{
+        border-bottom: 1px solid #ebebeb;
+     }
+     .brand_head{
+        display: flex;
+        justify-content: space-between;
+        padding: 17px 16px 6px;
+        font-size: 13px;
+        letter-spacing: 0.3px;
+        }
+        .brand_head p:nth-child(2){
+            font-size: 22px;
+            color: #878787;
+            transform: translate(7px, 2px);
+        }
+        .checkbox{
+            background-color: #fff;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #bababa;
+            border-radius: 2px;
+        }
+        .brand_mi{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0px 16px 31px;
+            gap: 11px;
+            font-size: 14px;
+        }
+        .section_logo{
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section_flipkart{
+            display: flex;
+            gap: 11px;
+        }
+        .flip_logo img{
+            width: 100%;
+        }
+        .flip_logo{
+            width: 77px;
+            height: 21px;
+        }
+        .section_question{
+            font-size: 12px;
+            color: #878787;
+            background-color: #fff;
+            width: 14px;
+            height: 14px;
+            border: 1px solid #ebebeb;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 2px 0px 8px;
+        }
     }
