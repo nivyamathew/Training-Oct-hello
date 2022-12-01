@@ -415,26 +415,32 @@ header {
         display: none;
     }
     .flip_desktop{
-        display: flex;
+        display: block;
     }
     .nav_header{
       background-color: rgb(40, 116, 240);
       color: #fff;  
       width: 100%;
-      height: 52px;
+      height: 56px;
       display: flex;
       align-items: center;
+      overflow: hidden;
     }
     .nav_flipkart_logo{
-        margin-left: 173px;
+        margin-left: 62px;
+        
+    }
+    .nav_border_desktop{
+        min-width: 124px;
+        background-color: rgb(40, 116, 240);
     }
     .nav_flipkart_img img{
-        width: 70px;
-        height: 19px;
+        width: 75px;
+        height: 20.11px;
     }
     .nav_explore_img img{
-        width: 9px;
-        height: 9px;
+        width: 10px;
+        height: 10px;
         margin-top: 1px
     }
     .nav_explore_plus{
@@ -442,20 +448,19 @@ header {
         align-items: center;
         margin-top: -9px;
         width: 75px;
-        letter-spacing: 0.004ch;
+        letter-spacing: 0.03ch;
         transform: translateY(1px);
     }
     .nav_explore_plus code{
         color: #ffe500;
-        font-weight: 500;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 10px;
+        font-size: 11px;
         font-style: italic;
     }
     .nav_explore_plus p{
         font-style:italic;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 10px;
+        font-size: 11px;
         color: #f0f0f0;
     }
     .nav_explore_img{
@@ -464,44 +469,194 @@ header {
     .search_bar{
         display: flex;
         align-items: center;
+        justify-content: space-between;
         border: 1px solid #fff;
         background-color: #fff;
-        border-radius: 2px;
-        margin: 0px 0px 0px 6px;
-        height: 32px;
-        font-size: 13px;
+        border-radius: 1px;
+        height: 34px;
+        font-size: 14px;
         font-family: 'flipkart';
         color: grey;
+        overflow: hidden;
+        width: 100%;
+        min-width: 302px;
+        max-width: 530px;
+        transform: translateX(12px);
     }
     .search_products{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        width: 100%;
+        
     }
-    .search_items{
-        padding: 0px 16px 0px 14px;
+    .search_items p{
+        padding: 0px 0px 0px 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
     }
+    
     .search_icon svg{
-        width: 17.7px;
-        height: 19px;
+       
+        width: 20px;
+        height: 20px;
         padding: 4.75px 12px 0px 8px;
     }
     .login{
         border: 1px solid #fff;
         background-color: #fff;
-        border-radius: 2px;
+        border-radius: 1px;
         color: rgb(40, 116, 240);
         font-family: 'flipkart';
-        font-size: 14px;
-        font-weight: 600;
+        font-size: 15px;
         letter-spacing: 0.5px;
-        height: 17px;
-        padding: 6px 38px 4px 37px;
-        margin:  0px 18px 1px;
+        height: 16px;
+        padding: 4px 41px 6px 40px;
+        margin:  0px 19px 1px;
+        transform: translateX(13px);
     }
     .nav_seller{
-        font-family: 'flipkart';
-        font-weight: 800px;
-        font-size: 14px;
+        font-family:roboto,arial,sans-serif ;
+        font-size: 16px;
     }
-}
+     .nav_seller p{
+        width:134px;
+        margin: 0px 0px 1px 29px;
+        transform: translateX(4.5px);
+    } 
+    .nav_more p{
+        font-family: roboto,arial, sans-serif;
+        font-size: 16px;
+        white-space: nowrap;
+        margin: 0px 18px 2px 13px;
+        transform: translateX(16px);
+    }
+    .nav_cart_desktop{
+        display: flex;
+        transform: translate(34px, 1px);
+    }
+    .nav_cart_desktop svg{
+        margin: 0px 8px;
+        width: 16px;
+        height: 16px;
+    }
+
+     .nav_section{
+        height: 41px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        min-width:958px;
+        padding: 0px 25px;
+        margin-top: -2px;
+        margin-inline: auto;
+        max-width: 1248px;
+        border-bottom:  1px solid rgb(204, 202, 202);
+        box-shadow: 0px 2px 5px rgba(0 0 0 / 16%)
+     }
+     .nav_tabs span{
+        display: flex;
+        align-items: center;
+        
+        font-family: sans-serif;
+        font-size: 14px;
+
+
+     }
+     .nav_tabs span p{
+        margin: 0px 0px 6px;
+        color: #d7d7d7;
+        font-size: 18px;
+        margin-left: 3px;
+     }
+     .container_cards{
+        background-color: #f0f0f0;
+        padding: 8px;
+     }
+     .section_side_card{
+        width: 270px;
+        height: 211.61px;
+        background-color: #fff;
+     }
+     .section_card_img img{
+        width: 270px;
+        height: 145px;
+        border-bottom: 1px solid #ebebeb;
+     }
+     .section_side_deals{
+        font-size: 16px;
+        font-family: Arial,sans-serif;
+        color: #212121;
+        padding: 14px 16px;
+        margin: -4px 0px 0px;
+     }
+     .section_deal_mb{
+        font-size: 12px;
+        margin: 3px 0px 0px;
+     }
+     .section_side_choice{
+        width: 270px;
+        height: 500px;
+        background-color: #fff;
+        margin: 10px 0px 0px 0px;
+        color: #212121; 
+        font-family: Arial, sans-serif; 
+     }
+     .section_card_filter{
+        padding: 18px 16px 14px;
+        font-size: 18px;
+        letter-spacing: 0.3px;
+         border-bottom: 1px solid #ebebeb;
+     }
+     .section_categories{
+        padding: 17px 16px 16px;
+        border-bottom: 1px solid #ebebeb;
+     }
+     .category_head{
+        font-size: 12px;
+        margin: 0px 0px 5px;
+     }
+     .category_section{
+        display: flex;
+        color: #878787;
+        font-size: 14px;
+        align-items: center;
+        padding: 7px 0px 8px ;
+     }
+     .category_section svg{
+        margin: 0px 5px 0px 0px;
+       }
+       .category_selected{
+        padding: 6px 0px 8px;
+        font-size: 14px;
+        margin: 0px 0px 0px 15px;
+       }
+       .section_price{
+        padding: 17px 16px 16px 16px;
+       }
+       .section_price_head{
+        font-size: 13px;
+        letter-spacing: 0.3px;
+        padding: 0px 0px 8px 0px;
+       }
+       .section_graph{
+        display: flex;
+        align-items: flex-end;
+       }
+       .first_graph{
+        background-color: #e0e0e0;
+        width: 142px;
+        height: 20px;
+       }
+       .second_graph{
+        background-color: #e0e0e0;
+        width: 47px;
+        height: 17px;
+       }
+       .third_graph{
+        background-color: #e0e0e0;
+        width: 48px;
+        height: 20px;
+       }
+    }
