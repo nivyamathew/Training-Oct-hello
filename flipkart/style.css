@@ -2,7 +2,6 @@
     padding: 0px;
     margin: 0px;
 }
-
 @font-face {
     font-family: 'flipkart';
     src: url(assets/font/roboto-regular.woff2);
@@ -17,29 +16,23 @@ header {
     font-family: 'flipkart';
     justify-content: space-between;
     padding: 6px 12px 0px;
-   
 }
-
 .nav_bar {
     display: flex;
     gap: 11px;
 }
-
 .nav_search_bar {
     display: flex;
     gap: 32px;
 }
-
 .nav_logo img {
     width: 100%
 }
-
 .nav_logo {
     width: 23px;
     height: 23px;
     transform: translateY(-2px);
 }
-
 .nav_page {
     transform: translate(1px, -1px);
     font-size: 16px;
@@ -47,25 +40,20 @@ header {
     white-space: nowrap;
     overflow: hidden;
 }
-
 .nav_login {
     width: 52.5px;
     color: #eaeaea;
 }
-
 .nav_cart {
     transform: translate(-7px, 2px);
 }
-
 .nav_search {
     transform: translate(2px, -1px);
 }
-
 .nav_sort_filter img {
     width: 24px;
     height: 24px;
 }
-
 .nav_top {
     display: flex;
     justify-content: space-around;
@@ -75,9 +63,7 @@ header {
     position: sticky;
     z-index: 5;
     top: 0;
-
 }
-
 .nav_sort_filter {
     display: flex;
     align-items: center;
@@ -86,13 +72,11 @@ header {
     font-size: 14px;
     width: 50%;
 }
-
 .nav_border {
     width: 1px;
     height: 48px;
     background-color: #ebebeb;
 }
-
 .nav_tokens {
     display: flex;
     padding: 0px 11px;
@@ -102,11 +86,9 @@ header {
     position: relative;
     z-index: -1;
 }
-
 .nav_tokens::-webkit-scrollbar {
     display: none;
 }
-
 .nav_token {
     display: flex;
     align-items: center;
@@ -121,42 +103,34 @@ header {
     padding: 2px 8px 0px 4px;
     color: #212121;
 }
-
 .nav_token:nth-child(2) {
     background-color: #f5f7fa;
     color: #747178;
     gap: 3.5px;
     padding: 2px 11px 0px 4px;
 }
-
 .nav_token:nth-child(3) {
     background-color: #f5f7fa;
     color: #747178;
     gap: 4.5px;
     padding: 2px 11px 0px 4px;
-
 }
-
 .nav_token:nth-child(4) {
     padding: 2px 8px 0px 4px;
 }
-
 .nav_token_detail p {
     font-size: 12px;
     font-family: 'flipkart';
     line-height: 17px;
 }
-
 .nav_token_img img {
     width: 32px;
     height: 32px;
     margin: 0px 4px 0px 0px;
 }
-
 .nav_token_img {
     transform: translateY(1px);
 }
-
 .nav_bottom_border {
     width: 100%;
     height: 2px;
@@ -164,8 +138,8 @@ header {
     position: sticky;
     z-index: 5;
     top: 48px;
-} 
-.content_card{
+}
+.content_card {
     padding: 0px 5px;
     border-bottom: rgb(240, 240, 240, 1.00);
 }
@@ -173,29 +147,27 @@ header {
     width: 96px;
     height: 114px;
     padding-top: 16px;
-  
 }
-
 .content_section {
     padding: 12px 0px;
     display: flex;
 }
-.content_details{
+.content_details {
     margin: 8px 0px 6px;
     padding: 0px 4px 0px 12px;
 }
-.content_name{
-    font-size:  14px;
+.content_name {
+    font-size: 14px;
     font-family: 'flipkart';
     color: #212121;
     width: 160px;
 }
-.content_rating{
+.content_rating {
     margin: 8px 0px 6px;
     display: flex;
     align-items: center;
 }
-.rating{
+.rating {
     background-color: #008c00;
     display: flex;
     align-items: center;
@@ -207,10 +179,10 @@ header {
     font-size: 12px;
     border-radius: 4px;
 }
-.rating span{
+.rating span {
     font-size: 11px;
 }
-.flipkart_logo img{
+.flipkart_logo img {
     width: 55.02px;
     height: 13px;
     margin-top: 1px;
@@ -218,47 +190,45 @@ header {
     font-family: auto;
     position: relative;
     z-index: -1;
-
 }
-.reviewers{
+.reviewers {
     font-size: 12px;
-    font-family:'flipkart';
+    font-family: 'flipkart';
     color: #878787;
     margin: 0px 0px 0px 5px;
     padding: 0px 0px 2px;
 }
-.content_price{
+.content_price {
     display: flex;
     align-items: center;
     gap: 7px;
 }
-.old_price{
+.old_price {
     font-family: 'auto';
     font-size: 16px;
     color: #878787;
     text-decoration: line-through;
 }
-.price{
+.price {
     font-size: 16px;
     font-family: 'auto';
 }
-.free_delivery{
+.free_delivery {
     font-size: 12px;
     font-family: 'flipkart';
     margin: 4px 0px;
 }
-.bank_offer{
+.bank_offer {
     color: #26a541;
     font-size: 12px;
     font-family: 'auto';
     margin: 6px 0px;
 }
-.wishlist img{
+.wishlist img {
     width: 18px;
     height: 16px;
 }
-   
-.wishlist{
+.wishlist {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -270,14 +240,13 @@ header {
     padding: 9px 8px;
     height: 16px;
     width: 18px;
-   
 }
-.special_about{
+.special_about {
     color: #878787;
     font-size: 12px;
     font-family: 'auto';
 }
-.storage{
+.storage {
     border: 1px solid rgb(240, 240, 240, 1.00);
     margin: -6px 0px 10px 5px;
     width: 140.33px;
@@ -287,10 +256,10 @@ header {
     justify-content: center;
     align-items: center;
 }
-.content_display{
+.content_display {
     display: flex;
 }
-.display{
+.display {
     border: 1px solid rgb(240, 240, 240, 1.00);
     margin: 0px 0px 10px 5px;
     height: 22px;
@@ -299,7 +268,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-.battery{
+.battery {
     border: 1px solid rgb(240, 240, 240, 1.00);
     margin: 0px 0px 10px 10px;
     height: 22px;
@@ -308,142 +277,143 @@ header {
     justify-content: center;
     align-items: center;
 }
-.camera{
+.camera {
     display: flex;
 }
-.rear_camera, .front_camera{
+.rear_camera,
+.front_camera {
     border: 1px solid rgb(240, 240, 240, 1.00);
-    margin: 0px 0px 10px 5px;  
+    margin: 0px 0px 10px 5px;
     height: 22px;
     padding: 0px 8px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.front_camera{
+.front_camera {
     margin: 0px 0px 0px 10px;
 }
- hr{
+hr {
     height: 1px;
-    background-color: rgba(234,234,234,1.00);
+    background-color: rgba(234, 234, 234, 1.00);
     border: none;
     display: block;
     width: 100%;
-
 }
-.content_border{
+.content_border {
     height: 2px;
 }
-.content_offer{
+.content_offer {
     background-color: #f0f0f0;
     padding: 8px 0px;
 }
-
-.content_time{
+.content_time {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     background-color: #ffff;
     padding: 16px;
-}   
-.time_img img{
+}
+.time_img img {
     width: 70px;
     height: 70px;
     margin-top: 5px;
 }
-.more_offer img{
-    height:10px;
+.more_offer img {
+    height: 10px;
     width: 6px;
     transform: translate(-1px, 1px);
 }
-.content_deals{
+.content_deals {
     display: flex;
     align-items: center;
     height: 70px;
 }
-.time_deals{
+.time_deals {
     padding: 0px 20px 0px 18px;
 }
-.time_head{
+.time_head {
     font-size: 16px;
     color: #212121;
     margin: 0px 0px 2px;
 }
-.offer{
+.offer {
     font-size: 12px;
     color: #878787;
     font-family: 'flipkart';
 }
-.offer_percent{
+.offer_percent {
     font-size: 16px;
     color: #4bb550;
 }
-.flip_desktop{
+.flip_desktop {
     display: none;
 }
+
 @media screen and (min-width:768px) {
     .nav_token:nth-child(2) {
         padding: 2px 7px 0px 0px;
     }
-    .nav_token:nth-child(2) .nav_token_img img{
+    .nav_token:nth-child(2) .nav_token_img img {
         margin: 0px 4px 0px -1px;
     }
-
-    .nav_token:nth-child(3) {
+     .nav_token:nth-child(3) {
         padding: 2px 0px 0px 0px;
     }
-    .nav_token:nth-child(3) .nav_token_img img{
+    .nav_token:nth-child(3) .nav_token_img img {
         transform: translate(-4px, 0px);
     }
-    .nav_token:nth-child(3) .nav_token_detail{
+    .nav_token:nth-child(3) .nav_token_detail {
         transform: translateX(-5px);
     }
     .nav_token:nth-child(4) {
-         margin: 8px 3px 0px;
+        margin: 8px 3px 0px;
     }
-    .nav_token:nth-child(4) .nav_token_img img{
+    .nav_token:nth-child(4) .nav_token_img img {
         transform: translate(-2px, 0px);
     }
-    .nav_token:nth-child(4) .nav_token_detail{
+    .nav_token:nth-child(4) .nav_token_detail {
         transform: translateX(-2.25px);
     }
-} 
+}
 
 /* //////////////////////////// DESKTOP VIEW //////////// */
-@media screen and (min-width: 911px){
-    .flip_mobile{
+@media screen and (min-width: 911px) {
+    .flip_mobile {
         display: none;
     }
-    .flip_desktop{
+    .flip_desktop {
         display: block;
     }
-    .nav_header{
-      background-color: rgb(40, 116, 240);
-      color: #fff;  
-      width: 100%;
-      height: 56px;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
+    .nav_header {
+        background-color: rgb(40, 116, 240);
+        color: #fff;
+        width: 100%;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        z-index: 100;
     }
-    .nav_flipkart_logo{
+    .nav_flipkart_logo {
         margin-left: 62px;
-        
     }
-    .nav_border_desktop{
+    .nav_border_desktop {
         min-width: 124px;
         background-color: rgb(40, 116, 240);
     }
-    .nav_flipkart_img img{
+    .nav_flipkart_img img {
         width: 75px;
         height: 20.11px;
     }
-    .nav_explore_img img{
+    .nav_explore_img img {
         width: 10px;
         height: 10px;
         margin-top: 1px
     }
-    .nav_explore_plus{
+    .nav_explore_plus {
         display: flex;
         align-items: center;
         margin-top: -9px;
@@ -451,22 +421,22 @@ header {
         letter-spacing: 0.03ch;
         transform: translateY(1px);
     }
-    .nav_explore_plus code{
+    .nav_explore_plus code {
         color: #ffe500;
-        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 11px;
         font-style: italic;
     }
-    .nav_explore_plus p{
-        font-style:italic;
+    .nav_explore_plus p {
+        font-style: italic;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 11px;
         color: #f0f0f0;
     }
-    .nav_explore_img{
+     .nav_explore_img {
         transform: translate(2px, -1px);
     }
-    .search_bar{
+    .search_bar {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -483,27 +453,25 @@ header {
         max-width: 530px;
         transform: translateX(12px);
     }
-    .search_products{
+    .search_products {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        
-    }
-    .search_items p{
+     }
+    .search_items p {
         padding: 0px 0px 0px 14px;
         white-space: nowrap;
         overflow: hidden;
         width: 100%;
     }
-    
-    .search_icon svg{
-       
+    .search_icon svg {
+
         width: 20px;
         height: 20px;
         padding: 4.75px 12px 0px 8px;
     }
-    .login{
+    .login {
         border: 1px solid #fff;
         background-color: #fff;
         border-radius: 1px;
@@ -513,198 +481,199 @@ header {
         letter-spacing: 0.5px;
         height: 16px;
         padding: 4px 41px 6px 40px;
-        margin:  0px 19px 1px;
+        margin: 0px 19px 1px;
         transform: translateX(13px);
     }
-    .nav_seller{
-        font-family:roboto,arial,sans-serif ;
+    .nav_seller {
+        font-family: roboto, arial, sans-serif;
         font-size: 16px;
     }
-     .nav_seller p{
-        width:134px;
+    .nav_seller p {
+        width: 134px;
         margin: 0px 0px 1px 29px;
         transform: translateX(4.5px);
-    } 
-    .nav_more p{
-        font-family: roboto,arial, sans-serif;
+    }
+    .nav_more p {
+        font-family: roboto, arial, sans-serif;
         font-size: 16px;
         white-space: nowrap;
         margin: 0px 18px 2px 13px;
         transform: translateX(16px);
     }
-    .nav_cart_desktop{
+    .nav_cart_desktop {
         display: flex;
         transform: translate(34px, 1px);
     }
-    .nav_cart_desktop svg{
+     .nav_cart_desktop svg {
         margin: 0px 8px;
         width: 16px;
         height: 16px;
     }
-
-     .nav_section{
-        height: 41px;
+    .nav_section {
+        height: 42px;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        min-width:958px;
+        min-width: 958px;
         padding: 0px 25px;
         margin-top: -2px;
         margin-inline: auto;
         max-width: 1248px;
-        border-bottom:  1px solid rgb(204, 202, 202);
+        border-bottom: 1px solid rgb(204, 202, 202);
         box-shadow: 0px 2px 5px rgba(0 0 0 / 16%)
-     }
-     .nav_tabs span{
+    }
+    .nav_tabs span {
         display: flex;
         align-items: center;
-        
-        font-family: sans-serif;
+        font-family: 'flipkart';
+        font-weight: 500;
         font-size: 14px;
-
-
-     }
-     .nav_tabs span p{
+    }
+    .nav_tabs span p {
         margin: 0px 0px 6px;
         color: #d7d7d7;
         font-size: 18px;
         margin-left: 3px;
-     }
-     .container_cards{
+    }
+    .content_container {
+        display: flex;
+    }
+    .container_cards {
         background-color: #f0f0f0;
-        padding: 8px;
-     }
-     .section_side_card{
+        padding: 7px 8px;
+        z-index: -1;
+    }
+    .section_side_card {
         width: 270px;
         height: 211.61px;
         background-color: #fff;
-     }
-     .section_card_img img{
+    }
+    .section_card_img img {
         width: 100%;
-     }
-     .section_card_img{
+    }
+    .section_card_img {
         width: 270px;
         height: 145px;
         border-bottom: 1px solid #ebebeb;
-     }
-     .section_side_deals{
+    }
+    .section_side_deals {
         font-size: 16px;
-        font-family: Arial,sans-serif;
+        font-family: 'flipkart';
+        font-weight: 600px;
         color: #212121;
         padding: 19px 16px;
         margin: -4px 0px 0px;
-     }
-     .section_deal_mb{
+    }
+    .section_deal_mb {
         font-size: 12px;
         margin: 3px 0px 0px;
-     }
-     .section_side_choice{
+    }
+     .section_side_choice {
         width: 270px;
-        height: 500px;
+        height: 100%;
         background-color: #fff;
         margin: 10px 0px 0px 0px;
-        color: #212121; 
-        font-family: Arial, sans-serif; 
-     }
-     .section_card_filter{
+        color: #212121;
+        font-family: 'flipkart';
+    }
+    .section_card_filter {
         padding: 18px 16px 14px;
         font-size: 18px;
         letter-spacing: 0.3px;
-         border-bottom: 1px solid #ebebeb;
-     }
-     .section_categories{
+        border-bottom: 1px solid #ebebeb;
+    }
+    .section_categories {
         padding: 17px 16px 16px;
         border-bottom: 1px solid #ebebeb;
-     }
-     .category_head{
+    }
+     .category_head {
         font-size: 12px;
         margin: 0px 0px 5px;
-     }
-     .category_section{
+    }
+    .category_section {
         display: flex;
         color: #878787;
         font-size: 14px;
         align-items: center;
-        padding: 7px 0px 8px ;
-     }
-     .category_section svg{
+        padding: 7px 0px 8px;
+    }
+    .category_section svg {
         margin: 0px 5px 0px 0px;
-       }
-       .category_selected{
+    }
+    .category_selected {
         padding: 6px 0px 8px;
         font-size: 14px;
         margin: 0px 0px 0px 15px;
-       }
-       .section_price{
+    }
+    .section_price {
         padding: 17px 10px 16px 10px;
         border-bottom: 1px solid #ebebeb;
-       }
-       .section_price_head{
+    }
+    .section_price_head {
         font-size: 13px;
         letter-spacing: 0.3px;
         padding: 0px 6px 8px 6px;
-       }
-       .section_graph{
+    }
+    .section_graph {
         display: flex;
         align-items: flex-end;
         padding: 0px 6px;
-       }
-       .first_graph{
+    }
+    .first_graph {
         background-color: #e0e0e0;
         width: 142px;
         height: 25px;
-       }
-       .second_graph{
+    }
+    .second_graph {
         background-color: #e0e0e0;
         width: 47px;
         height: 22px;
-       }
-       .third_graph{
+    }
+    .third_graph {
         background-color: #e0e0e0;
         width: 48px;
         height: 25px;
-       }
-       .section_graph_base{
+    }
+    .section_graph_base {
         display: flex;
         margin-top: -2px;
-       }
-       .section_start{
+    }
+    .section_start {
         background-color: #fff;
         border-radius: 50px;
         width: 11px;
         height: 11px;
-         border: 1px solid #bababa;
-         transform: translate(0.25px, -4px);  
-
-       }
-       .section_base{
+        border: 1px solid #bababa;
+        transform: translate(0.25px, -4px);
+    }
+    .section_base {
         background-color: #2874f0;
         width: 255px;
         height: 6px;
-        
-       }
-       .section_end{
+
+    }
+    .section_end {
         background-color: #fff;
         border-radius: 50px;
         border: 1px solid #bababa;
         width: 11px;
         height: 11px;
-        transform: translate(-0.25px, -4px); 
-     }
-     .section_dots{
+        transform: translate(-0.25px, -4px);
+    }
+     .section_dots {
         display: flex;
         padding: 0px 2px 0px 6px;
         justify-content: space-between;
         color: #bababa;
         transform: translateY(-9px);
-     }
-     .price_range{
+    }
+    .price_range {
         padding: 0px 2px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-     }
-     .price_section{
+    }
+    .price_section {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -713,76 +682,351 @@ header {
         margin-top: -1px;
         height: 22px;
         font-size: 14px;
-     }
-     .price_section:nth-child(1){
+    }
+    .price_section:nth-child(1) {
         width: 83px;
-     }
-     .price_section:nth-child(3){
+    }
+    .price_section:nth-child(3) {
         width: 91px;
         padding: 0px 10px 0px 5px;
-     }
-     .price_diff{
+    }
+    .price_diff {
         font-size: 14px;
         color: #878787;
-     }
-     .section_brand{
+    }
+    .section_brand {
         border-bottom: 1px solid #ebebeb;
-     }
-     .brand_head{
+    }
+     .section_head {
         display: flex;
+        font-weight: 600;
         justify-content: space-between;
-        padding: 17px 16px 6px;
+        padding: 17px 16px 8px;
         font-size: 13px;
         letter-spacing: 0.3px;
-        }
-        .brand_head p:nth-child(2){
-            font-size: 22px;
-            color: #878787;
-            transform: translate(7px, 2px);
-        }
-        .checkbox{
-            background-color: #fff;
-            width: 12px;
-            height: 12px;
-            border: 1px solid #bababa;
-            border-radius: 2px;
-        }
-        .brand_mi{
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            padding: 0px 16px 31px;
-            gap: 11px;
-            font-size: 14px;
-        }
-        .section_logo{
-            padding: 16px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .section_flipkart{
-            display: flex;
-            gap: 11px;
-        }
-        .flip_logo img{
-            width: 100%;
-        }
-        .flip_logo{
-            width: 77px;
-            height: 21px;
-        }
-        .section_question{
-            font-size: 12px;
-            color: #878787;
-            background-color: #fff;
-            width: 14px;
-            height: 14px;
-            border: 1px solid #ebebeb;
-            border-radius: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0px 2px 0px 8px;
-        }
     }
+     .section_head p:nth-child(2) {
+        font-size: 22px;
+        font-weight: 100;
+        color: #878787;
+        transform: translate(7px, 2px);
+    }
+    .checkbox {
+        background-color: #fff;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #bababa;
+        border-radius: 2px;
+    }
+    .brand_mi {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px 16px 29px;
+        gap: 11px;
+        font-size: 14px;
+    }
+    .section_logo {
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ebebeb;
+    }
+    .section_flipkart {
+        display: flex;
+        gap: 11px;
+    }
+    .flip_logo img {
+        width: 100%;
+    }
+    .flip_logo {
+        width: 77px;
+        height: 21px;
+    }
+    .section_question {
+        font-size: 12px;
+        color: #878787;
+        background-color: #fff;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #ebebeb;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 2px 0px 8px;
+    }
+     .section_rating {
+        font-family: 'flipkart';
+        font-size: 13px;
+        letter-spacing: 0.3px;
+        font-weight: 100;
+        border-bottom: 1px solid #ebebeb;
+    }
+    .rating_selector {
+        display: flex;
+        padding: 0px 16px 11px;
+        gap: 10px;
+        font-weight: 100px;
+        font-size: 14px;
+    }
+    .section_gst {
+        border-bottom: 1px solid #ebebeb;
+    }
+    .rating_selector:nth-child(3) {
+        padding: 0px 16px 32px;
+    }
+    .ram_checkbox {
+        display: flex;
+        font-size: 14px;
+        gap: 10px;
+        padding: 0px 16px 16px;
+    }
+    .section_ram {
+        padding: 0px 0px 16px;
+        border-bottom: 1px solid #ebebeb;
+    }
+    .section_content {
+        border-bottom: 1px solid #ebebeb;
+        padding: 2px 0px 2px 0px;
+
+    }
+    .section_head p:nth-child(2) {
+        transform: translate(7px, -9px);
+    }
+    .section_offers {
+        border-bottom: 1px solid #ebebeb;
+        padding: 0px 0px 16px;
+    }
+    .price_checkbox {
+        padding: 0px 16px 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+     .price_offer p:nth-child(1) {
+        font-size: 14px;
+    }
+    .section_help {
+        padding: 30px 0px 0px;
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+     .need_help {
+        font-family: 'flipkart';
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .section_decide {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: #2874f0;
+        font-family: 'flipkart';
+        margin: 5px 0px 20px;
+        font-size: 18px;
+
+    }
+     .section_decide svg {
+        transform: rotate(180deg);
+        width: 6px;
+        height: 12px;
+    }
+    .content_main_section {
+        margin: 0px 0px 0px 10px;
+        background-color: #FFF;
+        width: 100%
+    }
+    .content_item {
+        padding: 12px 16px 0px;
+        font-family: 'flipkart';
+    }
+    .content_item_section {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: #878787;
+        margin: 3px 0px 0px 0px;
+    }
+    .content_item_section svg {
+        transform: rotate(180deg);
+        height: 7px;
+        width: 20px;
+    }
+    .content_mobile_range {
+        display: flex;
+        box-sizing: border-box;
+        padding: 15px 5px 4px 0px;
+        line-height: 1.45;
+    }
+    .content_range {
+        display: flex;
+    }
+    .content_range p {
+        font-size: 12px;
+        color: #2874f0;
+    }
+    .content_range span {
+        color: #878787;
+        font-size: 12px;
+    }
+    .content_range span:nth-child(1) {
+        margin-right: 3px;
+    }
+     .content_range span:nth-child(2) {
+        margin-right: 3px;
+    }
+    .mi_head {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px 0px;
+
+    }
+     .mi_head p {
+        font-size: 16px;
+        color: #212121;
+        font-weight: 600;
+        transform: translateY(-2px);
+    }
+    .mi_head span {
+        margin-left: 11px;
+        font-size: 12px;
+        color: #878787;
+    }
+    .sort_price {
+        display: flex;
+    }
+    .content_sort {
+        display: flex;
+    }
+    .sort_price span {
+        margin: 0px 8px 0px 12px;
+        padding: 10px 0px 3px;
+        font-size: 14px;
+    }
+    .sort_popularity {
+        margin: 0px 10px;
+        padding: 10px 0px 6px;
+        color: #2874f0;
+        font-size: 14px;
+        font-weight: 600;
+        border-bottom: 2px solid #2874f0;
+    }
+    .content_sort_head {
+        padding: 10px 10px 3px 0px;
+        margin: 0px;
+        font-size: 14px;
+        color: #212121;
+        font-weight: 600;
+    }
+    .sort_border {
+        width: 100%;
+        background-color: #ebebeb;
+        height: 1px;
+    }
+    .content_list {
+        padding: 24px 0px 30px 24px;
+        font-family: 'flipkart';
+        color: #212121;
+        justify-content: space-between;
+        min-width: 707px;
+    }
+    .section_list {
+        display: flex;
+    }
+    .list_img img {
+        width: 100%;
+    }
+    .list_logo img {
+        width: 100%;
+    }
+    .list_img {
+        width: 166.02px;
+        height: 200px;
+        margin: 0px 17px 0px 17px;
+    }
+    .list_compare {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 17px;
+        font-size: 14px;
+    }
+    .list_logo {
+        width: 77px;
+        height: 21px;
+    }
+    .list_items {
+        width: 36.22%;
+        position: relative;
+        padding: 0px 0px 0px 25px;
+        margin-top: -1px;
+    }
+    .list_head {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1;
+    }
+    .rating svg {
+        width: 10px;
+        height: 10px;
+    }
+    .list_rating {
+        display: flex;
+        margin: 6px 0px 0px;
+    }
+    .list_rating span:nth-child(2) {
+        font-size: 14px;
+        color: #878787;
+        padding: 0px 0px 0px 8px;
+        font-weight: 600;
+    }
+    .list_description ul li {
+        list-style-type: none;
+        padding: 0px 8px 0px 0px;
+        display: table-row;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 5px;
+    }
+    .list_description ul li::before {
+        color: #878787;
+        content: "•";
+        padding: 0px 8px 0px 0px;
+        display: table-cell;
+    }
+    .list_description {
+        margin-top: 13px;
+    }
+    .list_wishlist {
+        position: absolute;
+        left: 500px;
+        margin: 1px;
+    }
+    .list_price_details {
+        padding: 0px 09px 0px 25px;
+    }
+    .list_detail {
+        display: flex;
+    }
+    .list_price {
+        font-size: 25px;
+        font-weight: 800;
+        padding: 0px 10px 0px 0px;
+        margin-top: -1px;
+    }
+    .list_offer_price {
+        display: flex;
+        padding: 10px 0px 0px 0px;
+        gap: 10px;
+    }
+    .list_bank_offer {
+        color: #26a541;
+        font-size: 14px;
+        font-weight: 800;
+    }
+}
