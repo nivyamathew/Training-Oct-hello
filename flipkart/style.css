@@ -1029,4 +1029,46 @@ hr {
         font-size: 14px;
         font-weight: 800;
     }
+    .page_sort{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        line-height: 32px;
+        font-family: 'flipkart';
+        color: #212121;
+        height: 41px;
+    }
+    .page_numbers{
+        display: flex;
+        text-align: center;
+        padding: 4px 0px;
+        margin-left: 150px;
+    }
+    .total_page{
+        font-size: 14px;
+    }
+    .page_numbers p:hover{
+        background-color:#2874f0;
+        color: #fff;
+        display: flex;
+        text-align: center;
+        border-radius: 100px;
+        width: 10px;
+        height: 30px;
+    }
+    .page_order{
+        font-weight: 800;
+    }
+    .page_numbers p{
+        padding: 0px 10px;
+    }
+    .page_next p{
+        background-color: #fff;
+        font-size: 16px;
+    }
+    .page_next{
+        padding: 0px 25px;
+        color:#2874f0;
+        font-size: 14px;
+     }
 }
