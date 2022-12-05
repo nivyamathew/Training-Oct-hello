@@ -37,14 +37,6 @@ function newCard(){
 // console.log(3 >= 3)
 // console.log(11 <= 11)
 // console.log(3 <= 2)
-
-
-
-
-
-
-
-
 // let age = 110
 // if (age < 100){
 //     console.log("Not eligible")
