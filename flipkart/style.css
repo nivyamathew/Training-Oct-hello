@@ -1103,7 +1103,7 @@ hr {
         margin: 0px 0px 0px 8px;
         background-color: #fff;        
     } 
-    .review_head{
+    /* .review_head{
         padding: 15px 20px;
         height: 29px;
         font-size: 20px;
@@ -1128,6 +1128,54 @@ hr {
         margin: 0px 10px;
     }
     .list_rate{
-        margin: 8px 0px 0px;
+        margin: 15px 0px 5px;
+        font-weight: 600;
     }
-}
+     .review_mobile_description ul li{
+        list-style-type: none;
+        padding: 0px 8px 0px 0px;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 5px;
+    }  */
+    footer{
+        background-color: #172337;  
+        box-sizing: border-box;     
+    }
+    .footer_content{
+        display: flex;
+        color: #fff;
+        font-family: 'flipkart';
+        font-size: 12px;
+    }
+    .footer_section{       
+        display: flex;  
+        padding-top: 40px;
+        margin-left: 65px;
+        width: 90%; 
+    }
+    .footer_section li{
+        list-style-type: none;
+        line-height: 2;
+    }
+       .footer_section p{
+        color: #878787;
+        margin: 0px 0px 9px;
+     }
+    .address:nth-child(5){
+        padding: 0px 25px;
+        border-left: 1px solid #454d5e;
+        height: 160px;
+    }
+    .address:nth-child(6){
+        margin: 0px 0px 10px;
+        padding: 0px 0px 0px 14px;
+    } 
+    .more_details{
+        flex: 1;
+    }
+    .more_details code{
+        color: #2874f0;
+    }
+    
+} 
