@@ -1,18 +1,18 @@
-// for (let i = 0; i = 6; i = 1){
-//     console.log(i)
-// }
-// for (let i =  10; i < 101; i += 10){
-//     console.log(i)
-// }
-// let messages = [
-//     "Hey, how's it going?",
-//     "I'm great, thank you! How about you",
-//     "all good. Been working on my portfolio",
-//     "Same here!"
-// ]
-// for (let i = 0; i < 5; i += 1){
-//     console.log(1)
-// }
+for (let i = 0; i = 6; i = 1){
+    console.log(i)
+}
+for (let i =  10; i < 101; i += 10){
+    console.log(i)
+}
+let messages = [
+    "Hey, how's it going?",
+    "I'm great, thank you! How about you",
+    "all good. Been working on my portfolio",
+    "Same here!"
+]
+for (let i = 0; i < 5; i += 1){
+    console.log(message(i))
+}
 // console.log(messages)
 // let sentence = ["Hello", "my","name", "is", "Nivya"]
 // let greetingEl = documnet.getElementById ("greeting-el") 
