@@ -1,6 +1,7 @@
-let firstCard =  10  
-let secondCard = 4
-let sum = firstCard + secondCard + 4
+let firstCard =  getRandomCard() 
+let secondCard = getRandomCard()
+let cards = [firstCard, secondCard]
+let sum = firstCard + secondCard 
 let hasBlackJack = false
 let isAlive = true
 let message = "" 
@@ -9,10 +10,28 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 // let sumEl = document.querySelector(".sum-el")
 let cardsEl = document.getElementById("cards-el")
+function getRandomCard(){
+    return Math.floor(Math.random() * 13) + 1
+    if (randomNumber > 10){
+        return 10
+    }
+    else if (randomNumber === 1){
+        return 11
+    }
+    else{
+        return randomNumber
+    }
+}
 
 function startGame(){
-    cardsEl.textContent = "Cards: "  + firstcard + " " + secondcard
-    sumEl.textContent = "Sum: " + sum
+    renderGame()
+}
+function renderGame(){
+    cardsEl.textContent = "Cards: "
+    // sumEl.textContent = "Sum: " + sum
+    for (let i = 0; i < cards.length; i++){
+        cardsEl.textContent += cards[i] + " "
+    }
 if (sum <= 20 ) {
     message = "Do you want to draw a new card! 🙂"
 }
@@ -27,7 +46,11 @@ else {
 messageEl.textContent = message
 }
 function newCard(){
-    console.log("Drawing a new card from the deck  ")
+    let card = getRandomCard()
+    sum = card
+    cards.push(card)
+    console.log(cards)
+    renderGame()
 }
 
 // console.log(4 === 3)
@@ -47,3 +70,11 @@ function newCard(){
 // else{
 //     console.log("Not eligible, You have already gotten")
 // }
+// let featuredPosts = ["Checkout my  Netflix clone", 
+//         "Here's thecode for my project",
+//         "I've just relaunched my portfolio"
+//     ]
+//     // let experience = ["Trainee at Vonnue", "frontend developer"] 
+//     // console.log (experience[1])
+//     // console.log (experience[2])
+//     console.log(featuredPosts.length) 
