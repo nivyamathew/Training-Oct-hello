@@ -26,7 +26,12 @@ function getRandomCard(){
 }
 
 function startGame(){
-    renderGame()
+    isAlive = true
+    let firstCard = getRandomCard()
+    let secondCard = getRandomCard()
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard
+        renderGame()
 }
 function renderGame(){
     cardsEl.textContent = "Cards: "
