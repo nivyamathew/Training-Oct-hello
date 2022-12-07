@@ -116,5 +116,37 @@
         console.log("-" + largeCountries[i])
      }
      let largestCountries = ["Tuvalu", "India","USA","Indonesia","Monaco"]
-     console.log("The 5 largest countries in the World")
+   
+     largestCountries.pop()
+     largestCountries.push("Pakistan")
+     largestCountries.shift()
+     largestCountries.unshift("China")
+     console.log(largestCountries)
       
+     let dayOfMonth = 13
+     let weekday = "Friday"
+     if(dayOfMonth === 13 && weekday === "Friday"){
+      console.log("😱")
+     }
+
+   //   let hands = ["rock", "paper", "scissor"]
+   //   function getHand(){
+   //    let randomIndex =Math.floor( Math.random() * 3 )
+   //    return hands[randomIndex] 
+   //   }
+   //   console.log( getHand() )
+
+   //   let fruit = ["🍎","🍊","🍎","🍎","🍊"]
+   //   let appleShelf = document.getElementById("apple-shelf")
+   //   let orangeShelf = document.getElementById("orange-shelf")
+   //   function sortFruit(){
+   //    for (let i = 0; i < fruit.length; i++){
+   //       if (fruit[i] === "🍎") {
+   //          appleShelf.textContent += "🍎"
+   //       }
+   //       else if (fruit[i] === "🍊") {
+   //          orangeShelf.textContent += "🍊"
+   //       }
+   //    }
+   //   }
+   //   sortFruit()
