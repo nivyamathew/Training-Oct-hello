@@ -116,7 +116,6 @@
         console.log("-" + largeCountries[i])
      }
      let largestCountries = ["Tuvalu", "India","USA","Indonesia","Monaco"]
-<<<<<<< HEAD
    
      largestCountries.pop()
      largestCountries.push("Pakistan")
@@ -151,7 +150,3 @@
    //    }
    //   }
    //   sortFruit()
-=======
-     console.log("The 5 largest countries in the World")
-      
->>>>>>> 068b0aa (feat: section3 completed)
