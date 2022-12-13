@@ -1,4 +1,4 @@
-let firstNumber = -30
+let firstNumber = 15.001
 let secondNumber = 15.001
 let thirdNumber = 15.001
 
