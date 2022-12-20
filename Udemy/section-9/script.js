@@ -1,57 +1,147 @@
 'use strict';
-const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
-const openingHours = {
-    [weekdays[3]]: {
-        open: 12,
-        close: 22,
-    },
-    [weekdays[4]]: {
-        open: 11,
-        close: 23,
-    },
-    [`day-${2 + 4}`]: {
-        open: 0, close: 24,
-    },
-};
-const restaurant = {
-    name: 'Classico Italino',
-    location: 'Vis Angelo Tavanti 23, Firenze, Italy',
-    categories: ['Itallian', 'Pizzeria', 'Vegetarian', 'Organic'],
-    starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Carpese Salad'],
-    mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-    //ES6 enhanced object literals
-    // openingHours,
-    // openingHours: {
-    //     thu: {
-    //         open: 12,
-    //         close: 22,
-    //     },
-    //     fri: {
-    //         open: 11,
-    //         close: 24,
-    //     },
-    //     sat: {
-    //         open: 0,
-    //         close: 24,
-    //     },
-    // },
+// const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+// const openingHours = {
+//     [weekdays[3]]: {
+//         open: 12,
+//         close: 22,
+//     },
+//     [weekdays[4]]: {
+//         open: 11,
+//         close: 23,
+// },
+// [`day-${2 + 4}`]: {
+//         open: 0, close: 24,
+//     },
+// };
+// const restaurant = {
+//     name: 'Classico Italino',
+//     location: 'Vis Angelo Tavanti 23, Firenze, Italy',
+//     categories: ['Itallian', 'Pizzeria', 'Vegetarian', 'Organic'],
+//     starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Carpese Salad'],
+//     mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+// openingHours,
+// openingHours: {
+//     thu: {
+//         open: 12,
+//         close: 22,
+//     },
+//     fri: {
+//         open: 11,
+//         close: 24,
+//     },
+//     sat: {
+//         open: 0,
+//         close: 24,
+//     },
+//  },
 
-    order: function (starterIndex, mainIndex) {
-        return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-    },
-    orderDelivery: function ({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
-        console.log(`Order recieved! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered
-        to ${address} at ${time}`);
-    },
-    orderPasta: function (ing1, ing2, ing3) {
-        console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, ${ing3} `);
-    },
-    orderPizza: function (mainIngredient, ...otherIngredients) {
-        console.log(mainIngredient);
-        console.log(otherIngredients);
+//     order: function (starterIndex, mainIndex) {
+//         return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+//     },
+//     orderDelivery: function ({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
+//         console.log(`Order recieved! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered
+//         to ${address} at ${time}`);
+//     },
+//     orderPasta: function (ing1, ing2, ing3) {
+//         console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, ${ing3} `);
+//     },
+//     orderPizza: function (mainIngredient, ...otherIngredients) {
+//         console.log(mainIngredient);
+//         console.log(otherIngredients);
+//     }
+// // };
+
+console.log('a+very+nice+string'.split('+'));
+console.log('Jonas schmedtmann'.split(''));
+const[firstName, lastName] = 'Jonas Schmedtmann'.split('');
+const newName = ['Mr.', firstName, lastName.toUpperCase()].join('');
+console.log(newName);
+const capitalizeName = function(name){
+    const names = name.split('');
+    const namesUpper = [];
+    for(const n of names){
+        namesUpper.push(n[0].toUpperCase() + n.slice(1));
+    }
+    console.log(namesUpper.join(''))
+}
+const passenger = 'jessica ann smith davis'
+capitalizeName('jonas schmedtmann');
+const messsage = 'Go to gate 23!';
+console.log(message.padStart(25, '+'));
+console.log('Jonas'.padStart(25, '+'));
+
+/*onst airline = 'TAP Air Portugal';
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+const passenger = 'jOnAs';
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect = passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect)
+//comparing emails
+const email = 'hello@jonas.io';
+const loginEmail = ' Hello@Jonas.Io \n';
+const lowerEmail = loginEmail.toLowerCase();
+const trimmedEmail = lowerEmail.trim();
+console.log(trimmedEmail);
+const normalEmail = loginEmail.toLowerCase().trim();
+console.log(normalEmail)
+console.log(email === normalEmail);
+//replacing
+const priceGB = '288,97$';
+const priceUS = priceGB.replace('$', '#');
+console.log(priceUS);
+const announcement = 'All passengers come to boarding door 23. Boarding door 23!'
+console.log(announcement.replace('door', 'gate'));
+console.log(announcement.replace(/door/g, 'gate'));
+//BOOleans
+const plane = 'Airbus A320neo';
+console.log(plane.includes('A320'));
+console.log(plane.includes('Boeing'));
+console.log(plane.startsWith('Air'));
+if (plane.startsWith('Airbus') && plane.endsWith('neo')) {
+    console.log('Part of the New Airbus family');
+}
+const checkBaggage = function (items) {
+    const baggage = items.toLowerCase();
+    if (baggage.includes('knife') || baggage.includes('gun')) {
+        console.log('You are NOT allowed on board');
+    } else {
+        console.log('Welcome abroad!');
     }
 };
-  
+checkBaggage('I have a laptop, some food and a pocket knife');
+checkBaggage('Socks and camera');
+checkBaggage('Got some snacks and a gun for protection');*/
+
+// const airline = 'TAP  Air Portugal';
+// const plane = 'A320';
+// console.log(plane[0]);
+// console.log(plane[1]);
+// console.log(plane[2]);
+// console.log('B737'[0]);
+// console.log(airline.length);
+// console.log('B737'.length);
+// console.log(airline.indexOf('r'));
+// console.log(airline.indexOf('portugal'));
+// console.log(airline.slice(4));
+// console.log(airline.slice(4, 7));
+// console.log(airline.slice(0, airline.indexOf('')));
+// console.log(airline.slice(airline.lastIndexOf('')+ 1));
+// console.log(airline.slice(-2));
+// console.log(airline.slice(1, -1));
+// const checkMiddleSeat = function(seat){
+//     const s = seat.slice(-1);
+//     if(s === 'B' || s === 'E')
+//     console.log('You got the middle seat');
+//     else console.log('You got Lucky');  
+// }
+// checkMiddleSeat('11B');
+// checkMiddleSeat('23C');
+// checkMiddleSeat('3E');
+// console.log(new String('jonas'));
+// console.log(typeof new String ('jonas'));
+// console.log(typeof new String('jonas').slice(1));
+
 /*// MAPS ITERATIONS
 const question = new Map([
     ['question', 'what is the best programming language in the world?'],
@@ -424,4 +514,35 @@ console.log(staff)*/
 // for(const [team,odd] of Object.entries(game.odds)){
 //     const teamStr = team === 'x' ? 'draw' : `victory ${game[team]}`;
 //     console.log(`Odd of ${odd}`);
+// }
+// const gameEvents = new Map([
+//     [17, '⚽️ Goal'],
+//     [36, ' 🔄 Substitution'],
+//     [47, '⚽️ Goal'],
+//     [61, '🔄 Substitution'],
+//     [64, ' 🔶 Yellow card'],
+//     [69, ' 🔴 Red Card'],
+//     [70, '🔄 Substitution'],
+//     [72, '🔄 Substitution'],
+//     [76, '⚽️ Goal'],
+//     [80, '⚽️ Goal'],
+//     [92, '🔶 Yellow Card'],
+// ]);
+// // console.log(gameEvents.values());
+// const events = [...new Set(gameEvents.values())];
+// console.log(events);
+
+// //2,
+// gameEvents.delete(64);
+// console.log(gameEvents)
+
+// //3.
+// console.log(`An event happened , on average, every ${90 / gameEvents.size} minutes`);
+// const time = [...gameEvents.keys()].pop();
+// console.log(time);
+// console.log(`An event happened , on average, every ${time / gameEvents.Size} minutes`);
+// //4.
+// for (const [min, event] of gameEvents) {
+//     const half = min <= 45? 'FIRST' : 'SECOND';
+//     console.log(`[ HALF ] ${min}: ${event}`);
 // }
