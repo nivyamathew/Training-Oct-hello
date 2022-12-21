@@ -51,24 +51,42 @@
 //     }
 // // };
 
-console.log('a+very+nice+string'.split('+'));
-console.log('Jonas schmedtmann'.split(''));
-const[firstName, lastName] = 'Jonas Schmedtmann'.split('');
-const newName = ['Mr.', firstName, lastName.toUpperCase()].join('');
-console.log(newName);
-const capitalizeName = function(name){
-    const names = name.split('');
-    const namesUpper = [];
-    for(const n of names){
-        namesUpper.push(n[0].toUpperCase() + n.slice(1));
-    }
-    console.log(namesUpper.join(''))
-}
-const passenger = 'jessica ann smith davis'
-capitalizeName('jonas schmedtmann');
-const messsage = 'Go to gate 23!';
-console.log(message.padStart(25, '+'));
-console.log('Jonas'.padStart(25, '+'));
+// console.log('a+very+nice+string'.split('+'));
+// console.log('Jonas schmedtmann'.split(''));
+// const[firstName, lastName] = 'Jonas Schmedtmann'.split('');
+// const newName = ['Mr.', firstName, lastName.toUpperCase()].join('');
+// console.log(newName);
+// const capitalizeName = function(name){
+//     const names = name.split('');
+//     const namesUpper = [];
+//     for(const n of names){
+//         namesUpper.push(n[0].toUpperCase() + n.slice(1));
+//     }
+//     console.log(namesUpper.join(''))
+// }
+// const passenger = 'jessica ann smith davis'
+// capitalizeName('jonas schmedtmann');
+// const message = 'Go to gate 23!';
+// console.log(message.padStart(25, '+').padEnd(30, '+'));
+// console.log('Jonas'.padStart(25, '+').padEnd(30, '+'));
+// const maskCreditCard = function(number){
+//     const str = number + '';
+//     const last = str.slice(-10);
+//     return last.padStart(str.length, '*');
+// }
+// console.log(maskCreditCard(12345678));
+// console.log(maskCreditCard(435346473524135637856));
+// console.log(maskCreditCard('234545656734657723054754774'));
+// //repeat
+// const message2 = 'Bad Weather...All Departures Delayed...  ';
+// console.log(message2.repeat(5));
+// const planesInlined = function(n){
+//     console.log(`There are ${n} planes in the line ${' 🛬'.repeat(n)}`);
+// }
+// planesInlined(5);
+// planesInlined(3);
+// planesInlined(12);
+
 
 /*onst airline = 'TAP Air Portugal';
 console.log(airline.toLowerCase());
@@ -546,3 +564,27 @@ console.log(staff)*/
 //     const half = min <= 45? 'FIRST' : 'SECOND';
 //     console.log(`[ HALF ] ${min}: ${event}`);
 // }
+// document.body.append(document.createElement('textarea'));
+// document.body.append(document.createElement('button'));
+// const text = document.querySelector('textarea').value;
+// document.querySelector('button').addEventListener('click', function () {
+//     const text = document.querySelector('textarea').value;
+//     const rows = text.split('/n');
+//     console.log(rows);
+//     for (const[i, row] of rows.entries()) {
+//         const[first, second] = row.toLowerCase().trim().split('_');
+//         split('_');
+//         // console.log(row, first, second);
+//         const output = `${first}${second.replace(second[0], second[0].toUpperCase)}`;
+//         console.log(`${output.padEnd(20,0)}✅`);
+//     }
+// });
+// const getCode = sttr => structuredClone.slice(0,3).toUpperCase();
+// const flights = '_Delayed_departure;fao937412565;txlfadghe5445+11:25+_Arrival;kgdjbnlihreobn64435;dsbajvf;3254657';
+// for (const flight of flights.split('+')) {
+//     const[type, from, to ,time] = flight.split(';');
+//     console.log(type);
+//     const output = `${type.startsWith('Delayed') ? ' 🔴': ''} ${from} ${to} 
+//     (${time.replaceAll(':', 'h')}) $ from.slice(0, 3) ${to} (${time.replace(':','h')})`;
+//     console.log(output);
+// 
