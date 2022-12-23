@@ -53,18 +53,23 @@ const inputLoanAmount = document.querySelector('.form_input--loan-amount');
 const inputCloseUsername = document.querySelector('.form_input--user');
 const inputClosePin = document.querySelector('.form_input--pin');
 
+
+
 const dispalyMovements = function(movements, sort = false){
     containerMovements.innerHTML = '';
     const movs = sort ? movements.slice().sort((a,b) => a-b) : movements;
     
-    movements.forEach(function(mov, i){
+    movements.forEach(function(mov, i){                       
         const type = mov > 0 ? 'deposit' : 'withdrawal'
+
+        const date = new Date(acc.movementsDates[i]);
+        const displayDate = formatMovementDate(date, acc.locale);
+        const formattedMov = formatCur(mov, acc.locale, acc.currency);
         const html = `
         <div class="movements_row">
         <div class="movements_type movements_type--${type}">${i + 1} ${type}</div>
         <div class = "movements_value">${mov}</div>
-        </div>
-          `;
+        </div>`;
           containerMovements.insertAdjacentHTML('afterbegin', html); 
     });
 }; 
@@ -132,7 +137,56 @@ currenciesUnique.forEach(function(value, key, map){
 });*/
 
 
+const startLogOutTimer = function() {
+    let time = 100;
+    setInterval(function(){
+        
+        const min = String (MAth.trunc(time / 60)).padStart(2,0);
+        const sec = String(time % 60).padStart(2,0);
+
+        labelTimer.textContent = `${min}:${sec}`;
+        time--;
+        if(time === 0){
+            clearInterval(timer);
+            labelWelcome.textContent = 'Log in to get started';
+            containerApp.getElementsByClassName.opacity = 0;
+
+        }
+        time--;
+    };
+     time = 30;
+    tick();
+    const timer = setInterval(tick, 1000);
+};
+
 // Event handler
+/*
+let currentAccount;
+currentAccount = account1;
+updateUI(currentAccount);
+containerApp.getElementsByClassName.opacity = 100;
+
+const now = new Date();
+const options = {
+    hour: 'numeric',
+    minute: 'numeric',
+    day: 'numeric',
+    month: 'numeric',
+    year: 'numeric',
+    // weekday: 'long',
+};
+
+labelDate.textContent = new Intl.DateTimeFormat
+('en-UK',  options).format(now);
+
+
+const day = `${now.getDate()}`.padStart(2, 0);
+const month = `${now.getMonth() + 1}`.padStart(2, 0);
+const year = now.getFullYear();
+const hour = now.getHours();
+const min = now.getMinutes();
+labelDate.textContent = `${day}/${month}/${year}, ${hour}:${min}`;*/
+
 /*btnLogin.addEventListener('click', function(e){
     e.preventDefault();
     accounts.find(acc => acc.owner === inputLoginUsername.value);
@@ -163,14 +217,14 @@ currenciesUnique.forEach(function(value, key, map){
                 
             }
         });*/
-        btnLoan.addEventListener('click', function (e){
+        /*btnLoan.addEventListener('click', function (e){
             e.preventDefault();
             const amount = Number(inputLoanAmount.value);
             if (amount > 0 && currentAccount.movements.some(
                 mov => mov => amount * 0.1 )){
                     currentAccount.movements.push(amount);
                 }
-        });
+        });*/
        /* btnClose.addEventListener('click', function(e){
             e.preventDefault();
             if(
@@ -527,4 +581,201 @@ console.log(dogs.filter(checkEatingOkay));
 // 8.
 const dogsCopy = dogs.slice().sort((a, b) => a.recFood - b.recFood);
 console.log(dogsCopy);*/
+
+/*console.log(23 === 23.0);
+console.log(0.1 + 0.2);
+console.log(0.1 + 0.2 === 0.3);
+console.log(Number('23'));
+console.log(+'23');
+// Parsing
+console.log(Number.parseInt('30px', 10));
+console.log(Number.parseInt('e23', 10));
+console.log(Number.parseInt(' 2.5rem '));
+console.log(Number.parseFloat(' 2.5rem '));
+// check if value is not a number
+console.log(Number.isNaN(20));
+console.log(Number.isNaN('20'));
+console.log(Number.isNaN(+'20x'));
+console.log(Number.isNaN('20/0'));
+// if value is a number
+console.log(Number.isFinite('20'));
+console.log(Number.isFinite(20));
+console.log(Number.isFinite(+'20x'));
+console.log(Number.isFinite('20 /  0'));*/
+
+/*console.log(Math.sqrt(25));
+console.log(25 ** (1/2));
+console.log(9 ** (1/3));
+
+console.log(Math.max(5, 18, 23, 11, 2));
+console.log(Math.max(5, 18, '23px', 11, 2));
+console.log(Math.max(5, 18, '23', 11, 2));
+console.log(Math.min(5, 18, 23, 11, 2));
+
+console.log(Math.PI * Number.parseFloat('10px') ** 2);
+console.log(Math.trunc(Math.random() * 6) + 1);
+const randomInt = (min, max) =>
+    Math.trunc(Math.random()* (max - min) + 1) + min;
+    console.log(randomInt(10, 20));
+
+    // Rounding Integers
+
+    console.log(Math.trunc(23.3));
+    console.log(Math.round(23.8));
+    console.log(Math.round(23.3));
+    console.log(Math.ceil(23.8));
+    console.log(Math.ceil(23.3));
+    console.log(Math.floor(23.8));
+    console.log(Math.floor(23.3));
+    console.log(Math.floor(23.9));
+
+    // Rounding decimals
+    console.log((2.7).toFixed(0));
+    console.log((2.7).toFixed(3));
+    console.log((2.345).toFixed(2));
+    console.log((+2.345).toFixed(2));*/
+
+/*console.log(5 % 2);
+console.log(5 / 2);
+console.log( 8 % 3);
+console.log(8 / 3);
+console.log(6 / 2);
+console.log(6% 2);
+const isEven = n => n % 2 === 0;
+console.log(isEven(8));
+console.log(isEven(23));
+console.log(isEven(-1));
+
+[...document.querySelectorAll('.movements_row')].
+forEach (function (row, i){
+    if(i % 2 === 0) row.style.backgroundColor = 'orangered';
+    if(i % 3 === 0) row.style.backgroundColor = 'blue';
+
+})*/
+
+/*const diameter = 287_460_000_000;
+console.log(diameter);
+const priceCents = 345_99;
+console.log(priceCents);
+
+const transferFee1 = 15_00;
+const transferFee2 = 1_500;
+
+const PI = 3.14_15;
+console.log(PI);
+console.log(Number('230_000'));
+console.log(parse)*/
+
+
+/*console.log(2 ** 53 -1);
+console.log(Number.MAX_SAFE_INTEGER)
+console.log(2 ** 53 + 1);
+console.log(2 ** 53 + 2);
+console.log(2 ** 53 + 0);
+console.log(214597461327849865314796852158697465974653);
+console.log(987645335687453689746413654974614697497n);
+console.log(BigInt(6974658745));
+
+// operations
+console.log(10000n + 10000n);
+console.log(589746974658974697465894658974n * 10000000n);
+
+const num = 23;
+const huge = 78945659874565987461n;
+console.log(huge * BigInt(num));
+ 
+console.log(20n > 15);
+console.log(20n === 20);
+console.log(typeof 20n);
+console.log(20n == '20');
+console.log(huge + ' is really big!!!');
+
+console.log(10n / 3n);
+console.log(10 / 3);*/
+
+/*// CREATE A DATE
+ const now  = new Date();
+ console.log(now);
+ console.log(new Date ('Aug 02 2020 18: 05:41'));
+ console.log(new Date(account1.movementsDates));
+ console.log(new Date(2037, 10, 19, 15, 23, 5));
+ console.log(new Date(2037, 10, 31));
+
+ console.log(new Date(0));
+ console.log(new Date (3 * 24 * 60 * 1000));*/
+
+ /*//  working with dates
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(future);
+console.log(future.getMonth());
+console.log(future.getFullYear());
+console.log(future.getDate());
+console.log(future.getDay());
+console.log(future.getHours());
+console.log(future.getMinutes());
+console.log(future.getSeconds());
+console.log(future.toISOString());
+console.log(future.getTime());
+
+console.log(new Date(2142256980000));
+console.log(Date.now());
+future.setFullYear(2040);
+console.log(future);*/
+
+/*const future = new Date(2037, 10, 19, 15, 23);
+console.log(+future);
+const calcDaysPassed = (date1, date2) => 
+Math.abs(date2 - date1) / (1000 * 60 * 60 * 24);
+
+const days1 = calcDaysPassed(new Date(2037, 3, 14), new Date(2037, 3, 4),
+new Date(2037, 3, 14));
+console.log(days1);*/
+
+
+/*const num = 3884764.23;
+const options = {
+    style: 'currency',
+    unit: 'celsius',
+    currency: 'EUR',
+    useGrouping: false,
+}
+console.log('US:  ', new Intl.NumberFormat('en-US').format(num));
+console.log('Germany: ', new Intl.NumberFormat('de-DE').format(num));
+console.log('Syria: ', new Intl.NumberFormat('ar-SY', options).format(num));
+console.log(navigator.language,
+    new Intl.NumberFormat(navigator.language, options).format(num));*/
+
+
+/*const ingredients = ['olives', 'spinach']    
+ const pizzaTimer = setTimeout((ing1, ing2) => console.log(`Here is your pizza with ${ing1} and ${ing2}`),3000, ...ingredients);
+console.log('waiting...');
+if(ingredients.includes('spinach')) clearTimeout(pizzaTimer);
+
+setInterval(function(){
+    const now = new Date();
+    // console.log(now)
+})*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
