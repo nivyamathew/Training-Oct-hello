@@ -148,7 +148,8 @@
 // console.log('friend:', friend);
 // console.log('Me', me);
 // let lastName = 'Williams';
-// let oldLastName = lastName;
+// let oldLastName = lastName;git ststus
+
 // lastName = 'Davis';
 // console.log(lastName, oldLastName);
 // const jessica = {
