@@ -12,30 +12,30 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <img src="img/logo.png" alt="Bankist logo" class="nav_logo" id="logo" 
-            designer="Jonas" data-version-number="3.0">
+            <img src="img/logo.png" alt="Bankist logo" class="nav_logo" id="logo" designer="Jonas"
+                data-version-number="3.0">
             <ul class="nav_links">
                 <li class="nav_item"><a class="nav_link" href="#">Features</a></li>
                 <li class="nav_item"><a class="nav_link" href="#section--2">Operations</a></li>
-                <li class="nav_item"><a class="nav_link" href="#section--2">Testimonials</a></li>
+                <li class="nav_item"><a class="nav_link" href="#section--3">Testimonials</a></li>
                 <li class="nav_item"><a class="nav_link nav_link--btn btn--show-modal" href="#">Open account</a></li>
             </ul>
         </nav>
         <div class="header-title">
             <h1 onclick="alert('HTML alert')">
-            <h1 onclick="alert('HTML alert')">
                 When
                 <!-- GREEN HIGHLIGHT EFFECT -->
                 <span class="highlight">banking</span>
+                meets
                 <span class="highlight">minimalist</span>
 
             </h1>
             <h4> A simpler banking experience for a simpler life.</h4>
-            <button class="btn--text btn--scroll-to">Learn more & DownArrow;</button>
+            <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
             <img src="img/hero.png" calss="header_img" alt="Miniamlist bank items">
         </div>
     </header>
-    <section class="section" id="section--1">
+    <section class="section section--hidden" id="section--1">
         <div class="section_title">
             <h2 class="section_description">Features</h2>
             <h3 class="section_header">
@@ -81,7 +81,7 @@
             </div>
         </div>
     </section>
-    <section class="section" id="section--2">
+    <section class="section section--hidden" id="section--2">
         <div class="section_title">
             <h2 class="section_description">OPerations</h2>
             <h3 class="section_header">
@@ -90,13 +90,13 @@
         </div>
         <div class="operations">
             <div class="operations_tab-container">
-                <button class="btn operatiions_tab operations_tab--1 operations_tab--active" data-tab="1">
-                    <span>01</span>Instant Loans </button>
-                <button class="btn operations_tab operations_tab--2" data-tab="2"></button>
-                <span>02</span>Instant loans
+                <button class="btn operations_tab operations_tab--1 operations_tab--active" data-tab="1">
+                    <span>01</span>Instant Transfers </button>
+                <button class="btn operations_tab operations_tab--2 operations_tab--active" data-tab="2">
+                    <span>02</span>Instant loans
                 </button>
-                <button class="btn operations_tab operations_tab--3" data-tab="2"></button>
-                <span>02</span>Instant closing
+                <button class="btn operations_tab operations_tab--3 operations_tab--active" data-tab="3">
+                    <span>03</span>Instant closing
                 </button>
             </div>
             <div class="operations_content operations_content--1 operations_content--active">
@@ -137,15 +137,15 @@
         </div>
     </section>
 
-    <section class="section" id="section--3">
+    <section class="section secton--hidden" id="section--3">
         <div class="section_title section_title--testimonials">
-            <h2 class="section_description">Not surre yet?</h2>
+            <h2 class="section_description">Not sure yet?</h2>
             <h3 class="section_header">
                 Milllions of Bankists are already making their lifes simpler.
             </h3>
         </div>
-        <div class="slider">
-            <div class="slide slide--1">
+         <div class="slider"> 
+         <div class="slide slide--1">
                 <div class="testimonial">
                     <h5 class="testimonial_header">Best financial decision ever!</h5>
                     <blockquote class="testimonial_text">
@@ -189,22 +189,26 @@
                         ipsa minus consequatur error sunt, deleniti saepe aliquid quos inventore sequi. Necessitatibus
                         id alias reiciendis, perferendis facere.
                     </blockquote>
-                    <address class="testim">&larr;</button>
-                        onial_author">
+                    <address class="testimonial_author">
                         <img src="img/user-3.jpg" alt="" class="testimonial_photo">
                         <h6 class="testimonial_name">Francisco Gomes</h6>
                         <p class="testimonial_location">Lisbon, Portugal</p>
                     </address>
                 </div>
-            </div>
-            <button class="slider_btn slider_btn--left">&larr;</button>
-            <button class="slider_btn slider_btn--right">&rarr;</button>
-            <div class="dots"></div>
+             </div> 
+      <!-- <div class="slide"><img src="img/img-1.jpg" alt="photo 1"></div>
+        <div class="slide"><img src="img/img-2.jpg" alt="photo 2"></div>
+        <div class="slide"><img src="img/img-3.jpg" alt="photo 3"></div>
+        <div class="slide"><img src="img/img-4.jpg" alt="photo 4"></div> -->
+
+        <button class="slider_btn slider_btn--left">&larr;</button>
+        <button class="slider_btn slider_btn--right">&rarr;</button>
+        <div class="dots"></div>
         </div>
     </section>
-    <section class="section section--sign-up">
+    <section class="section section--hidden section--sign-up">
         <div class="section_title">
-            <h3 class="section_header">The best day to join Bankist was one year ago. The 
+            <h3 class="section_header">The best day to join Bankist was one year ago. The
                 second best is today!
             </h3>
         </div>
@@ -222,15 +226,16 @@
         </ul>
         <img src="img/icon.png" alt="logo" class="footer_logo">
         <p class="footer_copyright">&copy;Copyright by
-            <a class="footer_link twitter-link" target="_blank"
-            href="https:??twitter.com/jonassschemedtman">Jonas Schmedtmann</a>
+            <a class="footer_link twitter-link" target="_blank" href="https:??twitter.com/jonassschemedtman">Jonas
+                Schmedtmann</a>
             Use for learning or your portfolio. Don,t use to teach. Don't claim as your own product
         </p>
     </footer>
     <div class="modal hidden">
         <button class="btn--close-modal">&times;</button>
         <h2 class="modal_header">Open your bank account <br> in just
-        <span class="highlight"> 5 minutes</span></h2>
+            <span class="highlight"> 5 minutes</span>
+        </h2>
         <form class="modal_form">
             <label>First Name</label>
             <input type="text">
@@ -243,6 +248,7 @@
     </div>
     <div class="overlay hidden"></div>
     <script src="script.js"></script>
+    
 </body>
 
 </html>
