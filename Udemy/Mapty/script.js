@@ -277,11 +277,11 @@ class App {
     }
 }
 
-const app = new App();
+const app = new App();  
+ 
+// form.addEventListener('submit', function (e) {
 
-form.addEventListener('submit', function (e) {
+// });
+// inputType.addEventListener('change', function () {
 
-});
-inputType.addEventListener('change', function () {
-
-});
+// });

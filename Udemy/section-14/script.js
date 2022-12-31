@@ -84,7 +84,7 @@ console.log(account.movements);*/
 class PersonCl {
     constructor(fullName, birthYear){
         this.fullName = fullName;
-        this.birthYear = birthYear;        
+        this.birthYear = birthYear;
     }
 
     calcAge(){
@@ -119,7 +119,7 @@ console.log(jessica.__proto__=== PersonCl.prototype);
 jessica.greet();
 
 const walter = new PersonCl('walter', 1965);
-const account = { 
+const account = {
     owner: 'Jonas',
     movements: [200, 530, 120, 300],
 }
@@ -140,7 +140,7 @@ const steven = Object.create(PersonProto);
 console.log(steven);
 steven.name = 'Steven';
 steven.birthyear = 2002;
-steven.calcAge(); 
+steven.calcAge();
 console.log(steven.__proto__ === PersonProto);
 const sarah = Object.create(PersonProto);
 sarah.init('Sarah', 1979);
@@ -285,7 +285,7 @@ EV.prototype.chargeBattery = function (chargeTo){
 EV.prototype.accelerate = function(){
     this.speed += 20;
     this.charge--;
-    console.log(`${this.make} is going at ${this.speed} km/h, 
+    console.log(`${this.make} is going at ${this.speed} km/h,
     with a charge of ${this.charge}`);
 
 }

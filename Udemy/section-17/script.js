@@ -39,7 +39,6 @@ const lastPost2 = await getLastPost();
 console.log(lastPost2);
 
 // Module pattern
-
 const ShoppingCart2 = (function(){
 const cart = []
 const shippingCost = 10;
@@ -65,7 +64,11 @@ ShoppingCart2.addToCart('pizza', 2);
 console.log(ShoppingCart2);
 console.log(ShoppingCart2.shippingCost);
 
-import cloneDeep from './node_modules/lodash-es/cloneDeep.js';
+/*
+// INTRODUCTION TO NPM
+// import cloneDeep from '../node_modules/lodash-es/cloneDeep.js';
+import cloneDeep from 'lodash-es';
+
 const state = {
     cart: [
         {product: 'bread', quantity: 5},
@@ -79,4 +82,29 @@ state.user.loggedIn = false;
 console.log(stateClone);
 
 console.log(stateDeepClone);
+ 
 
+// if(module.hot) {
+//     module.hot.accept()
+// }
+
+class Person {
+    #greeting = 'Hey'
+    constructor(name) {
+        this.name = name;
+        console.log(`${this.#greeting}, ${this.name}`);
+    }
+}
+const nivya = new Person('Nivya')
+console.log('Nivya' ?? null);
+console.log(cart.find(el => el.quantity >= 2));
+Promise.resolve('TEST').then( x => console.log(x));
+
+ import 'core-js/stable';
+// import 'core-js/stable/array/find';
+// import 'core-js/stable/promis
+
+// Polifiling async functions
+import 'regenerator-runtime/rumtime';
+
+*/

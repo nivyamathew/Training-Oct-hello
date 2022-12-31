@@ -1,6 +1,6 @@
 header{
     padding: 10px 20px;
-    border-bottom: 1ppx solid #eee;
+    border-bottom: 1px solid #eee;
     background: #fff;
 }
 header:after{
@@ -48,7 +48,7 @@ button{
     top: 40px;
     right: 50%;
     width: 40px;
-    //opacity: 0;
+    opacity: 0;
     animation:zoom 1s ease forwards;
 }
 
@@ -56,3 +56,4 @@ button{
     0%{opacity: 0}
     50%{opacity: 1}
     100%{opacity: 0; right: 40px}
+}
